@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+<title>Testing</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../css/bootstrap_css/datepicker.css">
+<link rel="stylesheet" href="../css/bootstrap_css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap_css/bootstrap-responsive.css">
+ </head>
+ <body>
+ <center>
+      <h1>BootStrap Datepicker</h1>
+  <form>
+  <div class="well span12 main">
+  <input type="text" id="dp1" class="span2 datepicker" placeholder="Date..."  name="date"> <br>
+      </div>
+      <input type="submit" value="Search" class="btn">
+  </form>
+ </center>
+
+<!-- JAVAscript ----------------------------------------------------------------->
+<script type="text/javascript" src="../js/bootstrap_js/jquery.js"></script>
+<script type="text/javascript" src="../js/bootstrap_js/bootstrap.js"></script>
+<script src="../js/bootstrap_js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+$(function(){
+   $('.datepicker').datepicker({
+      format: 'mm-dd-yyyy'
+    });
+});
+</script>
+
+ </body>
+ </html>
+

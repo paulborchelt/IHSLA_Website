@@ -1,0 +1,3 @@
+<?=$navbarteam?>
+<?=$team?>
+<?=$teamcontacts?>

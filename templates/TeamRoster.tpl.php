@@ -1,0 +1,2 @@
+<?=$navbarteam?>
+<?=$roster?>

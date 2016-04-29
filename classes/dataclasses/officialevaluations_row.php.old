@@ -1,0 +1,138 @@
+<?php
+require_once ('row.php');
+
+class OfficialEvaluations_Row extends Row
+{
+    protected $idofficialevaluations;
+    protected $idschedule;
+    protected $idcontactinfo;
+    protected $Team_ID;
+    protected $rules;
+    protected $rulescomments;
+    protected $judgment;
+    protected $judgmentcomments;
+    protected $consistency;
+    protected $consistencycomments;
+    protected $hustle;
+    protected $hustlecomments;
+    protected $communication;
+    protected $communicationcomments;
+    protected $additionalcomments;
+    
+    protected $_schedule;
+    protected $_teamObject;
+    function __construct($array = null){
+        
+        $this->idofficialevaluations = $array['idofficialevaluations'];
+        $this->idschedule = $array['idschedule'];
+        $this->idcontactinfo = $array['idcontactinfo'];
+        $this->Team_ID = $array['Team_ID'];
+        $this->rules = $array['rules'];
+        $this->rulescomments = $array['rulescomments'];
+        $this->judgment = $array['judgment'];
+        $this->judgmentcomments = $array['judgmentcomments'];
+        $this->consistency = $array['consistency'];
+        $this->consistencycomments = $array['consistencycomments'];
+        $this->hustle = $array['hustle'];
+        $this->hustlecomments = $array['hustlecomments'];
+        $this->communication = $array ['communication'];
+        $this->communicationcomments = $array['communicationcomments'];
+        $this->additionalcomments = $array['additionalcomments'];
+        
+        $this->_schedule = new Schedule_Row($array);
+        //TODO: Make sure to fill in the reset of the team object and not jsut the name. 
+        $this->_teamObject = new Teams_Row(array( Team_Name => $array['Eval_Team_Name']));
+    }
+    
+  function getExsistingRow($database){
+    $sql_Statement = "SELECT *
+				FROM OfficialEvaluations
+				WHERE idcontactinfo = '$this->idcontactinfo' AND idschedule = '$this->idschedule' AND Team_ID = '$this->Team_ID'";
+        $database->query($sql_Statement);
+        $row = $database->fetchNextArray();  
+        return $row != NULL ? new OfficialEvaluations_Row ($row) : NULL ;
+  }
+  
+  function getAllExsistingRow($database){
+    $sql_Statement = "SELECT *
+				FROM OfficialEvaluations
+				WHERE idcontactinfo = '$this->idcontactinfo' AND idschedule = '$this->idschedule'";
+        $database->query($sql_Statement);
+        $row = $database->fetchNextArray();  
+        return $row != NULL ? new OfficialEvaluations_Row ($row) : NULL ;
+  }
+  
+  static function GetSelectStatement(){
+        //TODO: Add all columns needed for a schedule
+        return "SELECT *, home.Team_ID as Home_Team_ID, 
+                          home.Team_Name as Home_Team_Name,
+                          home.Address as Home_Address,
+                          home.City as Home_City,
+                          home.State as Home_State,
+                          home.ZIP as Home_ZIP,
+                          home.Phone as Home_Phone,
+                          home.Fax as Home_Fax,
+                          home.Home_Colors as Home_Home_Colors,
+                          home.Away_Colors as Home_Away_Colors,
+                          home.Mascot as Home_Mascot,
+                          home.Member as Home_Member,
+                          home.League as Home_League,
+                          away.Team_ID as Away_Team_ID, 
+                          away.Team_Name as Away_Team_Name,
+                          away.Address as Away_Address,
+                          away.City as Away_City,
+                          away.State as Away_State,
+                          away.ZIP as Away_ZIP,
+                          away.Phone as Away_Phone,
+                          away.Fax as Away_Fax,
+                          away.Home_Colors as Away_Home_Colors,
+                          away.Away_Colors as Away_Away_Colors,
+                          away.Mascot as Away_Mascot,
+                          eval.Team_Name as Eval_Team_Name";
+  }
+  
+  function whereStatement(){
+    $sql_Statement = "
+        Left Join Schedule on Game_ID = idschedule
+        LEFT JOIN `Teams` AS home ON `HomeTeam_ID` = home.Team_ID
+        LEFT JOIN `Teams` AS away ON `AwayTeam_ID` = away.Team_ID
+        LEFT JOIN `Teams` AS eval ON OfficialEvaluations.Team_ID = eval.Team_ID
+        WHERE idcontactinfo = '$this->idcontactinfo' AND idschedule = '$this->idcontactinfo'";  
+    return $sql_Statement;
+  }
+  
+  function whereStatementAll(){
+    $sql_Statement = "
+        Left Join Schedule on Game_ID = idschedule
+        LEFT JOIN `Teams` AS home ON `HomeTeam_ID` = home.Team_ID
+        LEFT JOIN `Teams` AS away ON `AwayTeam_ID` = away.Team_ID
+        LEFT JOIN `Teams` AS eval ON OfficialEvaluations.Team_ID = eval.Team_ID
+        WHERE idcontactinfo = '$this->idcontactinfo'";  
+    return $sql_Statement;
+  }
+  
+  function CreateNumberOptions( $previousValue=1 ){
+    $arrayofnumbers = array(0,1,2,3,4,5,6,7,8,9,10);
+    foreach( $arrayofnumbers as $i){
+        if ( $previousValue == $i){
+            $returnumberoptions .= "<OPTION SELECTED> $i </OPTION>";
+        }
+        else{
+            $returnumberoptions .= "<OPTION> $i </OPTION>";;
+        }
+    }
+    
+    return $returnumberoptions;
+  }
+  
+  function DoYouWantToEditDisplay($main){
+    $tpl = new Template('../templates/');
+    $tpl->set("Game_ID",$this->idschedule);
+    $tpl->set("Team_ID",$this->Team_ID);
+    $main->set('content', $tpl->fetch('OfficialsEvaluationDoYouWantToEdit.form.tpl.php'));
+    echo $main->fetch('../templates/pages/main.tpl.php');
+    
+  }
+    
+}
+?>
