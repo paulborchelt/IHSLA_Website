@@ -31,7 +31,7 @@
           <div class="row-fluid">
             <div class="span4">
               <h2>Roncalli is looking for a new JV Coach</h2>
-              <p>This a test of github commit. Roncalli is looking for a JV coach.  This is a paid position. Anyone intrested should contact Sean Cross at <a href="mailto:seancross@comcast.net">seancross@comcast.net</a></p>
+              <p>Roncalli is looking for a JV coach.  This is a paid position. Anyone intrested should contact Sean Cross at <a href="mailto:seancross@comcast.net">seancross@comcast.net</a></p>
             </div><!--/span-->
           </div><!--/row-->
         </div><!--/span-->
