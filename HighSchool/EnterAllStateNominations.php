@@ -11,13 +11,15 @@ require_once ('../classes/dataclasses/teams_row.php');
 function DefaultDisplay($db, $main, $team, $sqlExecutorNominations, $position ){
    $nextPosition = Allstate_Nominations_Row::getNextPosition(clone $db, $position->Position_ID);
    $totalnominations = Allstate_Nominations_Row::getTotalNominations(clone $db, $team->Team_ID);
+   $teamLimt = Allstate_Nominations_Row::getNominationTeamLimit( clone $db, $team->Team_ID  );
+   $main->info("You have used $totalnominations of your $teamLimt allotted nominations.");
    if( null == $nextPosition ){
       $sqlExecutorNominations->Search(Allstate_Nominations_Row::getWhereStatement($team->Team_ID, null));
    }
    else{
       $sqlExecutorNominations->Search(Allstate_Nominations_Row::getWhereStatement($team->Team_ID, $position->Position_ID));
    }
-   if ( $sqlExecutorNominations->numRows() < Allstate_Nominations_Row::getNominationLimit( $position->Position_ID) && $totalnominations < Allstate_Nominations_Row::getNominationLimit( clone $db, $team->Team_ID  )){
+   if ( $sqlExecutorNominations->numRows() < Allstate_Nominations_Row::getNominationLimit( $position->Position_ID) && $totalnominations < Allstate_Nominations_Row::getNominationTeamLimit( clone $db, $team->Team_ID  )){
       $main->set('content', $sqlExecutorNominations->fetch(array(nextposition => Allstate_Nominations_Row::getNextPosition(clone $db, $position->Position_ID), team => $team, nominationform => Allstate_Nominations_Row::getNominationForm(clone $db, $team->Team_ID, $position->Position_ID), position => $position )));
    }
    else{

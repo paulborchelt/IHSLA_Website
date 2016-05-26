@@ -14,26 +14,16 @@
           </div>
          <div class="row-fluid">
             <div class="span4">
+              <h2>IHSLA Announces it's 2016 State Tournament Bracket.</h2>
+              <p>1) Carmel 2)Cathedral 3) Culver 4) HSE 5) Zionsville 6) Fishers 7) Noblesville 8) Brebeuf 9) St. Joe 10) Guerin 11) Park Tudor 12) Heritage 13) Concordia 14) Center Grove 15) Castle 16) Penn.</p>
+              <p><a class="btn" href="../leagueuploads/Bracket2016.JPG">View details >></a></p>
+            </div><!--/span-->
+            <div class="span4">
               <h2>Fishers High School to host IHSLA Championship weekend</h2>
               <p>Fisherss High School won the bid to host the 2016 IHSLA championship weekd June 3rd and 4th.</p>
               <p><a class="btn" href="../leagueuploads/IHSLA_PRESS_RELEASE.pdf">View details >></a></p>
             </div><!--/span-->
-            <div class="span4">
-              <h2>North Central is looking for assistant coach</h2>
-              <p>North Central High School is seeking a varsity boys lacrosse coach beginning with the 2015-2016 school year.</p>
-              <p><a class="btn" href="../leagueuploads/NC_Job.pdf">View details >></a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Columbus Lacrosse club is seeking a head coach for their summer, high school team</h2>
-              <p>Columbus Lacrosse club is seeking a head coach for their summer, high school team.  The time commitment includes 2-3 practices per week and three tournaments over the course of the summer between June and August.  The emphasis is on player development.  This is a paid position including travel/expense stipend.  For more information, please contact Andrew Jerman at <a href="mailto:andrew@auinc.com">andrew@auinc.com</a>.  All inquiries will remain confidential. </p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>Roncalli is looking for a new JV Coach</h2>
-              <p>Roncalli is looking for a JV coach.  This is a paid position. Anyone intrested should contact Sean Cross at <a href="mailto:seancross@comcast.net">seancross@comcast.net</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
+            
         </div><!--/span-->
       </div><!--/row-->
 

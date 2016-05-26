@@ -12,7 +12,7 @@
          <li><button type="button" onClick="window.location='teams.php?Team_ID=<?=$team->Team_ID?>'">Update Team Contacts</button></li>
          <li><button type="button" onClick="window.location='SubmitProgramMembers.php?Team_ID=<?=$team->Team_ID?>'">Submit Program Members to League</button></li>
          <? if ( 1 != $team->Club ): ?>
-         </a><li><button type="button" onClick="window.location='EnterAllStateNominations.php?Team_ID=<?=$team->Team_ID?>&Position_ID=1'">Enter All-State Nominations</button></li> 
+         </a> </a><li><button type="button" onClick="window.location='EnterAllStateNominations.php?Team_ID=<?=$team->Team_ID?>&Position_ID=1'">Enter All-State Nominations</button></li>
          <!-- <li><button type="button" onClick="window.location='EnterAllStateVotes.php?Team_ID=<?=$team->Team_ID?>&Position_ID=1&Team_Level=1'">Enter All-State Votes</button></li> -->
          <?endif;?>
       </ul>

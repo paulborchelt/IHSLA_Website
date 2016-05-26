@@ -9,6 +9,7 @@ require_once ('../classes/dataclasses/saves_row.php');
 require_once ('../classes/selectYear.php');
 require_once ('../classes/navigation.php');
 $db = new db();
+$db->query("SET SESSION SQL_BIG_SELECTS=1");
 
 $main = new TemplateLogger($db,'./');  
 $navbar = new TemplateLogger($db,'./');

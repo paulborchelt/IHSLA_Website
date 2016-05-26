@@ -27,7 +27,7 @@
 
 <br /><br /> 
 <? if (FALSE == $summary ): ?>
-   <? if ( 7 == $nextposition->Position_ID ) : ?>
+   <? if ( 8 == $nextposition->Position_ID ) : ?>
       <p>Once you have finished entering <?=$position->Description?> Nominations, hit next to see a summary nominations.</p>
       <button type="button" class="btn btn-default" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?action=Summary&Position_ID=1&Team_ID=<?=$team->Team_ID?>'">Next</button>
    <? else: ?>

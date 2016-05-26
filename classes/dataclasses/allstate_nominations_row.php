@@ -66,11 +66,14 @@ class Allstate_Nominations_Row extends row{
       case 6:
          $nextPosition = new Position_Row(array(Position_ID => 7));
          break;
+      case 7:
+         $nextPosition = new Position_Row(array(Position_ID => 8));
+         break;
    	default :
          $nextPosition = null;
       }
       
-      if( 7 == $nextPosition->Position_ID){
+      if( 8 == $nextPosition->Position_ID){
          return $nextPosition;
       }
       else{
@@ -89,7 +92,7 @@ class Allstate_Nominations_Row extends row{
          $limit = 6;
          break;
       case 3: 
-         $limit =3;
+         $limit = 3;
          break;
       case 4:
          $limit = 1;
@@ -100,6 +103,9 @@ class Allstate_Nominations_Row extends row{
       case 6:
          $limit = 1;
          break;
+      case 7:
+         $limit = 1;
+         break;
       default: 
          $limit = 0;
       }
@@ -108,27 +114,26 @@ class Allstate_Nominations_Row extends row{
    
    static function getNominationTeamLimit( $db, $teamid ) {
       $sql = "SELECT ranking from laxpower_ranking where teamid = $teamid";
-     	$row = $database->queryUniqueArray($sql);
+     	$row = $db->queryUniqueArray($sql);
       
-      if ( $row->ranking < 9 ){
+      if ( $row[ranking] < 9 ){
          $limit = 13;
       }
-      else if ( $row->ranking > 8 && $row->ranking < 17 ){
+      else if ( $row[ranking] > 8 && $row[ranking] < 17 ){
          $limit = 7;
       }
-      else if ( $row->ranking > 17 && $row->ranking < 27 ){
+      else if ( $row[ranking] > 17 && $row[ranking] < 27 ){
          $limit = 3;
       }
       else{
          $limit = 1;
-      }
-            
+      }    
       return $limit;
    }
    
    static function getTotalNominations ( $db, $teamid ){
       $currentSeason = Schedule_Row::GetCurrentSeasonYear();
-      $sql = "SELECT * from allstate_nominations as allstate
+      $sql = "SELECT * from Allstate_Nominations as allstate
               LEFT JOIN Players ON allstate.Player_ID = Players.Player_ID
               WHERE Team_ID = $teamid and Year = $currentSeason ";
       $db->query($sql);
