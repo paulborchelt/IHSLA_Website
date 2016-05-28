@@ -27,7 +27,7 @@ class AllState_Votes_Row extends row{
          }
          else{
             if( $this->Team_Level == 1 ){
-               $this->Points = 2;
+               $this->Points = 3;
             }
             elseif ( $this->Team_Level = 2 ){
                $this->Points =1;
@@ -163,6 +163,9 @@ class AllState_Votes_Row extends row{
       case 6:
          $limit = 1;
          break;
+      case 7:
+         $limit = 1;
+         break;
       default: 
          $limit = 0;
       }
@@ -187,6 +190,9 @@ class AllState_Votes_Row extends row{
          $limit = 0;
          break;
       case 6:
+         $limit = 0;
+         break;
+      case 7:
          $limit = 0;
          break;
       default: 
