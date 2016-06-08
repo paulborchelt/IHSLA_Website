@@ -2,12 +2,13 @@
 
 <div class="btn-toolbar" role="toolbar">
    <div class="btn-group btn-group-xs">
-     <button type="button" class="<?=$Position->Position_ID == 1 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=1&year=2015'">Attack</button>
-     <button type="button" class="<?=$Position->Position_ID == 2 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=2&year=2015'">Midfield</button>
-     <button type="button" class="<?=$Position->Position_ID == 3 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=3&year=2015'">Defense</button>
-     <button type="button" class="<?=$Position->Position_ID == 4 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=4&year=2015'">Goalie</button>
-     <button type="button" class="<?=$Position->Position_ID == 5 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=5&year=2015'">LSM</button>
-     <button type="button" class="<?=$Position->Position_ID == 6 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=6&year=2015'">FaceOff</button>
+     <button type="button" class="<?=$Position->Position_ID == 1 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=1&year=2016'">Attack</button>
+     <button type="button" class="<?=$Position->Position_ID == 2 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=2&year=2016'">Midfield</button>
+     <button type="button" class="<?=$Position->Position_ID == 3 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=3&year=2016'">Defense</button>
+     <button type="button" class="<?=$Position->Position_ID == 4 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=4&year=2016'">Goalie</button>
+     <button type="button" class="<?=$Position->Position_ID == 5 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=5&year=2016'">LSM</button>
+     <button type="button" class="<?=$Position->Position_ID == 6 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=6&year=2016'">FaceOff</button>
+     <button type="button" class="<?=$Position->Position_ID == 7 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Position_ID=7&year=2016'">Defensive Midfield</button>
    </div>
 </div> 
 <div>
@@ -21,7 +22,7 @@
 </tr>
 <? while ( $vote = $result->fetchNextObject() ): ?>
    <?$Points = $vote->Points; ?>
-   <?if ( 2 < $Points ): ?>
+   <?if ( 6 < $Points ): ?>
       <?$positionCount = AllState_Votes_Row::getPositionLimit($Position->Position_ID) ?>
       <?if ( $count >= $positionCount  && $previousPoints != $Points && $Team_Level != 3): ?>
         <? $count = 0; $Team_Level++; $previousPoints = 0; ?>
