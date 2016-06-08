@@ -45,14 +45,8 @@
         </div><!--/span-->
         <div class="row-fluid">
             <div class="span4">
-              <h2>East/West Game Roster Announced</h2>
-              <p>Coaches are:</p>
-              <p>East - Mike Williams (St. Joes), and Steve Kinney (Heritage Christian) </p>
-              <p>West - Drew Bogan (Park Tudor), and  D Soper (Guerin Catholic)</p>
-              <p>Schedule:</p>
-              <p>Practice Saturday June 3rd at Fishers High School 10 AM - 11:30 Am</p>
-              <p>Game Saturday June 3rd at Fishers High School 1:30 PM</p>
-              <p><a class="btn" href="../leagueuploads/2016EastWest.pdf">View details >></a></p>
+              <h2>Bloomington South looking for Head and Assistant Coaches</h2>
+              <p>Bloomginton South is looking to fill open coaching position. Please coantct Lisa Bell <a href="mailto:lkdeckar@indiana.edu"><span class="c8">lkdeckar@indiana.edu.</a></p>
             </div><!--/span-->
         </div><!--/span-->
       </div><!--/row-->
