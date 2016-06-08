@@ -34,11 +34,12 @@
               <p><a href="ViewAllState.php?year=2016&Position_ID=1">2016 All-State Awards</a></p>
               <p><a href="../leagueuploads/2016AcademicAllState.pdf">2016 Academic All-State Awards</a></p>
               <p><a href="../leagueuploads/2016AllAcademic.pdf">2016 All Academic Awards</a></p>
+              <p><a href="../leagueuploads/2016IHSLAAwards.pdf">2016 IHSLA Awards</a></p>
             </div><!--/span-->
             <div class="span4">
-              <h2>Semi-Finals and State Championship will be broadcasted on internet radio</h2>
-              <p>The IHSLA is pleased to announce that the state semi-finals and state championship will be broadcasted by Indiana Sports Radio.  Fans that may not be able to make the games can turn in to <a href="http://www.indianasrn.org//">www.IndianaSRN.org</a> and click on the quick link LACROSSE CHAMPIONSHIPS.</p>
-              <p><a class="btn" href="../leagueuploads/IndianaSRN.pdf">View details >></a></p>
+              <h2>Hoosier Crossroads Lacrosse Conference (HCLC) Awards</h2>
+              <p><a href="../leagueuploads/2016HCLCChampions.pdf">2016 HCLC Champion</a></p>
+              <p><a href="../leagueuploads/2016HCLCCOTY.pdf">2016 HCLC Coach of the Year</a></p>
             </div><!--/span-->
             
         </div><!--/span-->
