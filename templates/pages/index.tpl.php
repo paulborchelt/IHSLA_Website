@@ -14,32 +14,18 @@
           </div>
          <div class="row-fluid">
             <div class="span4">
-              <h2>Cathedral High School 2016 State Champions</h2>
-              <p>The 2016 seaons comes to end with 3 very exciting games on championship weekend.</p>
-              <ul>
-              <li>Semi-Finals </li>
-              <ul>
-              <li>Cathedral 12 vs Culver 10</li>
-              <li>Carmel  12 vs HSE 9 </li>
-              </ul>
-              <li>State Championship</li>
-              <ul>
-              <li>Cathedral 9 vs Carmel 4</li>
-              </ul>
-              </ul>
-              <p><a class="btn" href="../leagueuploads/Bracket2016.pdf">View details >></a></p>
+              <h2>Noblesville High School looking for Head and Assistant Coaches</h2>
+              <p>Noblesville High School is currnely looking for a head and assistant coaches. They may contact <a href="mailto:noblesvillelacrosse@gmail.com"><span class="c8">noblesvillelacrosse@gmail.com</a>.</p>
             </div><!--/span-->
             <div class="span4">
-              <h2>2016 IHSLA Awards</h2>
-              <p><a href="ViewAllState.php?year=2016&Position_ID=1">2016 All-State Awards</a></p>
-              <p><a href="../leagueuploads/2016AcademicAllState.pdf">2016 Academic All-State Awards</a></p>
-              <p><a href="../leagueuploads/2016AllAcademic.pdf">2016 All Academic Awards</a></p>
-              <p><a href="../leagueuploads/2016IHSLAAwards.pdf">2016 IHSLA Awards</a></p>
+              <h2>Westfield High School looking for Head and Assistant Coaches</h2>
+              <p>Westfield High School is looking to fill open coaching positions. Please contact Jeff Culley <a href="mailto:Jeffrey.l.culley@delphi.com"><span class="c8">Jeffrey.l.culley@delphi.com</a>.</p>
             </div><!--/span-->
             <div class="span4">
-              <h2>Hoosier Crossroads Lacrosse Conference (HCLC) Awards</h2>
-              <p><a href="../leagueuploads/2016HCLCChampions.pdf">2016 HCLC Champion</a></p>
-              <p><a href="../leagueuploads/2016HCLCCOTY.pdf">2016 HCLC Coach of the Year</a></p>
+              <h2>North Central High School looking for Head Coach </h2>
+              <p>North Central is looking fo fill open coaching positions. Please contact Charley Highsmith <a href="mailto:charleyhighsmith@hotmail.com"><span class="c8">charleyhighsmith@hotmail.com</a>.</p>
+              <p><a href="../leagueuploads/NorthCentralMensLacrosseOffers.pdf">North Central Mens Lacrosse Offers</a></p>
+              <p><a href="../leagueuploads/NorthCentralVarsityCoachJobListing.pdf">North Central Varsity Coach Job Listing</a></p>
             </div><!--/span-->
             
         </div><!--/span-->
