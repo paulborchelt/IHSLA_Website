@@ -14,8 +14,8 @@
           </div>
          <div class="row-fluid">
             <div class="span4">
-              <h2>Noblesville High School looking for Head and Assistant Coaches</h2>
-              <p>Noblesville High School is currnely looking for a head and assistant coaches. They may contact <a href="mailto:noblesvillelacrosse@gmail.com"><span class="c8">noblesvillelacrosse@gmail.com</a>.</p>
+              <h2>Zionsville High School looking for Offensive Coordinator and JV Coaches</h2>
+              <p>Zionsville High School is looking for a Offensive Coordinator and JV coaches. They may contact Danny Gray <a href="mailto:sportandfitness@yahoo.com"><span class="c8">sportandfitness@yahoo.com</a>.</p>
             </div><!--/span-->
             <div class="span4">
               <h2>Westfield High School looking for Head and Assistant Coaches</h2>
