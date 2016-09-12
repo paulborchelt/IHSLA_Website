@@ -34,6 +34,14 @@
               <h2>Bloomington South looking for Head and Assistant Coaches</h2>
               <p>Bloomginton South is looking to fill open coaching position. Please coantct Lisa Bell <a href="mailto:lkdeckar@indiana.edu"><span class="c8">lkdeckar@indiana.edu.</a></p>
             </div><!--/span-->
+            <div class="span4">
+              <h2>Columbus North looking for JV Head and Assistant Coaches</h2>
+              <p>Columbus North is looking to fill open coaching position. Please coantct Andrew Jerman <a href="mailto:acjerman47@gmail"><span class="c8">acjerman47@gmail.com.</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h2>Columbus East looking for Varsity Assistant Coaches</h2>
+              <p>Columbus East is looking to fill open coaching position. Please coantct Andrew Jerman <a href="mailto:acjerman47@gmail"><span class="c8">acjerman47@gmail.com.</a></p>
+            </div><!--/span-->
         </div><!--/span-->
       </div><!--/row-->
 
