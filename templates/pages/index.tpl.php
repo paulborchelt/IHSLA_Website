@@ -22,10 +22,8 @@
               <p>Westfield High School is looking to fill open coaching positions. Please contact Jeff Culley <a href="mailto:Jeffrey.l.culley@delphi.com"><span class="c8">Jeffrey.l.culley@delphi.com</a>.</p>
             </div><!--/span-->
             <div class="span4">
-              <h2>North Central High School looking for Head Coach </h2>
-              <p>North Central is looking fo fill open coaching positions. Please contact Charley Highsmith <a href="mailto:charleyhighsmith@hotmail.com"><span class="c8">charleyhighsmith@hotmail.com</a>.</p>
-              <p><a href="../leagueuploads/NorthCentralMensLacrosseOffers.pdf">North Central Mens Lacrosse Offers</a></p>
-              <p><a href="../leagueuploads/NorthCentralVarsityCoachJobListing.pdf">North Central Varsity Coach Job Listing</a></p>
+              <h2>Scenina is looking for lacrosse coach. </h2>
+              <p>Scenina High School is looking to fill open coaching positions. Please contact Rich Deering <a href="mailto:deeringindustrial@yahoo.com"><span class="c8">deeringindustrial@yahoo.com</a>.</p>
             </div><!--/span-->
             
         </div><!--/span-->
