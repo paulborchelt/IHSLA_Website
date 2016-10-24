@@ -14,10 +14,6 @@
           </div>
          <div class="row-fluid">
             <div class="span4">
-              <h2>Zionsville High School looking for Offensive Coordinator and JV Coaches</h2>
-              <p>Zionsville High School is looking for a Offensive Coordinator and JV coaches. They may contact Danny Gray <a href="mailto:sportandfitness@yahoo.com"><span class="c8">sportandfitness@yahoo.com</a>.</p>
-            </div><!--/span-->
-            <div class="span4">
               <h2>Westfield High School looking for Head and Assistant Coaches</h2>
               <p>Westfield High School is looking to fill open coaching positions. Please contact Jeff Culley <a href="mailto:Jeffrey.l.culley@delphi.com"><span class="c8">Jeffrey.l.culley@delphi.com</a>.</p>
             </div><!--/span-->
@@ -25,17 +21,12 @@
               <h2>Scenina is looking for lacrosse coach. </h2>
               <p>Scenina High School is looking to fill open coaching positions. Please contact Rich Deering <a href="mailto:deeringindustrial@yahoo.com"><span class="c8">deeringindustrial@yahoo.com</a>.</p>
             </div><!--/span-->
-            
-        </div><!--/span-->
-        <div class="row-fluid">
-            <div class="span4">
-              <h2>Bloomington South looking for Head and Assistant Coaches</h2>
-              <p>Bloomginton South is looking to fill open coaching position. Please coantct Lisa Bell <a href="mailto:lkdeckar@indiana.edu"><span class="c8">lkdeckar@indiana.edu.</a></p>
-            </div><!--/span-->
             <div class="span4">
               <h2>Columbus North looking for JV Head and Assistant Coaches</h2>
               <p>Columbus North is looking to fill open coaching position. Please coantct Andrew Jerman <a href="mailto:acjerman47@gmail"><span class="c8">acjerman47@gmail.com.</a></p>
             </div><!--/span-->
+        </div><!--/span-->
+        <div class="row-fluid">
             <div class="span4">
               <h2>Columbus East looking for Varsity Assistant Coaches</h2>
               <p>Columbus East is looking to fill open coaching position. Please coantct Andrew Jerman <a href="mailto:acjerman47@gmail"><span class="c8">acjerman47@gmail.com.</a></p>
