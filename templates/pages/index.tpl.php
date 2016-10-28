@@ -23,13 +23,17 @@
             </div><!--/span-->
             <div class="span4">
               <h2>Columbus North looking for JV Head and Assistant Coaches</h2>
-              <p>Columbus North is looking to fill open coaching position. Please coantct Andrew Jerman <a href="mailto:acjerman47@gmail"><span class="c8">acjerman47@gmail.com.</a></p>
+              <p>Columbus North is looking to fill open coaching position. Please coantct Andrew Jerman <a href="mailto:acjerman47@gmail.com"><span class="c8">acjerman47@gmail.com.</a></p>
             </div><!--/span-->
         </div><!--/span-->
         <div class="row-fluid">
             <div class="span4">
               <h2>Columbus East looking for Varsity Assistant Coaches</h2>
-              <p>Columbus East is looking to fill open coaching position. Please coantct Andrew Jerman <a href="mailto:acjerman47@gmail"><span class="c8">acjerman47@gmail.com.</a></p>
+              <p>Columbus East is looking to fill open coaching position. Please coantct Andrew Jerman <a href="mailto:acjerman47@gmailcom"><span class="c8">acjerman47@gmail.com.</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h2>Avon looking for Assistant Coaches</h2>
+              <p>Avon is looking to fill open coaching position. Please coantct Lisa Gemmer <a href="mailto:lisa.gemmer@synergy-tel.com"><span class="c8">lisa.gemmer@synergy-tel.com.</a></p>
             </div><!--/span-->
         </div><!--/span-->
       </div><!--/row-->
