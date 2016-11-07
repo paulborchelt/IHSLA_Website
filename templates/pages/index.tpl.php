@@ -14,8 +14,8 @@
           </div>
          <div class="row-fluid">
             <div class="span4">
-              <h2>IHSLA Fall Meeting Nov 5th 10 AM at Brebeuf Jesuit</h2>
-              <p>Our annual fall meeting will be held on Nov 5th 10 AM at Brebeuf Jesuit.  This is a manditor meeting for member teams.</p>
+              <h2>Chesteron is looking for a girls lacrosse coach. </h2>
+              <p>Chesteron High School is looking to fill open girls lacrosse positions. Please contact Jim Martin <a href="mailto:chestertonlax@gmail.com"><span class="c8">chestertonlax@gmail.com</a>.</p>
             </div><!--/span-->
             <div class="span4">
               <h2>Scenina is looking for lacrosse coach. </h2>
