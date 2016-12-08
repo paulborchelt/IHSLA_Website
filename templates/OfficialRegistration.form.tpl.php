@@ -26,7 +26,7 @@ Cost to be paid at class $35.00</span><br style="color: rgb(0, 0, 0); font-famil
 <span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgba(255, 255, 255, 0.917969); font-size: small; display: inline !important; float: none; ">
 Make checks out to ILOA</span></p>
 
-<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
     <table cellpadding="6" class="style1">
         <tr>
             <td>First Name:</td>

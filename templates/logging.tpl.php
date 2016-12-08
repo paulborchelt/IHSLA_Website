@@ -2,31 +2,31 @@
 
 <script type="text/javascript" language="javascript" src="../DataTables-1.9.4/media/js/jquery.js"></script>
 <div>
-   <? foreach ( $logs as $row ): ?>
-      <? foreach ( $row as $type => $log ): ?>
-        <? if ( TemplateLogger::success == $type ): ?>
+   <?php foreach ( $logs as $row ): ?>
+      <?php foreach ( $row as $type => $log ): ?>
+        <?php if ( TemplateLogger::success == $type ): ?>
             <div class="alert alert-success">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <?=$log?>
+              <?php echo$log?>
             </div>
-        <? elseif ( TemplateLogger::error == $type): ?>
+        <?php elseif ( TemplateLogger::error == $type): ?>
             <div class="alert alert-error">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <?=$log?>
+              <?php echo$log?>
             </div>
-        <? elseif ( TemplateLogger::info == $type ): ?>
+        <?php elseif ( TemplateLogger::info == $type ): ?>
             <div class="alert alert-info">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <?=$log?>
+              <?php echo$log?>
             </div>
-        <? elseif ( TemplateLogger::debug == $type): ?>
+        <?php elseif ( TemplateLogger::debug == $type): ?>
             <div class="alert alert-warring">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <b>DEBUG:</b> <?=$log?>
+              <b>DEBUG:</b> <?php echo$log?>
             </div>
-        <? else: ?>
-            <p><?=$log?></p> 
-        <? endif; ?>
+        <?php else: ?>
+            <p><?php echo$log?></p> 
+        <?php endif; ?>
       <?endforeach;?>
    <?endforeach;?>
 </div>

@@ -21,12 +21,12 @@ p.yiv1266137162msonormal
 </style>
 </head>
 
- <? while ( $evaluation = $result->fetchNextObject() ): ?>
+ <?php while ( $evaluation = $result->fetchNextObject() ): ?>
  
- <a><b>Game Date:</b> <?=$evaluation->_schedule->_DateObject->getMonthDayYearFormat()?>  </a></br>
- <a><b>Teams:</b> <?=$evaluation->_schedule->_HomeTeamObject->Team_Name?> vs  <?=$evaluation->_schedule->_AwayTeamObject->Team_Name?></a></br>
- <a><b>Evaluating Team:</b> <?=$evaluation->_teamObject->Team_Name?></a></br>
- <? $eval = "true" ?>
+ <a><b>Game Date:</b> <?php echo $evaluation->_schedule->_DateObject->getMonthDayYearFormat()?>  </a></br>
+ <a><b>Teams:</b> <?php echo $evaluation->_schedule->_HomeTeamObject->Team_Name?> vs  <?php echo $evaluation->_schedule->_AwayTeamObject->Team_Name?></a></br>
+ <a><b>Evaluating Team:</b> <?php echo $evaluation->_teamObject->Team_Name?></a></br>
+ <?php $eval = "true" ?>
 	<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:382.0pt;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in" width="637">
 
 		<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt">
@@ -55,11 +55,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><?=$evaluation->rules?></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><?php echo $evaluation->rules?></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="rulescomments"  rows="4" cols="50"><?=$evaluation->rulescomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="rulescomments"  rows="4" cols="50"><?php echo $evaluation->rulescomments?></textarea></p>
 			</td>
 		</tr>
 		<tr style="mso-yfti-irow:2;">
@@ -69,11 +69,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><?=$evaluation->judgment?></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><?php echo $evaluation->judgment?></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="judgmentcomments" rows="4" cols="50"><?=$evaluation->judgmentcomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="judgmentcomments" rows="4" cols="50"><?php echo $evaluation->judgmentcomments?></textarea></p>
 			</td>
 		</tr>
 		<tr style="mso-yfti-irow:3;height:15.0pt">
@@ -84,11 +84,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal" style="overflow: auto"><o:p>&nbsp;</o:p><?=$evaluation->consistency?></p>
+			<p class="MsoNormal" style="overflow: auto"><o:p>&nbsp;</o:p><?php echo $evaluation->consistency?></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="consistencycomments" rows="4" cols="50" ><?=$evaluation->consistencycomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="consistencycomments" rows="4" cols="50" ><?php echo $evaluation->consistencycomments?></textarea></p>
 			</td>
 		</tr>
 		<tr style="mso-yfti-irow:4;height:15.0pt">
@@ -99,11 +99,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><?=$evaluation->hustle?></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><?php echo $evaluation->hustle?></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="hustlecomments" rows="4" cols="50" ><?=$evaluation->hustlecomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="hustlecomments" rows="4" cols="50" ><?php echo $evaluation->hustlecomments?></textarea></p>
 			</td>
 		</tr>
 		<tr style="mso-yfti-irow:5;height:15.0pt">
@@ -114,11 +114,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><?=$evaluation->communication?></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><?php echo $evaluation->communication?></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="communicationcomments" rows="4" cols="50" ><?=$evaluation->communicationcomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="communicationcomments" rows="4" cols="50" ><?php echo $evaluation->communicationcomments?></textarea></p>
 			</td>
 		</tr>
 		<tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes;height:15.0pt">
@@ -136,7 +136,7 @@ p.yiv1266137162msonormal
 			<span style="font-family:Calibri">Additional Comments</span></strong><o:p></o:p></p>
 			<p class="yiv1266137162msonormal">
 			<o:p></o:p>
-			<textarea name="additionalcomments" rows="8" cols="50"><?=$evaluation->additionalcomments?></textarea></p>
+			<textarea name="additionalcomments" rows="8" cols="50"><?php echo $evaluation->additionalcomments?></textarea></p>
 			<p class="yiv1266137162msonormal">
 			<o:p></o:p></p>
 			</td>
@@ -144,12 +144,12 @@ p.yiv1266137162msonormal
 
 	</table>
     <br />
-     <? endwhile; ?>
+     <?php endwhile; ?>
      
-     <? if ( "true" != $eval ): ?>
+     <?php if ( "true" != $eval ): ?>
      
      <p>Official has not been evaluated yet.</p>
      
-     <? endif; ?>
+     <?php endif; ?>
 
-     <input TYPE="button" value="Back" onClick="location.href='OfficialsGameListAdmin.php?UID=<?=$UID?>'" class="style2" style="width: 63px">
+     <input TYPE="button" value="Back" onClick="location.href='OfficialsGameListAdmin.php?UID=<?php echo $UID?>'" class="style2" style="width: 63px">

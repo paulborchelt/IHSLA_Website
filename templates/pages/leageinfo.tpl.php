@@ -1,5 +1,5 @@
 
-<?=$leagueinfonavbar?>
+<?php echo$leagueinfonavbar ?>
 
 <h3>Board of Directors</h3>
 <p>Mike Williams    '15 - '16   <a href="mailto:mwilliams@saintjoelacrosse.com"><span class="c8">mwilliams@saintjoelacrosse.com</a></p>

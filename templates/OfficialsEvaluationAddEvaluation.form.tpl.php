@@ -49,11 +49,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="locationcheck" style="width: 48px"<?=$selectlocationcheckoptionsform?></select></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="locationcheck" style="width: 48px"<?php echo $selectlocationcheckoptionsform?></select></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="locationcheckcomments"  rows="4" cols="50"><?=$locationcheckcomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="locationcheckcomments"  rows="4" cols="50"><?php echo $locationcheckcomments?></textarea></p>
 			</td>
 		</tr>
 		<tr style="mso-yfti-irow:2;">
@@ -63,11 +63,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="certified" style="width: 48px"<?=$selectcertifiedoptionsform?></select></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="certified" style="width: 48px"<?php echo $selectcertifiedoptionsform?></select></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="certifiedcomments" rows="4" cols="50"><?=$certifiedcomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="certifiedcomments" rows="4" cols="50"><?php echo $certifiedcomments?></textarea></p>
 			</td>
 		</tr>
 		<tr style="mso-yfti-irow:3;height:15.0pt">
@@ -78,11 +78,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal" style="overflow: auto"><o:p>&nbsp;</o:p><select name="providecard" style="width: 48px"<?=$selectprovidecardoptionsform?></select></p>
+			<p class="MsoNormal" style="overflow: auto"><o:p>&nbsp;</o:p><select name="providecard" style="width: 48px"<?php echo $selectprovidecardoptionsform?></select></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="providecardcomments" rows="4" cols="50" ><?=$providecardcomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="providecardcomments" rows="4" cols="50" ><?php echo $providecardcomments?></textarea></p>
 			</td>
 		</tr>
 		<tr style="mso-yfti-irow:4;height:15.0pt">
@@ -93,11 +93,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="comheadcoachonly" style="width: 48px"<?=$selectcomheadcoachonlyoptionsform?></select></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="comheadcoachonly" style="width: 48px"<?php echo $selectcomheadcoachonlyoptionsform?></select></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="comheadcoachonlycomments" rows="4" cols="50" ><?=$comheadcoachonlycomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="comheadcoachonlycomments" rows="4" cols="50" ><?php echo $comheadcoachonlycomments?></textarea></p>
 			</td>
 		</tr>
 		<tr style="mso-yfti-irow:5;height:15.0pt">
@@ -108,11 +108,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="consistent" style="width: 48px"<?=$selectconsistentoptionsform?></select></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="consistent" style="width: 48px"<?php echo $selectconsistentoptionsform?></select></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="consistentcomments" rows="4" cols="50" ><?=$consistentcomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="consistentcomments" rows="4" cols="50" ><?php echo $consistentcomments?></textarea></p>
 			</td>
 		</tr>
       <tr style="mso-yfti-irow:5;height:15.0pt">
@@ -123,11 +123,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="professional" style="width: 48px"<?=$selectprofessionaloptionsform?></select></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="professional" style="width: 48px"<?php echo $selectprofessionaloptionsform?></select></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="professionalcomments" rows="4" cols="50" ><?=$professionalcomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="professionalcomments" rows="4" cols="50" ><?php echo $professionalcomments?></textarea></p>
 			</td>
 		</tr>
       <tr style="mso-yfti-irow:5;height:15.0pt">
@@ -138,11 +138,11 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="concerns" style="width: 48px"<?=$selectconcernsoptionsform?></select></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="concerns" style="width: 48px"<?php echo $selectconcernsoptionsform?></select></p>
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="concernscomments" rows="4" cols="50" ><?=$concernscomments?></textarea></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><textarea name="concernscomments" rows="4" cols="50" ><?php echo $concernscomments?></textarea></p>
 			</td>
 		</tr>
       <tr style="mso-yfti-irow:5;height:15.0pt">
@@ -153,7 +153,7 @@ p.yiv1266137162msonormal
 			</td>
 			<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 0in 0in 0in;height:15.0pt; width: 33pt;">
-			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="rating" style="width: 48px"<?=$selectratingoptionsform?></select></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p><select name="rating" style="width: 48px"<?php echo $selectratingoptionsform?></select></p>
 			</td>
 		</tr>
 		<tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes;height:15.0pt">
@@ -171,30 +171,30 @@ p.yiv1266137162msonormal
 			<span style="font-family:Calibri">Additional Comments</span></strong><o:p></o:p></p>
 			<p class="yiv1266137162msonormal">
 			<o:p></o:p>
-			<textarea name="additionalcomments" rows="8" cols="50"><?=$additionalcomments?></textarea></p>
+			<textarea name="additionalcomments" rows="8" cols="50"><?php echo $additionalcomments?></textarea></p>
 			<p class="yiv1266137162msonormal">
 			<o:p></o:p></p>
 			</td>
 		</tr>
 	</table>
-    <input type="HIDDEN" name="idschedule" value=<?=$idschedule?>>
-    <input type="HIDDEN" name="Game_ID" value=<?=$idschedule?>>
-    <input type="HIDDEN" name="Team_ID" value=<?=$Team_ID?>>
-    <input type="HIDDEN" name="idcontactinfo" value=<?=$idcontactinfo?>>
-    <? if ($submittype == "Submit"): ?>
+    <input type="HIDDEN" name="idschedule" value=<?php echo $idschedule?>>
+    <input type="HIDDEN" name="Game_ID" value=<?php echo $idschedule?>>
+    <input type="HIDDEN" name="Team_ID" value=<?php echo $Team_ID?>>
+    <input type="HIDDEN" name="idcontactinfo" value=<?php echo $idcontactinfo?>>
+    <?php if ($submittype == "Submit"): ?>
         <input type="HIDDEN" name="action" value="AddEvaluation">
         <INPUT type="submit" name="Submit" value="SUBMIT" >
-        <input TYPE="button" value="Cancel" onClick="location.href='<?=$_SERVER['PHP_SELF']?>?action=selectGame&Game_ID=<?=$idschedule?>&Team_ID=<?=$Team_ID?>'" class="style2" style="width: 63px"> 
-    <? else:?>
-        <? if ($view == "false"): ?>
+        <input TYPE="button" value="Cancel" onClick="location.href='<?php echo $_SERVER['PHP_SELF']?>?action=selectGame&Game_ID=<?php echo $idschedule?>&Team_ID=<?php echo $Team_ID?>'" class="style2" style="width: 63px"> 
+    <?php else:?>
+        <?php if ($view == "false"): ?>
            <input type="HIDDEN" name="action" value="EditEvaluation">
-           <input type="HIDDEN" name="idofficialevaluations" value="<?=$idofficialevaluations?>">
+           <input type="HIDDEN" name="idofficialevaluations" value="<?php echo $idofficialevaluations?>">
            <INPUT type="submit" name="Edit" value="EDIT" ></td>
-           <input TYPE="button" value="Cancel" onClick="location.href='<?=$_SERVER['PHP_SELF']?>?action=selectGame&Game_ID=<?=$idschedule?>&Team_ID=<?=$Team_ID?>'" class="style2" style="width: 63px"> 
-        <? else: ?>
+           <input TYPE="button" value="Cancel" onClick="location.href='<?php echo $_SERVER['PHP_SELF']?>?action=selectGame&Game_ID=<?php echo $idschedule?>&Team_ID=<?php echo $Team_ID?>'" class="style2" style="width: 63px"> 
+        <?php else: ?>
            <input type="HIDDEN" name="action" value="EvalList">
-           <input type="HIDDEN" name="idofficialevaluations" value="<?=$idofficialevaluations?>">
+           <input type="HIDDEN" name="idofficialevaluations" value="<?php echo $idofficialevaluations?>">
            <INPUT type="submit" name="BACK" value="BACK" ></td>
-        <? endif; ?>
-    <? endif; ?>
+        <?php endif; ?>
+    <?php endif; ?>
     </form>

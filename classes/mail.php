@@ -1,4 +1,4 @@
-<?
+<?php
 class mail {
    private $message;
    private $subject;

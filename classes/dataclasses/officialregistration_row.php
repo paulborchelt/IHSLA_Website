@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 class OfficialRegistration_Row extends Row{
    protected $idofficialregistration;

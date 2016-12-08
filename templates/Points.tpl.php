@@ -10,9 +10,9 @@
          } );
 </script>
 
-<?=$navbarstats?>
+<?php echo$navbarstats?>
 
-<?=$selectYear?>
+<?php echo$selectYear?>
 
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
    <thead>
@@ -28,22 +28,22 @@
       </tr>
    </thead>
       <tbody>
-<? while ( $points = $result->fetchNextObject() ): ?>
+<?php while ( $points = $result->fetchNextObject() ): ?>
          <tr>
-         	<td><?=$points->_RostersObject->number?></td>
-         	<td><?=$points->_PlayersObject->getFullName()?></td>
-            <td><?=$points->_PlayersObject->_teamObject->Team_Name?></td>
-            <td><?=$points->_PlayersObject->getGradeName()?></td>
-            <td><?=$points->_RostersObject->_PositionObject->Description?></td>
-            <td><?=$points->Goals?></td>
-            <td><?=$points->Assists?></td>
-            <td><?=$points->getPoints()?></td>
+         	<td><?php echo$points->_RostersObject->number?></td>
+         	<td><?php echo$points->_PlayersObject->getFullName()?></td>
+            <td><?php echo$points->_PlayersObject->_teamObject->Team_Name?></td>
+            <td><?php echo$points->_PlayersObject->getGradeName()?></td>
+            <td><?php echo$points->_RostersObject->_PositionObject->Description?></td>
+            <td><?php echo$points->Goals?></td>
+            <td><?php echo$points->Assists?></td>
+            <td><?php echo$points->getPoints()?></td>
          </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
       </tbody>
 </table>
 
-<?=$statsenterformhome?>
+<?php echo$statsenterformhome?>
 
-<?=$statsenterformaway?>
+<?php echo$statsenterformaway?>
 

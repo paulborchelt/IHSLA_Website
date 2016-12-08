@@ -1,17 +1,17 @@
  <div>
- <?=$Score?>
+ <?php echo $Score?>
  </div>
   
  <div>
- <?=$Stats?>
+ <?php echo $Stats?>
  </div>
  
  <div>
-  <?=$Saves?>
+  <?php echo $Saves?>
  </div>
  
  <div>
-   <?=$AllStats?>
+   <?php echo $AllStats?>
  </div>
  
  

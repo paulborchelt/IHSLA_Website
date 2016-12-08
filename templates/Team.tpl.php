@@ -1,7 +1,7 @@
 
 <table cellspacing="1" cellpadding="1" border="0">
-    <valign="top"><font color="#000066"><b><font size="3" face="Arial, Helvetica, sans-serif"><?=$team->Team_Name?> High School</font></b></font>
-    <? if ( $edit == EDIT ): ?>
+    <valign="top"><font color="#000066"><b><font size="3" face="Arial, Helvetica, sans-serif"><?php echo$team->Team_Name?> High School</font></b></font>
+    <?php if ( $edit == EDIT ): ?>
 
     <tr>
         <td><b>School Information</b></td>
@@ -10,11 +10,11 @@
 
         <td>&nbsp;</td>
         <!--
-        <td><a href="AdminTeams.php?link=UpdateTeamInfoTest.php?Team_ID=<?=$team->Team_ID?>&Team_ID=<?=$team->Team_ID?>&action=Edit"><img src=" /HighSchool/images/icon_edit.gif"></a></td>
+        <td><a href="AdminTeams.php?link=UpdateTeamInfoTest.php?Team_ID=<?php echo$team->Team_ID?>&Team_ID=<?php echo$team->Team_ID?>&action=Edit"><img src=" /HighSchool/images/icon_edit.gif"></a></td>
         -->
     </tr>
     
-    <? else:?>
+    <?php else:?>
 
     <tr>
         <td><b>School Information</b></td>
@@ -26,14 +26,14 @@
         <td>&nbsp;</td>
     </tr>
     
-    <? endif; ?>
+    <?php endif; ?>
 
     <tr>
         <td>&nbsp;</td>
 
         <td>School Address:</td>
 
-        <td><?=$team->Address?></td>
+        <td><?php echo$team->Address?></td>
     </tr>
 
     <tr>
@@ -41,14 +41,14 @@
 
         <td>&nbsp;</td>
 
-        <td><?=$team->ZIP?></td>
+        <td><?php echo$team->ZIP?></td>
     </tr>
     <tr>
         <td>&nbsp;</td>
 
         <td>Phone:</td>
 
-        <td><?=$team->Phone?></td>
+        <td><?php echo$team->Phone?></td>
     </tr>
 
     <tr>
@@ -56,7 +56,7 @@
 
         <td>Home Colors</td>
 
-        <td><?=$team->Home_Colors?></td>
+        <td><?php echo$team->Home_Colors?></td>
     </tr>
 
     <tr>
@@ -64,7 +64,7 @@
 
         <td>Away Colors</td>
 
-        <td><?=$team->Away_Colors?></td>
+        <td><?php echo$team->Away_Colors?></td>
     </tr>
 
     <tr>
@@ -72,14 +72,14 @@
 
         <td>Mascot</td>
 
-        <td><?=$team->Mascot?></td>
+        <td><?php echo$team->Mascot?></td>
     </tr>
         <tr>
         <td>&nbsp;</td>
 
         <td>Class:</td>
 
-        <td><?=$team->getClassName()?></td>
+        <td><?php echo$team->getClassName()?></td>
     </tr>
     
 </table>

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <?include('../templates/include/header.html')?>
+  <?php include('../templates/include/header.html')?>
   
   <body>
   
-    <?include('../templates/pages/navbar.tpl.php')?>
+    <?php include('../templates/pages/navbar.tpl.php')?>
 
     <div class="container-fluid">
       <div class="row-fluid">
-         <?include('../templates/include/sidebar.html')?>
+         <?php include('../templates/include/sidebar.html')?>
          <div class="span9">
-            <?=$logging?>
-            <?=$selectYear?>
-            <?=$content?>
+            <?php $logging ?>
+            <?php $selectYear ?>
+            <? echo$content; ?>
          </div><!--/span-->
       </div><!--/row-->
 

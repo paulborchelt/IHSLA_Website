@@ -3,11 +3,11 @@
     <TD>Edit</TD>
     <TD>Delete</TD>
 </TR>
-<? while ( $issue = $result->fetchNextObject() ): ?>
+<?php while ( $issue = $result->fetchNextObject() ): ?>
 <TR>
-    <TD><?=$issue->title?></TD>
-    <TD><a href="<?=$_SERVER['PHP_SELF']?>?action=EDIT_ISSUE&id=<?=$issue->id?>"> <img src= /HighSchool/images/icon_edit.gif></a></TD>
-    <TD><a href="<?=$_SERVER['PHP_SELF']?>?action=DELETE_ISSUE&id=<?=$issue->id?>"> <img src= /HighSchool/images/icon_delete.gif></a></TD>
+    <TD><?php echo $issue->title?></TD>
+    <TD><a href="<?php echo $_SERVER['PHP_SELF']?>?action=EDIT_ISSUE&id=<?php echo $issue->id?>"> <img src= /HighSchool/images/icon_edit.gif></a></TD>
+    <TD><a href="<?php echo $_SERVER['PHP_SELF']?>?action=DELETE_ISSUE&id=<?php echo $issue->id?>"> <img src= /HighSchool/images/icon_delete.gif></a></TD>
 </TR>
-<? endwhile; ?>
+<?php endwhile; ?>
 </TABLE>

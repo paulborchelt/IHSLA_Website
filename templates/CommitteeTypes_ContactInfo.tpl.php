@@ -5,13 +5,13 @@
     <TD>End Year</TD>
     <TD>Delete</TD>
 </TR>
-<? while ( $member = $result->fetchNextObject() ): ?>
+<?php while ( $member = $result->fetchNextObject() ): ?>
 <TR>
-    <TD><?=$member->_ContactInfo->FirstName?> <?=$member->_ContactInfo->LastName?></TD>
-    <TD><?=$member->_CommitteeTypes->name?></TD>
-    <TD><?=$member->startyear?></TD>
-    <TD><?=$member->endyear?></TD>
-    <TD><a href="<?=$_SERVER['PHP_SELF']?>?page=DELETE_COMMITTEE_MEMBER&contactinfo_id=<?=$member->contactinfo_id?>"> <img src= /HighSchool/images/icon_delete.gif></a></TD>
+    <TD><?php echo $member->_ContactInfo->FirstName?> <?php echo $member->_ContactInfo->LastName?></TD>
+    <TD><?php echo $member->_CommitteeTypes->name?></TD>
+    <TD><?php echo $member->startyear?></TD>
+    <TD><?php echo $member->endyear?></TD>
+    <TD><a href="<?php echo $_SERVER['PHP_SELF']?>?page=DELETE_COMMITTEE_MEMBER&contactinfo_id=<?php echo $member->contactinfo_id?>"> <img src= /HighSchool/images/icon_delete.gif></a></TD>
 </TR>
-<? endwhile; ?>
+<?php endwhile; ?>
 </TABLE>

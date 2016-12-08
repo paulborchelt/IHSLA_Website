@@ -19,27 +19,27 @@
          <th>Graduation Year:</th>
          <th>Height</th>
          <th>Weight</th>
-         <? if(1 == $team->Club): ?>
+         <?php if(1 == $team->Club): ?>
             <th>School</th>
-          <? endif; ?>
+          <?php endif; ?>
          <th>Edit/Delete</th>
       </tr>
    </thead>
    <tbody>
-   <? while ( $players = $result->fetchNextObject() ): ?>
+   <?php while ( $players = $result->fetchNextObject() ): ?>
       <tr>
-      	<td><?=$players->First_Name?></td>
-      	<td><?=$players->Last_Name?></td>
-          <td><?=$players->getGradeName()?></td>
-          <td><?=$players->getHeight()?></td>
-          <td><?=$players->getWeight()?></td>
-          <? if(1 == $players->_teamObject->Club): ?>
-            <td><?=$players->_schoolObject->Team_Name?></td>
-          <? endif; ?>
-      	 <td><a href="<?=$_SERVER['PHP_SELF']?>?action=Edit&Player_ID=<?=$players->Player_ID?>&Team_ID=<?=$players->Team_ID?>"> <img src= ../images/site_images/icon_edit.gif>
-              <a href="<?=$_SERVER['PHP_SELF']?>?action=Delete&Player_ID=<?=$players->Player_ID?>&Team_ID=<?=$players->Team_ID?>"> <img src= ../images/site_images/icon_delete.gif>
+      	<td><?php echo $players->First_Name?></td>
+      	<td><?php echo $players->Last_Name?></td>
+          <td><?php echo $players->getGradeName()?></td>
+          <td><?php echo $players->getHeight()?></td>
+          <td><?php echo $players->getWeight()?></td>
+          <?php if(1 == $players->_teamObject->Club): ?>
+            <td><?php echo $players->_schoolObject->Team_Name?></td>
+          <?php endif; ?>
+      	 <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&Player_ID=<?php echo $players->Player_ID?>&Team_ID=<?php echo $players->Team_ID?>"> <img src= ../images/site_images/icon_edit.gif>
+              <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&Player_ID=<?php echo $players->Player_ID?>&Team_ID=<?php echo $players->Team_ID?>"> <img src= ../images/site_images/icon_delete.gif>
           </td>
       </tr>
-   <? endwhile; ?>
+   <?php endwhile; ?>
    </tbody>
 </table>

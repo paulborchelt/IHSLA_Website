@@ -17,19 +17,19 @@
       </tr>
    </thead>
       <tbody>
-<? while ( $points = $result->fetchNextObject() ): ?>
+<?php while ( $points = $result->fetchNextObject() ): ?>
          <tr>
-            <td><?=$points->_TeamsObject->Team_Name?></td>
-         	<td><?=$points->_RostersObject->number?></td>
-         	<td><?=$points->_PlayersObject->getFullName()?></td>
-            <td><?=$points->Goals?></td>
-            <td><?=$points->Assists?></td>
-            <td><?=$points->getPoints()?></td>
-            <td><?=$points->GroundBalls?></td>
-            <td><?=$points->Shots?></td>
-            <td><?=$points->Turnovers?></td>
-            <td><?=$points->CausedTurnovers?></td>
+            <td><?php echo $points->_TeamsObject->Team_Name?></td>
+         	<td><?php echo $points->_RostersObject->number?></td>
+         	<td><?php echo $points->_PlayersObject->getFullName()?></td>
+            <td><?php echo $points->Goals?></td>
+            <td><?php echo $points->Assists?></td>
+            <td><?php echo $points->getPoints()?></td>
+            <td><?php echo $points->GroundBalls?></td>
+            <td><?php echo $points->Shots?></td>
+            <td><?php echo $points->Turnovers?></td>
+            <td><?php echo $points->CausedTurnovers?></td>
          </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
       </tbody>
 </table>

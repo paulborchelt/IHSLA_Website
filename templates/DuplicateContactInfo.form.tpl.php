@@ -12,27 +12,27 @@
    <ol>
       <li>The contact(s) below matches the contact you entered. Please select one to move to your team:</li>
       <ul>
-         <? while ( $contactinfo = $result->fetchNextObject() ): ?>
-            <li><?=$contactinfo->FirstName?> <?=$contactinfo->LastName?> 
-             <? if ($contactinfo->Email != ""): ?>
-                <?=$contactinfo->Email?>  
-             <? endif ?>
-             <? if ($contactinfo->PhoneCell != ""): ?>
-                (c) <?=$contactinfo->PhoneCell?>  
-             <? endif ?>
-             <? if ($contactinfo->PhoneHome != ""): ?>
-                (h) <?=$contactinfo->PhoneHome?>  
-             <? endif ?>
-             <? if ($contactinfo->PhoneWork != ""): ?>
-                (w) <?=$contactinfo->PhoneWork?>  
-             <? endif ?>
-            <button class="btn btn-small btn-primary" type="button" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?action=AddExistingContact&Id=<?=$contactinfo->Id?>&Team_ID=<?=$Team_ID?>&CTID=<?=$CTID?>&MainContact=<?=$MainContact?>'"> Add</button> </li>
-         <? endwhile; ?>
+         <?php while ( $contactinfo = $result->fetchNextObject() ): ?>
+            <li><?php echo $contactinfo->FirstName?> <?php echo $contactinfo->LastName?> 
+             <?php if ($contactinfo->Email != ""): ?>
+                <?php echo $contactinfo->Email?>  
+             <?php endif ?>
+             <?php if ($contactinfo->PhoneCell != ""): ?>
+                (c) <?php echo $contactinfo->PhoneCell?>  
+             <?php endif ?>
+             <?php if ($contactinfo->PhoneHome != ""): ?>
+                (h) <?php echo $contactinfo->PhoneHome?>  
+             <?php endif ?>
+             <?php if ($contactinfo->PhoneWork != ""): ?>
+                (w) <?php echo $contactinfo->PhoneWork?>  
+             <?php endif ?>
+            <button class="btn btn-small btn-primary" type="button" onClick="window.location='<?php echo $_SERVER['PHP_SELF']?>?action=AddExistingContact&Id=<?php echo $contactinfo->Id?>&Team_ID=<?php echo $Team_ID?>&CTID=<?php echo $CTID?>&MainContact=<?php echo $MainContact?>'"> Add</button> </li>
+         <?php endwhile; ?>
       </ul>
        
-      <li>None of the contacts above match the contact I want to enter. Please add the contact I entered as a new contact. <button class="btn btn-small" type="button" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Force=Force&action=EnterContact&FirstName=<?=$newContactInfo->FirstName?>&LastName=<?=$newContactInfo->LastName?>&PhoneCell=<?=$newContactInfo->PhoneCell?>&PhoneHome=<?=$newContactInfo->PhoneHome?>&PhoneWork=<?=$newContactInfo->PhoneWork?>&Email=<?=$newContactInfo->Email?>&PhoneCell=<?=$newContactInfo->PhoneCell?>&CTID=<?=$CTID?>&MainContact=<?=$MainContact?>&Team_ID=<?=$Team_ID?>'"> ADD</button></li>
+      <li>None of the contacts above match the contact I want to enter. Please add the contact I entered as a new contact. <button class="btn btn-small" type="button" onClick="window.location='<?php echo $_SERVER['PHP_SELF']?>?Force=Force&action=EnterContact&FirstName=<?php echo $newContactInfo->FirstName?>&LastName=<?php echo $newContactInfo->LastName?>&PhoneCell=<?php echo $newContactInfo->PhoneCell?>&PhoneHome=<?php echo $newContactInfo->PhoneHome?>&PhoneWork=<?php echo $newContactInfo->PhoneWork?>&Email=<?php echo $newContactInfo->Email?>&PhoneCell=<?php echo $newContactInfo->PhoneCell?>&CTID=<?php echo $CTID?>&MainContact=<?php echo $MainContact?>&Team_ID=<?php echo $Team_ID?>'"> ADD</button></li>
       
-      <li>I made a mistake and would like to start over. <button class="btn btn-small" type="button" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?Team_ID=<?=$Team_ID?>'"> Cancel</button></li>
+      <li>I made a mistake and would like to start over. <button class="btn btn-small" type="button" onClick="window.location='<?php echo $_SERVER['PHP_SELF']?>?Team_ID=<?php echo $Team_ID?>'"> Cancel</button></li>
    
    </ol>
 

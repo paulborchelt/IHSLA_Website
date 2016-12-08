@@ -1,5 +1,5 @@
 
-<?=$leagueinfonavbar?>
+<?php echo$leagueinfonavbar?>
 
 <h3>History:</h3>
 

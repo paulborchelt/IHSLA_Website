@@ -16,23 +16,23 @@
       	<td>Team Name:</td>
       	<td>City:</td>
           <td>State:</td>
-          <? if ($user->hasPermisions(Groups_Row::Administrators)): ?>
+          <?php if ($user->hasPermisions(Groups_Row::Administrators)): ?>
             <td>Edit/Delete</td>
-          <? endif; ?>
+          <?php endif; ?>
       </tr>
    </thead>
    <tbody>
-       <? while ( $teams = $result->fetchNextObject() ): ?>
+       <?php while ( $teams = $result->fetchNextObject() ): ?>
        <tr>
-      	<td><?=$teams->Team_Name?></td>
-      	<td><?=$teams->City?></td>
-          <td><?=$teams->State?></td>
-          <? if ($user->hasPermisions(Groups_Row::Administrators)): ?>
-         	 <td><a href="<?=$_SERVER['PHP_SELF']?>?action=Edit&league=<?=$teams->League?>&Team_ID=<?=$teams->Team_ID?>"> <img src= /images/site_images/icon_edit.gif>
-                 <a href="<?=$_SERVER['PHP_SELF']?>?action=Delete&league=<?=$teams->League?>&Team_ID=<?=$teams->Team_ID?>"> <img src= /images/site_images/icon_delete.gif>
+      	<td><?php echo $teams->Team_Name?></td>
+      	<td><?php echo $teams->City?></td>
+          <td><?php echo $teams->State?></td>
+          <?php if ($user->hasPermisions(Groups_Row::Administrators)): ?>
+         	 <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&league=<?php echo $teams->League?>&Team_ID=<?php echo $teams->Team_ID?>"> <img src= ../images/site_images/icon_edit.gif>
+                 <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&league=<?php echo $teams->League?>&Team_ID=<?php echo $teams->Team_ID?>"> <img src= ../images/site_images/icon_delete.gif>
              </td>
-          <? endif; ?>
+          <?php endif; ?>
       </tr>
-      <? endwhile; ?>
+      <?php endwhile; ?>
    </tbody>
 </table>

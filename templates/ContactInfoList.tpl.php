@@ -21,14 +21,14 @@
    </tr>
 </thead>
 <tbody>
-<? while ( $contactinfo = $result->fetchNextObject() ): ?>
+<?php while ( $contactinfo = $result->fetchNextObject() ): ?>
    <tr>
-      <td><?=$contactinfo->_ContactInfoTeamsListObject->_TeamObject->Team_Name?></td>
-   	<td><?=$contactinfo->_ContactTypeObject->Type?></td>
-   	<td><?=$contactinfo->FirstName?></td>
-   	<td><?=$contactinfo->LastName?></td>
-   	<td><?=$contactinfo->Email?></td>
+      <td><?php echo $contactinfo->_ContactInfoTeamsListObject->_TeamObject->Team_Name?></td>
+   	<td><?php echo $contactinfo->_ContactTypeObject->Type?></td>
+   	<td><?php echo $contactinfo->FirstName?></td>
+   	<td><?php echo $contactinfo->LastName?></td>
+   	<td><?php echo $contactinfo->Email?></td>
    </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
 </tbody>
 </table>

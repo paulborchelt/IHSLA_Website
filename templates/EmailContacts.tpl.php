@@ -1,11 +1,11 @@
 <p>You have a couple of choice on how you want to send and email:</p>
 
-<p>Use Link to open email client: <a href="mailto:<?=$mailtolinks?>">Email</a></p>
+<p>Use Link to open email client: <a href="mailto:<?php echo $mailtolinks?>">Email</a></p>
 
 <p>Use <a href="ContactInfoList.php">Contact List</a> (cut and paste email address )</p>
 
 
-<form action="<?=$_SERVER['PHP_SELF']?>" method="post"> 	
+<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post"> 	
 
 		 <p>Enter Your Email Below:</p>
 		<tr>

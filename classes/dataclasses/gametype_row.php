@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 class GameType_Row extends Row{
    protected $id_gametype;

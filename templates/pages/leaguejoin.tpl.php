@@ -1,4 +1,4 @@
-<?=$leagueinfonavbar?>
+<?php echo$leagueinfonavbar?>
 
 <h3>Join League</h3>
 

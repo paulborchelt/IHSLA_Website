@@ -6,11 +6,11 @@
 	<td>Host Team:</td>
     <td>Delete:</td>
 </tr>
-<? while ( $teamassociations = $result->fetchNextObject() ): ?>
+<?php while ( $teamassociations = $result->fetchNextObject() ): ?>
 <tr>
-	<td><?=$teamassociations->_LinkedTeam->Team_Name?></td>
-	<td><?=$teamassociations->_HostTeam->Team_Name?></td>
-	<td><a href="<?=$_SERVER['PHP_SELF']?>?action=Delete&idlinkedteam=<?=$teamassociations->idlinkedteam?>"> <img src= /HighSchool/images/icon_delete.gif></td>
+	<td><?php echo $teamassociations->_LinkedTeam->Team_Name?></td>
+	<td><?php echo $teamassociations->_HostTeam->Team_Name?></td>
+	<td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&idlinkedteam=<?php echo $teamassociations->idlinkedteam?>"> <img src= /HighSchool/images/icon_delete.gif></td>
 </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
 </table>

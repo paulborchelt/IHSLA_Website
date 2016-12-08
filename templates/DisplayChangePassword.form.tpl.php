@@ -14,7 +14,7 @@
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-primary">Change Password</button>
-      <button type="button" class="btn btn-default" onClick="window.location='<?=$_SERVER['PHP_SELF']?>'">Cancel</button>
+      <button type="button" class="btn btn-default" onClick="window.location='<?php echo $_SERVER['PHP_SELF']?>'">Cancel</button>
       <input type="hidden" name="action" value="changepassword">
     </div>
   </div>

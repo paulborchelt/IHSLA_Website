@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <?include('../templates/include/header.html')?>
+  <?php include('../templates/include/header.html')?>
   <body>
-    <?include('../templates/pages/navbar.tpl.php')?>
+    <?php include('../templates/pages/navbar.tpl.php')?>
     <div class="container-fluid">
       <div class="row-fluid">
-          <?include('../templates/include/sidebar.html')?>
+          <?php include('../templates/include/sidebar.html')?>
         <div class="span9">
           <div class="hero-unit">
             <h3>Congratulation to Cathedral the 2016 State Champions.</h3>

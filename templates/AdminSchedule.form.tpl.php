@@ -28,10 +28,10 @@ addLoadEvent(function() {
 //-->
 </script>
 
-<?=$leagueoptionsform?>
+<?php echo$leagueoptionsform?>
 
 
-<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+<form action="<?php echo$_SERVER['PHP_SELF']?>" method="post">
     <table style="width: 1412px">
         <tr>
             <td style="width: 478px">Date:</td>
@@ -51,49 +51,49 @@ addLoadEvent(function() {
 
         <tr>
             <td style="height: 43px; width: 478px">
-                <?$calendar->writeScript()?>
+                <?php echo$calendar->writeScript()?>
             </td>
 
             <td style="height: 43px"><select name="HomeTeam_ID">
-                <?=$hometeamoptions?>
+                <?php echo$hometeamoptions?>
                 </select></td>
 
             <td style="height: 43px"><select name="AwayTeam_ID">
-                <?=$awayteamoptions?>
+                <?php echo$awayteamoptions?>
                 </select></td>
                 
             <td style="height: 43px"><select name="Site_ID">
-                <?=$siteidoptions?>
+                <?php echo$siteidoptions?>
                 </select></td>
 
             <td style="width: 536px; height: 43px">
                 &nbsp;<select name="Hour">
-				<?=$houroptions?>
+				<?php echo$houroptions?>
 				</select>:<select name="Minutes">
-				<?=$minuteoptions?>
+				<?php echo$minuteoptions?>
 				</select><select name="Period">
-				<?=$periodoptions?>
+				<?php echo$periodoptions?>
 				</select></td>
 
             <td style="height: 43px"><select name="Game_Level">
-                <?=$leveloptions?>
+                <?php echo$leveloptions?>
                 </select></td>
 
             <td style="height: 43px"><select name="Game_Type">
-                <?=$gametypeoptions?>
+                <?php echo$gametypeoptions?>
                 </select></td>
             <td style="height: 43px"></td>
-            <? if ($submittype == "Submit"): ?>
+            <?php if ($submittype == "Submit"): ?>
             <td style="height: 43px"><INPUT TYPE="HIDDEN" NAME="action" VALUE=Enter ><INPUT type="submit" name="Submit" value="SUBMIT" ></td>
-            <? else:?>
+            <?php else:?>
             <td style="height: 43px"><INPUT TYPE="HIDDEN" NAME="action" VALUE=SubmitEdit ><INPUT type="submit" name="Edit" value="EDIT" ></td>
-            <? endif; ?>
-            <input type="HIDDEN" name="Game_ID" value=<?=$gameid?> >
+            <?php endif; ?>
+            <input type="HIDDEN" name="Game_ID" value=<?php echo$gameid?> >
         </tr>
     </table>
 </form>
 
 <p>If you do not see an out of state team in your opponent list click on ADD TEAM to add it.</p> 
-<p><a href="AdminTeams.php?league=<?=$league?>&link=AdminSchedule.php"> ADD TEAM </a></p>
+<p><a href="AdminTeams.php?league=<?php echo$league?>&link=AdminSchedule.php"> ADD TEAM </a></p>
 
-<?=$list_of_schedule?>
+<?php echo$list_of_schedule?>

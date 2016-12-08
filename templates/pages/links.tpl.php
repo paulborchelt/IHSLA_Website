@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-   <?include('../templates/include/header.html')?>
+   <?php include('../templates/include/header.html')?>
 
   <body>
-    <?include('../templates/include/navbar.html')?>
+    <?php include('../templates/include/navbar.html')?>
 
     <div class="container-fluid">
       <div class="container">

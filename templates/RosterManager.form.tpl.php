@@ -10,7 +10,7 @@
          } );
 </script>
 
-<h3><?=$rostermanager->getTeamName()?></h3>
+<h3><?php echo$rostermanager->getTeamName()?></h3>
 
 
 <table cellspacing="1" cellpadding="1" border="1" class="display" id="example">
@@ -18,37 +18,37 @@
       <tr>
          <th>Name</th>
          <th>Grade</th>
-         <? while ( $level = $rostermanager->fetchNextLevelObject() ): ?> 
-            <th><?=$level->Level_Description?></th>
-         <? endwhile; ?>
+         <?php while ( $level = $rostermanager->fetchNextLevelObject() ): ?> 
+            <th><?php echo$level->Level_Description?></th>
+         <?php endwhile; ?>
          <th>Modify</th>
       </tr>
    </thead>
    <tbody>
-      <? while ( $player = $rostermanager->fetchNextPlayerObject() ): ?> 
+      <?php while ( $player = $rostermanager->fetchNextPlayerObject() ): ?> 
          <tr>
-            <td><?=$player->getFullName()?></td>
-            <td><?=$player->getGradeName()?></td>
-            <? $rostermanager->resetNextLevelObject() ?>
-            <? while ( $level = $rostermanager->fetchNextLevelObject() ): ?> 
-               <? if ( TRUE == $rostermanager->PlayerIsRostered( $player->Player_ID, $level->Level_ID ) ): ?> 
-                  <td><a href="Roster.php?action=removeplayer&player_id=<?=$player->Player_ID?>&Team_ID=<?=$player->Team_ID?>&level=<?=$level->Level_ID?>"> [REMOVE]</a></td>
-               <? else: ?>
-                  <td><a href="Roster.php?action=Add&Player_ID=<?=$player->Player_ID?>&Team_ID=<?=$player->Team_ID?>&level=<?=$level->Level_ID?>"> [ADD]</a></td>
-               <? endif; ?>
-            <? endwhile; ?>
-            <td><a href="EditPlayerInfo.php?action=Edit&Team_ID=<?=$rostermanager->getTeam_ID()?>&Player_ID=<?=$player->Player_ID?>"> <img src=../images/site_images/icon_edit.gif>
-                <a href="EditPlayerInfo.php?action=Delete&Team_ID=<?=$rostermanager->getTeam_ID()?>&Player_ID=<?=$player->Player_ID?>"> <img src=../images/site_images/icon_delete.gif></a></td>
+            <td><?php echo$player->getFullName()?></td>
+            <td><?php echo$player->getGradeName()?></td>
+            <?php $rostermanager->resetNextLevelObject() ?>
+            <?php while ( $level = $rostermanager->fetchNextLevelObject() ): ?> 
+               <?php if ( TRUE == $rostermanager->PlayerIsRostered( $player->Player_ID, $level->Level_ID ) ): ?> 
+                  <td><a href="Roster.php?action=removeplayer&player_id=<?php echo$player->Player_ID?>&Team_ID=<?php echo$player->Team_ID?>&level=<?php echo$level->Level_ID?>"> [REMOVE]</a></td>
+               <?php else: ?>
+                  <td><a href="Roster.php?action=Add&Player_ID=<?php echo$player->Player_ID?>&Team_ID=<?php echo$player->Team_ID?>&level=<?php echo$level->Level_ID?>"> [ADD]</a></td>
+               <?php endif; ?>
+            <?php endwhile; ?>
+            <td><a href="EditPlayerInfo.php?action=Edit&Team_ID=<?php echo$rostermanager->getTeam_ID()?>&Player_ID=<?php echo$player->Player_ID?>"> <img src=../images/site_images/icon_edit.gif>
+                <a href="EditPlayerInfo.php?action=Delete&Team_ID=<?php echo$rostermanager->getTeam_ID()?>&Player_ID=<?php echo$player->Player_ID?>"> <img src=../images/site_images/icon_delete.gif></a></td>
          </tr>
-      <? endwhile; ?>
+      <?php endwhile; ?>
    	<tr>
         <td></td>
    	  <td></td>
-        <? $rostermanager->resetNextLevelObject() ?>
-   	  <? while ( $level = $rostermanager->fetchNextLevelObject() ): ?> 
+        <?php $rostermanager->resetNextLevelObject() ?>
+   	  <?php while ( $level = $rostermanager->fetchNextLevelObject() ): ?> 
             <td></td>
-        <? endwhile; ?>
-         <td><a href="EditPlayerInfo.php?Team_ID=<?=$rostermanager->getTeam_ID()?>&link=Roster.php?Team_ID=<?=$rostermanager->getTeam_ID()?>"> [Add New Player]</a></td>
+        <?php endwhile; ?>
+         <td><a href="EditPlayerInfo.php?Team_ID=<?php echo$rostermanager->getTeam_ID()?>&link=Roster.php?Team_ID=<?php echo$rostermanager->getTeam_ID()?>"> [Add New Player]</a></td>
       </tr>
    </tbody>
 </table>

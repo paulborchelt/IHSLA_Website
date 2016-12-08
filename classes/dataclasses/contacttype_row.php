@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 class ContactType_Row extends row{
    protected $ID;

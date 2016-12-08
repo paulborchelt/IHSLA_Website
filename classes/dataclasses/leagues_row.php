@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 class Leagues_Row extends Row{
     protected $ID;

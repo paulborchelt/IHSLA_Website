@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 class Official_Availability_Row extends Row{
    protected $UID;

@@ -1,4 +1,4 @@
-<?
+<?php
 class selectGame {
    
    protected $Team_ID;

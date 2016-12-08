@@ -6,15 +6,15 @@
     <td>Delete:</td>
 
 </tr>
-<? while ( $contactrecord = $result->fetchNextObject() ): ?>
+<?php while ( $contactrecord = $result->fetchNextObject() ): ?>
 <tr>
-	<td><?=$contactrecord->Date?></td>
-    <td><?=$contactrecord->_ContactInfoObject->FirstName?>  <?=$contactrecord->_ContactInfoObject->LastName?></td>
-	<td><?=$contactrecord->info?></td>
-    <td><a href="<?=$_SERVER['PHP_SELF']?>?action=DeleteContactRecord&idcontactrecord=<?=$contactrecord->idcontactrecord?>&idcontactinfo=<?=$contactrecord->idcontactinfo?>"> <img src= /HighSchool/images/icon_delete.gif></a></td>
+	<td><?php echo $contactrecord->Date?></td>
+    <td><?php echo $contactrecord->_ContactInfoObject->FirstName?>  <?php echo $contactrecord->_ContactInfoObject->LastName?></td>
+	<td><?php echo $contactrecord->info?></td>
+    <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=DeleteContactRecord&idcontactrecord=<?php echo $contactrecord->idcontactrecord?>&idcontactinfo=<?php echo $contactrecord->idcontactinfo?>"> <img src= /HighSchool/images/icon_delete.gif></a></td>
 </tr>
 </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
 </table>
 
 <input TYPE="button" value="Back" onClick="location.href='ViewNewContacts.php'" class="style2" style="width: 63px">

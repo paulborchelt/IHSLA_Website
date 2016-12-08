@@ -4,49 +4,49 @@
  }
 </script>
 
-<h3><?=$team->Team_Name?></h3>
-<form class="well form-inline" role="form" action="<?=$_SERVER['PHP_SELF']?>" method="post">
+<h3><?php echo $team->Team_Name?></h3>
+<form class="well form-inline" role="form" action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
     <div class="form-group">
       <label>First Name</label>
-      <input type="text" class="input-small" id="first_name" name="First_Name" value="<?=$First_Name?>" placeholder="First Name">
+      <input type="text" class="input-small" id="first_name" name="First_Name" value="<?php echo $First_Name?>" placeholder="First Name">
       <label>Last Name</label>
-      <input type="text" class="input-small" name="Last_Name" value="<?=$Last_Name?>" placeholder="Last Name">
+      <input type="text" class="input-small" name="Last_Name" value="<?php echo $Last_Name?>" placeholder="Last Name">
       <label>Grade</label>
-      <select class="input-mini" name="Grade_Year"><?=$gradeoptions?></select>
+      <select class="input-mini" name="Grade_Year"><?php echo $gradeoptions?></select>
       <label>Height</label>
-      <input type="text" class="input-mini" name="Height" value="<?=$Height?>" placeholder="Height">
+      <input type="text" class="input-mini" name="Height" value="<?php echo $Height?>" placeholder="Height">
       <label>Weight</label>
-      <input type="text" class="input-mini" name="Weight" value="<?=$Weight?>" placeholder="Weigth">
+      <input type="text" class="input-mini" name="Weight" value="<?php echo $Weight?>" placeholder="Weigth">
       <label>USL Number</label>
-      <input type="text" class="input-medium" name="UsLacrosseNumber" value="<?=$UsLacrosseNumber?>" placeholder="US Lacrosse Number">
-      <? if(0 == $team->Club): ?>
-         <? if ($submittype == "Submit"): ?>
+      <input type="text" class="input-medium" name="UsLacrosseNumber" value="<?php echo $UsLacrosseNumber?>" placeholder="US Lacrosse Number">
+      <?php if(0 == $team->Club): ?>
+         <?php if ($submittype == "Submit"): ?>
           <input type="HIDDEN" name="action" value= Enter >
           <input type="submit" class="btn btn-primary" name="Submit" value="SUBMIT" >
-         <? else:?>
+         <?php else:?>
           <input type="HIDDEN" name="action" value=SubmitEdit >
           <input type="submit" class="btn btn-primary" name="Edit" value="EDIT" >
-         <? endif; ?>
-         <button type="button" class="btn"  onclick="window.location='<?=isset($_SESSION[Return_Link]) == true ? $_SESSION[Return_Link] : "login.php" ?>'"> Return</button>
-         <input type="HIDDEN" name="School_ID" value=<?=$team->Team_ID?> >
-      <? endif; ?>
+         <?php endif; ?>
+         <button type="button" class="btn"  onclick="window.location='<?php echo isset($_SESSION[Return_Link]) == true ? $_SESSION[Return_Link] : "login.php" ?>'"> Return</button>
+         <input type="HIDDEN" name="School_ID" value=<?php echo $team->Team_ID?> >
+      <?php endif; ?>
     </div>
-    <? if(1 == $team->Club): ?>
+    <?php if(1 == $team->Club): ?>
        <div class="form-group">
          <label>School Enrolled At</label>
-         <select name="School_ID"><?=$schooloptions?></select>
-         <button type="button" class="btn"  onclick="window.location='AdminTeams.php?league=<?=$team->League?>&link=EditPlayerInfo.php'"> Add Team</button>
-         <? if ($submittype == "Submit"): ?>
+         <select name="School_ID"><?php echo $schooloptions?></select>
+         <button type="button" class="btn"  onclick="window.location='AdminTeams.php?league=<?php echo $team->League?>&link=EditPlayerInfo.php'"> Add Team</button>
+         <?php if ($submittype == "Submit"): ?>
            <input type="HIDDEN" name="action" value= Enter >
            <input type="submit" class="btn btn-primary" name="Submit" value="SUBMIT" >
-         <? else:?>
+         <?php else:?>
            <input type="HIDDEN" name="action" value=SubmitEdit >
            <input type="submit" class="btn btn-primary" name="Edit" value="EDIT" >
-         <? endif; ?>
-         <button type="button" class="btn"  onclick="window.location='<?=isset($_SESSION[Return_Link]) == true ? $_SESSION[Return_Link] : login.php ?>'"> Return</button>
+         <?php endif; ?>
+         <button type="button" class="btn"  onclick="window.location='<?php echo isset($_SESSION[Return_Link]) == true ? $_SESSION[Return_Link] : login.php ?>'"> Return</button>
        </div>       
-    <? endif; ?>
-    <input type="HIDDEN" name="Team_ID" value=<?=$team->Team_ID?> >
-    <input type="HIDDEN" name="Player_ID" value=<?=$Player_ID?> >
+    <?php endif; ?>
+    <input type="HIDDEN" name="Team_ID" value=<?php echo $team->Team_ID?> >
+    <input type="HIDDEN" name="Player_ID" value=<?php echo $Player_ID?> >
 </form>
-<?=$list_of_players?>
+<?php echo $list_of_players?>

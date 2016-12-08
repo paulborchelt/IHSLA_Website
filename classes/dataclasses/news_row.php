@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 class News_Row extends Row{
    protected $id;

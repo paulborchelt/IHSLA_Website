@@ -5,14 +5,14 @@
     <TD>TO</TD>
     <TD>CT</TD>
 </TR>
-<? while ( $stats = $result->fetchNextObject() ): ?>
+<?php while ( $stats = $result->fetchNextObject() ): ?>
 <TR>
     <TD>test</TD>
-    <TD><?=$stats->shots?></TD>
-    <TD><?=$stats->groundballs?></TD>
-    <TD><?=$stats->turnovers?></TD>
-    <TD><?=$stats->causedturnovers?></TD>
+    <TD><?php echo$stats->shots?></TD>
+    <TD><?php echo$stats->groundballs?></TD>
+    <TD><?php echo$stats->turnovers?></TD>
+    <TD><?php echo$stats->causedturnovers?></TD>
 </TR>
-<? endwhile; ?>
+<?php endwhile; ?>
 </TABLE>
 

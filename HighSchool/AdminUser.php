@@ -1,4 +1,4 @@
-<?
+<?php
 
 require_once ('../classes/database.php');
 require_once ('../classes/dataclasses/users_row.php');

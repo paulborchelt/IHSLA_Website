@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 class CommitteeTypes_Row extends Row{
    protected $id;

@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 require_once('teams_row.php');
 require_once('position_row.php');

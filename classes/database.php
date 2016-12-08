@@ -1,4 +1,4 @@
-<?
+<?php
   /** A PHP class to access MySQL database with convenient methods
     * in an object oriented way, and with a powerful debug system.\n
     * Licence:  LGPL \n
@@ -29,11 +29,11 @@
       $base = 'indianalacrosse_org';
      //$server = 'pblgn1.apollomysql.com';
      $server = '127.0.0.1';
-     //$user = 'ihsla';
-     //$pass = 'lacrosse';
-     $user = 'root';
-     $pass = 'bu4227';
-      $this->mtStart    = $this->getMicroTime();
+     $user = 'ihsla';
+     $pass = 'lacrosse';
+    // $user = 'root';
+    // $pass = 'bu4227';
+     $this->mtStart    = $this->getMicroTime();
       $this->nbQueries  = 0;
       $this->lastResult = NULL;
       mysql_connect($server, $user, $pass) or die('Server connexion not possible.');

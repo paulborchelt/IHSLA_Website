@@ -20,23 +20,23 @@
          <th>Grade:</th>
          <th>Position:</th>
          <th>Level:</th>
-         <? if ( true == $showSchool) : ?>
+         <?php if ( true == $showSchool) : ?>
          <th>School:</th>   
-         <? endif ?>
+         <?php endif ?>
       </tr>
    </thead>
    <tbody>
-      <? while ( $roster = $result->fetchNextObject() ): ?>
+      <?php while ( $roster = $result->fetchNextObject() ): ?>
          <tr>
-         	<td><?=$roster->number?></td>
-         	<td><?=$roster->_PlayersObject->getFullName()?></td>
-            <td><?=$roster->_PlayersObject->getGradeName()?></td>
-            <td><?=$roster->_PositionObject->Description?></td>
-            <td><?=$roster->_LevelsObject->Level_Description?></td>
-            <? if ( true == $showSchool) : ?>
-               <td><?=$roster->_PlayersObject->getSchool()?></td>
-            <? endif ?>
+         	<td><?php echo $roster->number?></td>
+         	<td><?php echo $roster->_PlayersObject->getFullName()?></td>
+            <td><?php echo $roster->_PlayersObject->getGradeName()?></td>
+            <td><?php echo $roster->_PositionObject->Description?></td>
+            <td><?php echo $roster->_LevelsObject->Level_Description?></td>
+            <?php if ( true == $showSchool) : ?>
+               <td><?php echo $roster->_PlayersObject->getSchool()?></td>
+            <?php endif ?>
          </tr>
-      <? endwhile; ?>
+      <?php endwhile; ?>
    </tbody>
 </table>

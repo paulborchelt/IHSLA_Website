@@ -1,4 +1,4 @@
-<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
     <table cellspacing="1" cellpadding="1" border="0">
         <tr>
             <td></td>
@@ -11,41 +11,41 @@
         </tr>
         <tr>
             <td style="width: 121px">Contact Type</td>
-            <td style="height: 63px"><select name="CTID"><?=$contacttypeoptions?></select></td>
+            <td style="height: 63px"><select name="CTID"><?php echo $contacttypeoptions?></select></td>
         </tr>
         <tr>
             <td style="width: 121px">First Name</td><td style="height: 63px">
-			<input type="text" value="<?=$FirstName?>" name="FirstName" size="20"></td>
+			<input type="text" value="<?php echo $FirstName?>" name="FirstName" size="20"></td>
         </tr>
         	<td style="width: 121px">Last Name</td><td style="height: 63px">
-			<input type="text" value="<?=$LastName?>" name="LastName" size="20"></td>
+			<input type="text" value="<?php echo $LastName?>" name="LastName" size="20"></td>
         </td>
         <tr>
             <td style="width: 121px">Phone (Home)</td><td style="height: 63px">
-			<input type="text" value="<?=$PhoneHome?>" name="PhoneHome" size="20"></td>
+			<input type="text" value="<?php echo $PhoneHome?>" name="PhoneHome" size="20"></td>
         </tr>
         <tr>
             <td style="width: 121px">Phone (Work)</td><td style="height: 63px">
-			<input type="text" value="<?=$PhoneWork?>" name="PhoneWork" size="20"></td>
+			<input type="text" value="<?php echo $PhoneWork?>" name="PhoneWork" size="20"></td>
         </tr>
         <tr>
             <td style="width: 121px">Phone (Cell)</td><td style="height: 63px">
-			<input type="text" value="<?=$PhoneCell?>" name="PhoneCell" size="20"></td>
+			<input type="text" value="<?php echo $PhoneCell?>" name="PhoneCell" size="20"></td>
         </tr>
         <tr>
             <td style="width: 121px">Email</td><td style="height: 63px">
-			<input type="text" value="<?=$Email?>" name="Email" size="20"></td>
+			<input type="text" value="<?php echo $Email?>" name="Email" size="20"></td>
         </tr>
         <tr>
             <td style="width: 121px">Teams</td>
-            <td style="height: 63px"><select name="TID"><?=$teams?></select></td>
+            <td style="height: 63px"><select name="TID"><?php echo $teams?></select></td>
         </tr>
         <tr>
-        	<? if ($submittype == "Submit"): ?>
+        	<?php if ($submittype == "Submit"): ?>
             <td style="height: 63px; width: 121px;"><INPUT TYPE="HIDDEN" NAME="action" VALUE=EnterContact ><INPUT type="submit" name="Submit" value="SUBMIT" ></td>
-            <? else:?>
+            <?php else:?>
             <td style="height: 63px"><INPUT TYPE="HIDDEN" NAME="action" VALUE=SubmitEdit ><INPUT type="submit" name="Edit" value="EDIT" ></td>
-            <? endif; ?>
+            <?php endif; ?>
             <td style="height: 63px">&nbsp;</td>
         </tr>
     
@@ -68,17 +68,17 @@
     <td>Delete</td>
 
 </tr>
-<? while ( $newcontact = $list_of_newcontacts->fetchNextObject() ): ?>
+<?php while ( $newcontact = $list_of_newcontacts->fetchNextObject() ): ?>
 <tr>
-    <td><?=$newcontact->FirstName?>  <?=$newcontact->LastName?></td>
-    <td><?=$newcontact->getPhoneHome()?></td>
-    <td><?=$newcontact->getPhoneWork()?></td>
-    <td><?=$newcontact->getPhoneCell()?></td>
-    <td><?=$newcontact->Email?></td>
-    <td><?=$newcontact->_ContactInfoTeamsListObject->_TeamObject->Team_Name?></td>
-    <td><a href="<?=$_SERVER['PHP_SELF']?>?action=ContactRecordForm&Id=<?=$newcontact->Id?>"> ADD </a></td>
-    <td><a href="<?=$_SERVER['PHP_SELF']?>?action=ContactRecordView&idcontactinfo=<?=$newcontact->Id?>"> VIEW </a></td>
-    <td><a href="<?=$_SERVER['PHP_SELF']?>?action=Delete&Id=<?=$newcontact->Id?>&contactinfoteamslistid=<?=$newcontact->_ContactInfoTeamsListObject->contactinfoteamslistid?>"> <img src= /HighSchool/images/icon_delete.gif></a></td>
+    <td><?php echo $newcontact->FirstName?>  <?php echo $newcontact->LastName?></td>
+    <td><?php echo $newcontact->getPhoneHome()?></td>
+    <td><?php echo $newcontact->getPhoneWork()?></td>
+    <td><?php echo $newcontact->getPhoneCell()?></td>
+    <td><?php echo $newcontact->Email?></td>
+    <td><?php echo $newcontact->_ContactInfoTeamsListObject->_TeamObject->Team_Name?></td>
+    <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=ContactRecordForm&Id=<?php echo $newcontact->Id?>"> ADD </a></td>
+    <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=ContactRecordView&idcontactinfo=<?php echo $newcontact->Id?>"> VIEW </a></td>
+    <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&Id=<?php echo $newcontact->Id?>&contactinfoteamslistid=<?php echo $newcontact->_ContactInfoTeamsListObject->contactinfoteamslistid?>"> <img src= /HighSchool/images/icon_delete.gif></a></td>
 </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
 </table>

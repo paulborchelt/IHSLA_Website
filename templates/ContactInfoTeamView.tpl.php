@@ -8,7 +8,7 @@
 
         <td></td>
     </tr>
-    <? if( true == $edit ): ?>
+    <?php if( true == $edit ): ?>
     <tr>
         <td>&nbsp;</td>
 
@@ -16,69 +16,69 @@
         
         <td>&nbsp;</td>
 
-        <td><button type="button" class="btn btn-default" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?action=AddContact&Team_ID=<?=$teamid?>'">Add Contact</button></td>
+        <td><button type="button" class="btn btn-default" onClick="window.location='<?php echo$_SERVER['PHP_SELF']?>?action=AddContact&Team_ID=<?php echo$teamid?>'">Add Contact</button></td>
             
             
     </tr>
-    <? endif; ?>
-<? while ( $contactinfo = $result->fetchNextObject() ): ?>
+    <?php endif; ?>
+<?php while ( $contactinfo = $result->fetchNextObject() ): ?>
     <tr>
-        <td><b><?=$contactinfo->_ContactTypeObject->Type?>
+        <td><b><?php echo$contactinfo->_ContactTypeObject->Type?>
         </b></td>
 
         <td><b>Name:</b></td>
 
-        <td><b><?=$contactinfo->FirstName?>
-         <?=$contactinfo->LastName?>
+        <td><b><?php echo$contactinfo->FirstName?>
+         <?php echo$contactinfo->LastName?>
         </b></td>
-        <? if( true == $edit ): ?>
-             <td><a href="<?$_SERVER['PHP_SELF']?>?action=Edit&Id=<?=$contactinfo->Id?>&Team_ID=<?=$contactinfo->_ContactInfoTeamsListObject->TID?>&contactinfoteamslistid=<?=$contactinfo->_ContactInfoTeamsListObject->contactinfoteamslistid?>"> <img src= /images/site_images/icon_edit.gif></a>
-              <a href="<?$_SERVER['PHP_SELF']?>?action=Delete&CID=<?=$contactinfo->Id?>&Id=<?=$contactinfo->Id?>&Team_ID=<?=$contactinfo->_ContactInfoTeamsListObject->TID?>&contactinfoteamslistid=<?=$contactinfo->_ContactInfoTeamsListObject->contactinfoteamslistid?>"> <img src= /images/site_images/icon_delete.gif></a></td>
-        <? endif; ?>
-    </tr><? if ($contactinfo->PhoneHome != ""): ?>
+        <?php if( true == $edit ): ?>
+             <td><a href="<?php $_SERVER['PHP_SELF']?>?action=Edit&Id=<?php echo$contactinfo->Id?>&Team_ID=<?php echo$contactinfo->_ContactInfoTeamsListObject->TID?>&contactinfoteamslistid=<?php echo$contactinfo->_ContactInfoTeamsListObject->contactinfoteamslistid?>"> <img src= ../images/site_images/icon_edit.gif></a>
+              <a href="<?php $_SERVER['PHP_SELF']?>?action=Delete&CID=<?php echo$contactinfo->Id?>&Id=<?php echo$contactinfo->Id?>&Team_ID=<?php echo$contactinfo->_ContactInfoTeamsListObject->TID?>&contactinfoteamslistid=<?php echo$contactinfo->_ContactInfoTeamsListObject->contactinfoteamslistid?>"> <img src= ../images/site_images/icon_delete.gif></a></td>
+        <?php endif; ?>
+    </tr><?php if ($contactinfo->PhoneHome != ""): ?>
 
     <tr>
         <td>&nbsp;</td>
 
         <td>Phone (Home):</td>
 
-        <td><?=$contactinfo->PhoneHome?>
+        <td><?php echo$contactinfo->PhoneHome?>
         </td>
     </tr>
-    <? endif; ?>
-    <? if ($contactinfo->PhoneWork != ""): ?>
+    <?php endif; ?>
+    <?php if ($contactinfo->PhoneWork != ""): ?>
 
     <tr>
         <td>&nbsp;</td>
 
         <td>Phone (Work):</td>
 
-        <td><?=$contactinfo->PhoneWork?>
+        <td><?php echo$contactinfo->PhoneWork?>
         </td>
-    </tr><? endif; ?>
-    <? if ($contactinfo->PhoneCell != ""): ?>
+    </tr><?php endif; ?>
+    <?php if ($contactinfo->PhoneCell != ""): ?>
 
     <tr>
         <td>&nbsp;</td>
 
         <td>Phone (Cell):</td>
 
-        <td><?=$contactinfo->PhoneCell?>
+        <td><?php echo$contactinfo->PhoneCell?>
         </td>
     </tr>
-    <? endif; ?>
-    <? if ($contactinfo->Email != ""): ?>
+    <?php endif; ?>
+    <?php if ($contactinfo->Email != ""): ?>
 
     <tr>
         <td>&nbsp;</td>
 
         <td>Email:</td>
 
-        <td><?=$contactinfo->Email?>
+        <td><?php echo$contactinfo->Email?>
         </td>
     </tr>
-    <? endif; ?>
-    <? if ($contactinfo->_ContactInfoTeamsListObject->MainContact == 1): ?>
+    <?php endif; ?>
+    <?php if ($contactinfo->_ContactInfoTeamsListObject->MainContact == 1): ?>
 
     <tr>
         <td>&nbsp;</td>
@@ -87,7 +87,7 @@
 
         <td>YES</td>
     </tr>
-    <? else: ?>
+    <?php else: ?>
 
     <tr>
         <td>&nbsp;</td>
@@ -96,7 +96,7 @@
 
         <td>NO</td>
     </tr>
-    <? endif; ?>
-<? endwhile; ?>
+    <?php endif; ?>
+<?php endwhile; ?>
 </table>
 

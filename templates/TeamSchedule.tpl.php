@@ -18,9 +18,9 @@
          } );
 </script>
 
-<? if ($enterschedule != "yes"): ?>
-   <?=$navbarteam?>
-<? endif; ?>
+<?php if ($enterschedule != "yes"): ?>
+   <?php echo $navbarteam?>
+<?php endif; ?>
 
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
    <thead>
@@ -32,30 +32,30 @@
          <td>Site</td>
          <td>Time</td>
          <td>Level</td>
-         <? if ($enterschedule == "yes"): ?>
+         <?php if ($enterschedule == "yes"): ?>
             <td>Edit/Delete</td>
-         <? else: ?>
+         <?php else: ?>
             <td>Result</td>
-         <? endif; ?>
+         <?php endif; ?>
       </tr>
    </thead>
    <tbody>
-<? while ( $schedule = $result->fetchNextObject() ): ?>
+<?php while ( $schedule = $result->fetchNextObject() ): ?>
       <tr>
-         <td><?=$schedule->_DateObject->getScheduleSortFormat()?></td>
-         <td><?=$schedule->_DateObject->getScheduleFormat()?></td>
-         <td><?=$schedule->getLocation($Team_ID)?></td>
-         <td><?=$schedule->getOpponent($Team_ID)?></td>
-         <td><?=$schedule->_SiteObject->field_name?></td>
-         <td><?=$schedule->_TimeObject->getTime()?></td>
-         <td><?=$schedule->Game_Level?></td>
-         <? if ($enterschedule == "yes" && FALSE == $schedule->_Score->scoreSetHome && FALSE == $schedule->_Score->scoreSetAway ): ?>
-            <td><a href="<?=$_SERVER['PHP_SELF']?>?action=Edit&Game_ID=<?=$schedule->Game_ID?>&Team_ID=<?=$Team_ID?>"> <img src= ../images/site_images/icon_edit.gif>
-            <a href="<?=$_SERVER['PHP_SELF']?>?action=Delete&Game_ID=<?=$schedule->Game_ID?>&Team_ID=<?=$Team_ID?>"> <img src= ../images/site_images/icon_delete.gif></td>
-         <? else: ?>
-            <td><?=$schedule->getResults(TRUE)?></td>
-         <? endif; ?>
+         <td><?php echo $schedule->_DateObject->getScheduleSortFormat()?></td>
+         <td><?php echo $schedule->_DateObject->getScheduleFormat()?></td>
+         <td><?php echo $schedule->getLocation($Team_ID)?></td>
+         <td><?php echo $schedule->getOpponent($Team_ID)?></td>
+         <td><?php echo $schedule->_SiteObject->field_name?></td>
+         <td><?php echo $schedule->_TimeObject->getTime()?></td>
+         <td><?php echo $schedule->Game_Level?></td>
+         <?php if ($enterschedule == "yes" && FALSE == $schedule->_Score->scoreSetHome && FALSE == $schedule->_Score->scoreSetAway ): ?>
+            <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&Game_ID=<?php echo $schedule->Game_ID?>&Team_ID=<?php echo $Team_ID?>"> <img src= ../images/site_images/icon_edit.gif>
+            <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&Game_ID=<?php echo $schedule->Game_ID?>&Team_ID=<?php echo $Team_ID?>"> <img src= ../images/site_images/icon_delete.gif></td>
+         <?php else: ?>
+            <td><?php echo $schedule->getResults(TRUE)?></td>
+         <?php endif; ?>
       </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
  </tbody>
 </table>

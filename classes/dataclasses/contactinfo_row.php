@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 require_once('contacttype_row.php');
 require_once('contactinfoteamslist_row.php');

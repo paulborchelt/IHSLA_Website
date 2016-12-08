@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 require_once('teams_row.php');
 class ContactInfoTeamsList_Row extends row{

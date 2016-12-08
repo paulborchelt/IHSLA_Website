@@ -14,20 +14,20 @@
     <td>Carmel Dads Club:</td>
 
 </tr>
-<? while ( $registration = $result->fetchNextObject() ): ?>
+<?php while ( $registration = $result->fetchNextObject() ): ?>
 <tr>
-	<td><?=$registration->firstname?></td>
-	<td><?=$registration->lastname?></td>
-	<td><?=$registration->address?></td>
-	<td><?=$registration->city?></td>
-	<td><?=$registration->state?></td>
-	<td><?=$registration->zip?></td>
-	<td><?=$registration->email?></td>
-	<td><?=$registration->schoolattending?></td>
-	<td><?=$registration->gradeinschool?> </td>
-	<td><?=$registration->certifiedYesOrNo()?> </td>
-	<td><?=$registration->uslacrossenumber?> </td>
-    <td><?=$registration->carmeldadsclubYesOrNo()?> </td>
+	<td><?php echo $registration->firstname?></td>
+	<td><?php echo $registration->lastname?></td>
+	<td><?php echo $registration->address?></td>
+	<td><?php echo $registration->city?></td>
+	<td><?php echo $registration->state?></td>
+	<td><?php echo $registration->zip?></td>
+	<td><?php echo $registration->email?></td>
+	<td><?php echo $registration->schoolattending?></td>
+	<td><?php echo $registration->gradeinschool?> </td>
+	<td><?php echo $registration->certifiedYesOrNo()?> </td>
+	<td><?php echo $registration->uslacrossenumber?> </td>
+    <td><?php echo $registration->carmeldadsclubYesOrNo()?> </td>
 </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
 </table>

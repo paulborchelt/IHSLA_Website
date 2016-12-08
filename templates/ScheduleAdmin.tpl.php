@@ -13,21 +13,21 @@
 	<td>Umpire:</td>
 	<td>Field Judge:</td>
 </tr>
-<? while ( $schedule = $result->fetchNextObject() ): ?>
+<?php while ( $schedule = $result->fetchNextObject() ): ?>
 <tr>
-	<td><?=$schedule->_DateObject->getScheduleFormat()?></td>
-	<td><?=$schedule->_HomeTeamObject->Team_Name?></td>
-	<td><?=$schedule->_AwayTeamObject->Team_Name?></td>
-	<td><?=$schedule->_SiteObject->field_name?></td>
-	<td><?=$schedule->_TimeObject->getTime()?></td>
-	<td><?=$schedule->Game_Level?></td>
-	<td><?=$schedule->Game_Type?></td>
-	<td><a href="<?=$_SERVER['PHP_SELF']?>?action=Edit&Game_ID=<?=$schedule->Game_ID?>"> <img src= /HighSchool/images/icon_edit.gif>
-   <a href="<?=$_SERVER['PHP_SELF']?>?action=Delete&Game_ID=<?=$schedule->Game_ID?>"> <img src= /HighSchool/images/icon_delete.gif></td>
-	<td><?=$schedule->_CancelOptionsObject->cancelname?></td>
-	<td><?=$schedule->_RefereeObject->GetFullName()?> </td>
-	<td><?=$schedule->_UmpireObject->GetFullName()?> </td>
-	<td><?=$schedule->_FieldJudgeObject->GetFullName()?> </td>
+	<td><?php echo $schedule->_DateObject->getScheduleFormat()?></td>
+	<td><?php echo $schedule->_HomeTeamObject->Team_Name?></td>
+	<td><?php echo $schedule->_AwayTeamObject->Team_Name?></td>
+	<td><?php echo $schedule->_SiteObject->field_name?></td>
+	<td><?php echo $schedule->_TimeObject->getTime()?></td>
+	<td><?php echo $schedule->Game_Level?></td>
+	<td><?php echo $schedule->Game_Type?></td>
+	<td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&Game_ID=<?php echo $schedule->Game_ID?>"> <img src= /HighSchool/images/icon_edit.gif>
+   <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&Game_ID=<?php echo $schedule->Game_ID?>"> <img src= /HighSchool/images/icon_delete.gif></td>
+	<td><?php echo $schedule->_CancelOptionsObject->cancelname?></td>
+	<td><?php echo $schedule->_RefereeObject->GetFullName()?> </td>
+	<td><?php echo $schedule->_UmpireObject->GetFullName()?> </td>
+	<td><?php echo $schedule->_FieldJudgeObject->GetFullName()?> </td>
 </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
 </table>

@@ -1,4 +1,4 @@
-<?
+<?php
 class RowList{
     private $_sqlExecutorObject;
     

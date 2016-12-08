@@ -10,9 +10,9 @@
          } );
 </script>
 
-<?=$navbarstats?>
+<?php echo $navbarstats?>
 
-<?=$selectYear?>
+<?php echo $selectYear?>
 
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
    <thead>
@@ -26,15 +26,15 @@
       </tr>
    </thead>
       <tbody>
-<? while ( $saves = $result->fetchNextObject() ): ?>
+<?php while ( $saves = $result->fetchNextObject() ): ?>
          <tr>
-            <td><?=$saves->_TeamsObject->Team_Name?></td>
-         	<td><?=$saves->_RostersObject->number?></td>
-         	<td><?=$saves->_PlayersObject->getFullName()?></td>
-            <td><?=$saves->Saves?></td>
-            <td><?=$saves->Goals_Against?></td>
-            <td><?=$saves->getAverage()?></td>
+            <td><?php echo $saves->_TeamsObject->Team_Name?></td>
+         	<td><?php echo $saves->_RostersObject->number?></td>
+         	<td><?php echo $saves->_PlayersObject->getFullName()?></td>
+            <td><?php echo $saves->Saves?></td>
+            <td><?php echo $saves->Goals_Against?></td>
+            <td><?php echo $saves->getAverage()?></td>
          </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
       </tbody>
 </table>

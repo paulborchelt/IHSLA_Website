@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 require_once('players_rows.php');
 require_once('schedule_row.php');

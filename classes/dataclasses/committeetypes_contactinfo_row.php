@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 require_once('contactinfo_row.php');
 class CommitteeTypes_ContactInfo_Row extends Row{

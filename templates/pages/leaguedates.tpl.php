@@ -1,4 +1,4 @@
-<?=$leagueinfonavbar?>
+<?php echo $leagueinfonavbar?>
 
 <h3>League Dates</h3>
 <ul>

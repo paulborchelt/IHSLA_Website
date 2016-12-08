@@ -1,4 +1,4 @@
-<?=$leagueinfonavbar?>
+<?php echo$leagueinfonavbar ?>
 
 <h3>About</h3>
 <p> The Indiana High School Lacrosse Association is a non-profit organization run by volunteers devoted to the support of boys high school lacrosse.  

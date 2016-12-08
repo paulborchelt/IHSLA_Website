@@ -28,13 +28,13 @@ addLoadEvent(function() {
 </script>
 
 
-<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
     <table>
         <tr>
-            <td><?$calendar->writeScript()?></td>
-            <td><textarea name="info" rows="5" cols="50"><?=$additionalcomments?></textarea></td>
+            <td><?php echo $calendar->writeScript()?></td>
+            <td><textarea name="info" rows="5" cols="50"><?php echo $additionalcomments?></textarea></td>
             <input type="HIDDEN" name="action" value="EnterContactRecord">
-            <input type="HIDDEN" name="idcontactinfo" value="<?=$contactid?>">
+            <input type="HIDDEN" name="idcontactinfo" value="<?php echo $contactid?>">
             <input type="submit" name="Submit" value="SUBMIT" >
         </tr>
         

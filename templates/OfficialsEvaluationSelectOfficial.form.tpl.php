@@ -21,46 +21,46 @@
                <td>&nbsp;</td>
          </tr>
         <tr>
-            <? if ($refereeinfo->FirstName == null): ?>
-               <td><input TYPE="button" value="Add Official" onClick="location.href='<?=$_SERVER['PHP_SELF']?>?action=AddOfficialDisplay&officialtype=Referee&Game_ID=<?=$Game_ID?>&Team_ID=<?=$Team_ID?>'"></td>
+            <?php if ($refereeinfo->FirstName == null): ?>
+               <td><input TYPE="button" value="Add Official" onClick="location.href='<?php echo $_SERVER['PHP_SELF']?>?action=AddOfficialDisplay&officialtype=Referee&Game_ID=<?php echo $Game_ID?>&Team_ID=<?php echo $Team_ID?>'"></td>
                <td  >Referee</td>
-            <? else:?>
+            <?php else:?>
                <td  >
-			   <input name="official" value="<?=$refereeinfo->Id?>" type="radio" align="left" style="width: 35px"> </td>
-               <td  >Referee</td><td align="left"><?=$refereeinfo->FirstName?> <?=$refereeinfo->LastName?></td>
+			   <input name="official" value="<?php echo $refereeinfo->Id?>" type="radio" align="left" style="width: 35px"> </td>
+               <td  >Referee</td><td align="left"><?php echo $refereeinfo->FirstName?> <?php echo $refereeinfo->LastName?></td>
                <td>
-			   <input TYPE="button" value="Change" onClick="location.href='<?$_SERVER['PHP_SELF']?>?action=EditOfficial&idcontactinfo=<?=$refereeinfo->Id?>&officialtype=Referee&Game_ID=<?=$Game_ID?>&Team_ID=<?=$Team_ID?>'"></td>
-            <? endif; ?>
+			   <input TYPE="button" value="Change" onClick="location.href='<?php echo $_SERVER['PHP_SELF']?>?action=EditOfficial&idcontactinfo=<?php echo $refereeinfo->Id?>&officialtype=Referee&Game_ID=<?php echo $Game_ID?>&Team_ID=<?php echo $Team_ID?>'"></td>
+            <?php endif; ?>
          </tr>
          <tr>
-            <? if ($umpireinfo->FirstName == null): ?>
-               <td> <input TYPE="button" value="Add Official" onClick="location.href='<?=$_SERVER['PHP_SELF']?>?action=AddOfficialDisplay&officialtype=Umpire&Game_ID=<?=$Game_ID?>&Team_ID=<?=$Team_ID?>'"></td>
+            <?php if ($umpireinfo->FirstName == null): ?>
+               <td> <input TYPE="button" value="Add Official" onClick="location.href='<?php echo $_SERVER['PHP_SELF']?>?action=AddOfficialDisplay&officialtype=Umpire&Game_ID=<?php echo $Game_ID?>&Team_ID=<?php echo $Team_ID?>'"></td>
                <td  >Umpire</td>
-            <? else:?>
+            <?php else:?>
                <td  >
-			   <input name="official" value="<?=$umpireinfo->Id?>" type="radio" align="left" style="width: 39px"></td>
-               <td  >Umpire</td><td align="left"><?=$umpireinfo->FirstName?> <?=$umpireinfo->LastName?></td>
+			   <input name="official" value="<?php echo $umpireinfo->Id?>" type="radio" align="left" style="width: 39px"></td>
+               <td  >Umpire</td><td align="left"><?php echo $umpireinfo->FirstName?> <?php echo $umpireinfo->LastName?></td>
                <td> 
-			   <input TYPE="button" value="Change" onClick="location.href='<?$_SERVER['PHP_SELF']?>?action=EditOfficial&idcontactinfo=<?=$umpireinfo->Id?>&officialtype=Umpire&Game_ID=<?=$Game_ID?>&Team_ID=<?=$Team_ID?>'"> </td>
-            <? endif; ?>
+			   <input TYPE="button" value="Change" onClick="location.href='<?php echo $_SERVER['PHP_SELF']?>?action=EditOfficial&idcontactinfo=<?php echo $umpireinfo->Id?>&officialtype=Umpire&Game_ID=<?php echo $Game_ID?>&Team_ID=<?php echo $Team_ID?>'"> </td>
+            <?php endif; ?>
          </tr>
          <tr>
-            <? if ($fieldjudgeinfo->FirstName == null): ?>
-                <td><input TYPE="button" value="Add Official" onClick="location.href='<?=$_SERVER['PHP_SELF']?>?action=AddOfficialDisplay&officialtype=Field_Judge&Game_ID=<?=$Game_ID?>&Team_ID=<?=$Team_ID?>'"></td>
+            <?php if ($fieldjudgeinfo->FirstName == null): ?>
+                <td><input TYPE="button" value="Add Official" onClick="location.href='<?php echo $_SERVER['PHP_SELF']?>?action=AddOfficialDisplay&officialtype=Field_Judge&Game_ID=<?php echo $Game_ID?>&Team_ID=<?php echo $Team_ID?>'"></td>
                 <td  >Field Judge</td>
-            <? else:?>
+            <?php else:?>
                <td  >
-			   <input name="official" value="<?=$fieldjudgeinfo->Id?>" type="radio" align="left" style="width: 38px"></td>
-               <td  >Field Judge</td><td align="left"><?=$fieldjudgeinfo->FirstName?> <?=$fieldjudgeinfo->LastName?></td>
+			   <input name="official" value="<?php echo $fieldjudgeinfo->Id?>" type="radio" align="left" style="width: 38px"></td>
+               <td  >Field Judge</td><td align="left"><?php echo $fieldjudgeinfo->FirstName?> <?php echo $fieldjudgeinfo->LastName?></td>
                <td> 
-			   <input TYPE="button" value="Change" onClick="location.href='<?$_SERVER['PHP_SELF']?>?action=EditOfficial&idcontactinfo=<?=$fieldjudgeinfo->Id?>&officialtype=Field_Judge&Game_ID=<?=$Game_ID?>&Team_ID=<?=$Team_ID?>'"></td>
+			   <input TYPE="button" value="Change" onClick="location.href='<?php echo $_SERVER['PHP_SELF']?>?action=EditOfficial&idcontactinfo=<?php echo $fieldjudgeinfo->Id?>&officialtype=Field_Judge&Game_ID=<?php echo $Game_ID?>&Team_ID=<?php echo $Team_ID?>'"></td>
                
-            <? endif; ?>
+            <?php endif; ?>
         	<br>
          </tr>
          </table>
         <input type="HIDDEN" name="action" value="DisplayEvaluation">
-        <input type="HIDDEN" name="Game_ID" value=<?=$Game_ID?>>
-        <input type="HIDDEN" name="Team_ID" value=<?=$Team_ID?>>
+        <input type="HIDDEN" name="Game_ID" value=<?php echo $Game_ID?>>
+        <input type="HIDDEN" name="Team_ID" value=<?php echo $Team_ID?>>
         <br>
-		<input name="Submit1" type="submit" value="Evaluate" /><input TYPE="button" value="Back" onClick="location.href='<?=$_SERVER['PHP_SELF']?>?Team_ID=<?=$Team_ID?>'" class="style2" style="width: 63px"></form>
+		<input name="Submit1" type="submit" value="Evaluate" /><input TYPE="button" value="Back" onClick="location.href='<?php echo $_SERVER['PHP_SELF']?>?Team_ID=<?php echo $Team_ID?>'" class="style2" style="width: 63px"></form>

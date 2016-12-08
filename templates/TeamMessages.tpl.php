@@ -1,1 +1,1 @@
-<?=$navbarteam?>
+<?php echo $navbarteam?>

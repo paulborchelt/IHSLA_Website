@@ -1,4 +1,4 @@
-<?=$leagueinfonavbar?>
+<?php echo$leagueinfonavbar?>
 
 <h3>By-Laws/Docs</h3>
 <ul>

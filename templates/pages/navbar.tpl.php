@@ -9,12 +9,12 @@
        <a class="brand" href="index.php">IHSLA</a>
        <div class="nav-collapse collapse">
          <p class="navbar-text pull-right">
-           <? $user = Users_Row::getUser($db) ?>
-           <? if ($user == null): ?>
+           <?php $user = Users_Row::getUser($db) ?>
+           <?php if ($user == null): ?>
              <a href="login.php" class="navbar-link">Log in</a>
-           <? else: ?>
-               Logged in as <a href="#" class="navbar-link"><?=$user->_contactInfoObject->GetFullName()?></a>
-           <? endif; ?>
+           <?php else: ?>
+               Logged in as <a href="#" class="navbar-link"><?php echo$user->_contactInfoObject->GetFullName()?></a>
+           <?php endif; ?>
          </p>
          <ul class="nav">
            <li class="active"><a href="index.php">Home</a></li>

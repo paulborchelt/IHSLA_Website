@@ -11,7 +11,7 @@
 </script>
 
 <div>
-<?=$score?>
+<?php echo $score?>
 </div>
 
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
@@ -32,31 +32,31 @@
       </tr>
    </thead>
       <tbody>
-<? while ( $points = $result->fetchNextObject() ): ?>
+<?php while ( $points = $result->fetchNextObject() ): ?>
          <tr>
-            <td><?=$points->_TeamsObject->Team_Name?></td>
-         	<td><?=$points->_RostersObject->number?></td>
-         	<td><?=$points->_PlayersObject->getFullName()?></td>
-            <td><?=$points->Quarter?></td>
-            <td><?=$points->Goals?></td>
-            <td><?=$points->Assists?></td>
-            <td><?=$points->getPoints()?></td>
-            <td><?=$points->GroundBalls?></td>
-            <td><?=$points->Shots?></td>
-            <td><?=$points->Turnovers?></td>
-            <td><?=$points->CausedTurnovers?></td>
-            <td><a href="<?=$_SERVER['PHP_SELF']?>?action=Edit&Game_ID=<?=$points->Game_ID?>&Team_ID=<?=$points->Team_ID?>&Player_ID=<?=$points->Player_ID?>&Quarter=<?=$points->Quarter?>&Goals=<?=$points->Goals?>&Assists=<?=$points->Assists?>&GroundBalls=<?=$points->GroundBalls?>&Shots=<?=$points->Shots?>&Turnovers=<?=$points->Turnovers?>&CausedTurnovers=<?=$points->CausedTurnovers?>"> <img src= ../images/site_images/icon_edit.gif>
-            <a href="<?=$_SERVER['PHP_SELF']?>?action=Delete&Game_ID=<?=$points->Game_ID?>&Player_ID=<?=$points->Player_ID?>&Quarter=<?=$points->Quarter?>"> <img src= ../images/site_images/icon_delete.gif></td>
+            <td><?php echo $points->_TeamsObject->Team_Name?></td>
+         	<td><?php echo $points->_RostersObject->number?></td>
+         	<td><?php echo $points->_PlayersObject->getFullName()?></td>
+            <td><?php echo $points->Quarter?></td>
+            <td><?php echo $points->Goals?></td>
+            <td><?php echo $points->Assists?></td>
+            <td><?php echo $points->getPoints()?></td>
+            <td><?php echo $points->GroundBalls?></td>
+            <td><?php echo $points->Shots?></td>
+            <td><?php echo $points->Turnovers?></td>
+            <td><?php echo $points->CausedTurnovers?></td>
+            <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&Game_ID=<?php echo $points->Game_ID?>&Team_ID=<?php echo $points->Team_ID?>&Player_ID=<?php echo $points->Player_ID?>&Quarter=<?php echo $points->Quarter?>&Goals=<?php echo $points->Goals?>&Assists=<?php echo $points->Assists?>&GroundBalls=<?php echo $points->GroundBalls?>&Shots=<?php echo $points->Shots?>&Turnovers=<?php echo $points->Turnovers?>&CausedTurnovers=<?php echo $points->CausedTurnovers?>"> <img src= ../images/site_images/icon_edit.gif>
+            <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&Game_ID=<?php echo $points->Game_ID?>&Player_ID=<?php echo $points->Player_ID?>&Quarter=<?php echo $points->Quarter?>"> <img src= ../images/site_images/icon_delete.gif></td>
          </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
       </tbody>
 </table>
 
 <br />
 
-<?=$statsenterformhome?>
+<?php echo $statsenterformhome?>
 
-<?=$statsenterformaway?>
+<?php echo $statsenterformaway?>
 
-<button type="button" class="btn btn-default" onClick="window.location='<?=$_SERVER['PHP_SELF']?>?action=GoalieEnter&Game_ID=<?=$Game_ID?>'">Enter Goalie Scores ></button></td>
+<button type="button" class="btn btn-default" onClick="window.location='<?php echo $_SERVER['PHP_SELF']?>?action=GoalieEnter&Game_ID=<?php echo $Game_ID?>'">Enter Goalie Scores ></button></td>
 

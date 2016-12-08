@@ -1,4 +1,4 @@
-<?
+<?php
 class Row {
 
    public function __get($var){

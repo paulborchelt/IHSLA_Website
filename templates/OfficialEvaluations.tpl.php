@@ -21,12 +21,12 @@
       </tr>
    </thead>
    <tbody>
-      <? while ( $eval = $result->fetchNextObject() ): ?>
+      <?php while ( $eval = $result->fetchNextObject() ): ?>
          <tr>
-         	<td><?=$eval->_contactInfoObject->getFullName()?></td>
-         	<td><?=$eval->rating?></td>
-            <td><button type="button" onClick="window.location='OfficialsEvaluation.php?action=DisplayEvaluation&view=true&Team_ID=<?=$eval->Team_ID?>&Game_ID=<?=$eval->_schedule->Game_ID?>&official=<?=$eval->idcontactinfo?>'" name="ViewEval">View</button></td>
+         	<td><?php echo $eval->_contactInfoObject->getFullName()?></td>
+         	<td><?php echo $eval->rating?></td>
+            <td><button type="button" onClick="window.location='OfficialsEvaluation.php?action=DisplayEvaluation&view=true&Team_ID=<?php echo $eval->Team_ID?>&Game_ID=<?php echo $eval->_schedule->Game_ID?>&official=<?php echo $eval->idcontactinfo?>'" name="ViewEval">View</button></td>
          </tr>
-      <? endwhile; ?>
+      <?php endwhile; ?>
    </tbody>
 </table>

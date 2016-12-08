@@ -2,9 +2,9 @@
 <tr>
 	<td>Title:</td>
 </tr>
-<? while ( $news = $result->fetchNextObject() ): ?>
+<?php while ( $news = $result->fetchNextObject() ): ?>
 <tr>
-	<td><?=$news->headline?></td>
+	<td><?php echo $news->headline?></td>
 </tr>
-<? endwhile; ?>
+<?php endwhile; ?>
 </table>

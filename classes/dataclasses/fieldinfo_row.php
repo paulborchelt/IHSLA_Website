@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('row.php');
 class Field_Info_Row extends Row{
     protected $field_id;

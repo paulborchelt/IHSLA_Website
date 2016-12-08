@@ -1,7 +1,7 @@
 <div>
-   <?=$navbarteam?>
-   <?=$navbarstats?>
+   <?php echo $navbarteam?>
+   <?php echo $navbarstats?>
 </div>
 
-<?=$selectYear?>
-<?=$stats?>
+<?php echo $selectYear?>
+<?php echo $stats?>
