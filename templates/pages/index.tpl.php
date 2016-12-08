@@ -18,23 +18,15 @@
               <p>Chesteron High School is looking to fill open girls lacrosse positions. Please contact Jim Martin <a href="mailto:chestertonlax@gmail.com"><span class="c8">chestertonlax@gmail.com</a>.</p>
             </div><!--/span-->
             <div class="span4">
-              <h2>Scenina is looking for lacrosse coach. </h2>
-              <p>Scenina High School is looking to fill open coaching positions. Please contact Rich Deering <a href="mailto:deeringindustrial@yahoo.com"><span class="c8">deeringindustrial@yahoo.com</a>.</p>
-            </div><!--/span-->
-            <div class="span4">
               <h2>Westfield High School looking for Head and Assistant Coaches</h2>
               <p>Westfield High School is looking to fill open coaching positions. Please contact Jeff Culley <a href="mailto:Jeffrey.l.culley@delphi.com"><span class="c8">Jeffrey.l.culley@delphi.com</a>.</p>
             </div><!--/span-->
-        </div><!--/span-->
-        <div class="row-fluid">
             <div class="span4">
               <h2>Columbus North looking for JV Head and Assistant Coaches</h2>
               <p>Columbus North is looking to fill open coaching position. Please contact Andrew Jerman <a href="mailto:acjerman47@gmail.com"><span class="c8">acjerman47@gmail.com.</a></p>
             </div><!--/span-->
-            <div class="span4">
-              <h2>Columbus East looking for Varsity Head and Assistant Coaches</h2>
-              <p>Columbus East is looking to fill open coaching position. Please contact Andrew Jerman <a href="mailto:acjerman47@gmailcom"><span class="c8">acjerman47@gmail.com.</a></p>
-            </div><!--/span-->
+        </div><!--/span-->
+        <div class="row-fluid">
             <div class="span4">
               <h2>Avon looking for Assistant Coaches</h2>
               <p>Avon is looking to fill open coaching position. Please contact Lisa Gemmer <a href="mailto:lisa.gemmer@synergy-tel.com"><span class="c8">lisa.gemmer@synergy-tel.com.</a></p>
