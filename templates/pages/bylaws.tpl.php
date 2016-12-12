@@ -4,6 +4,7 @@
 <ul>
    <li> <a href="../leagueuploads/Bylaws.pdf">By-Laws</a> </li>
    <li> <a href="../leagueuploads/RulesPolicies.pdf">Policies and Rules for 2015 Season</a> </li>
+   <li> <a href="../leagueuploads/Coaches_Code_of_Conduct.pdf">Coaches Code of Conduct</a></li>
    <li> <a href="../leagueuploads/RFP_2015.doc">IHSLA State Championship RFP (Word Doc)</a> </li>
    <li> <a href="../leagueuploads/RFP_2015.pdf">IHSLA State Championship RFP (PDF)</a> </li>
    <li> <a href="https://drive.google.com/folderview?id=0B5c8AAhBaQ4wVXUtRERvTUZhemM&usp=sharing"> Fall Meeting Handouts</a></li>
