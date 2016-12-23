@@ -40,6 +40,9 @@ switch ($navigation->subpage){
  case Join:
    $main->set(content,$page->fetch('../templates/pages/leaguejoin.tpl.php'));
    break;
+ case FallMeeting:
+   $main->set(content,$page->fetch('../templates/pages/fallmeetinghandouts.tpl.php'));
+   break;
  default:
    $main->set(content,$page->fetch('../templates/pages/aboutandmission.tpl.php'));  
 }
