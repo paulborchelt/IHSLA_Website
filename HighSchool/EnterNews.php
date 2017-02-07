@@ -1,52 +1,37 @@
-<?php session_start();
-require('Security.php');
-Authentication();
-include("header.html");
-echo('<div id="Layer1" style="position:absolute; left:143px; top:136px; width:600px; height:560px; z-index:2"> ');
-require('functions.php');
-// Connect to the database server
-ConnectDatabase();
+<?php
+require_once ('../classes/database.php');
+require_once ('../classes/templateengine/template.php');
+require_once ('../classes/templateengine/templatelogger.php');
+require_once ('../classes/sqlexecutor.php');
+require_once ('../classes/dataclasses/news_row.php');
+require_once ('../classes/dataclasses/users_row.php');
 
-echo('<p>Test: '.$_SESSION['CoachID'].'</p>');
+$db = new db();
 
-$page = $_REQUEST['action'];
-switch($page)
-{
+$main = new TemplateLogger($db,'./');
+
+try{
+    $sql_News = new SqlExecutor( $db, new News_Row($_REQUEST) );   
+}
+catch(Exception $e){
+    $main->error($e);
+}
+
+$action = $_REQUEST['action'];
+switch ($action){
 	case Enter:
-		$headline = $_POST['headline'];
-		$message = mysql_real_escape_string($_POST['message']);
-		$author_id = $_SESSION['CoachID'];
-		$team_id = $_SESSION['TeamID'];
-		$date = date(Ymd);
-		$sql = "INSERT INTO News SET
-		author_id ='$author_id',
-		team_id ='$team_id',
-		message ='$message',
-		headline='$headline'";
-		if (@mysql_query($sql)) {
-			echo('<p>Your message has been entered.</p>');
-		} else {
-			echo('<p>Error adding message: ' .
-			mysql_error() . '</p>');
-		}
-		echo('<p><a href="login.php">Return to Coaches Area.</a></p>');
+        try{
+            $sql_News->insertAutoIncrement();
+            $main->success("News Entered.");
+        }
+        catch( Exception $e ){
+            $main->error("Failed to enter team. ". $e->getMessage());
+        }
+ 	    header('Location: index.php');
 		break;
 	default:
-	echo('<FORM action="'.$_SERVER['PHP_SELF'].'" method="post"> 	
-		<TABLE cellspacing="1" cellpadding="1" border="0">
-		<TR>
-		<TD>Headline:</TD></TR>
-		<TR>
-		<TD><INPUT TYPE="text" NAME="headline" size="50"></TD></TR>
-		<TR>
-		<TD>Message:</TD></TR>
-		<TR>
-		<TD><textarea name="message" rows="5" cols="60"></textarea></TD>
-		<TD><INPUT TYPE="HIDDEN" NAME="action" VALUE=Enter ></TD>
-		<TD><INPUT TYPE="HIDDEN" NAME="team_id" VALUE='.$_SESSION['TeamID'].'</TD>
-		<INPUT TYPE="submit" NAME="News" VALUE="Enter"></TD></TR></TABLE> 
-		</FORM>');
-		break;
+      echo $main->fetch('../templates/News.form.tpl.php');  
+
 }
 
 ?>

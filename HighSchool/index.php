@@ -11,17 +11,18 @@ $db = new db();
 
 $main = new TemplateLogger($db,'./'); 
 
-/*
+
 try{
     $sql_News = new SqlExecutor( $db, new News_Row($_REQUEST) );   
 }
 catch(Exception $e){
     $main->error($e);
 }
-*/
 
-//$sql_News->Search("ORDER BY timestamp DESC LIMIT 5");
-//$main->set('content', $sql_News->fetchThisTemplate("../templates/NewsHeadlines.tpl.php"));
+$sql_News->Search("ORDER BY timestamp ASC LIMIT 7");
+$tpl = new Template();
+$tpl->set('result', $sql_News);
+$main->set('newscards', $tpl->fetch('../templates/NewsCards.tpl.php'));
 echo $main->fetch('../templates/pages/index.tpl.php');  
 
 ?>

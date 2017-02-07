@@ -6,6 +6,7 @@ require_once ('../classes/templateengine/template.php');
 require_once ('../classes/templateengine/templatelogger.php');
 require_once ('../classes/sqlexecutor.php');
 require_once ('../classes/dataclasses/news_row.php');
+require_once ('../classes/dataclasses/users_row.php');
 
 $db = new db();
 

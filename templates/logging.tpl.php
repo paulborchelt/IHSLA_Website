@@ -7,28 +7,28 @@
         <?php if ( TemplateLogger::success == $type ): ?>
             <div class="alert alert-success">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <?php echo$log?>
+              <?php echo $log?>
             </div>
         <?php elseif ( TemplateLogger::error == $type): ?>
             <div class="alert alert-error">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <?php echo$log?>
+              <?php echo $log?>
             </div>
         <?php elseif ( TemplateLogger::info == $type ): ?>
             <div class="alert alert-info">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <?php echo$log?>
+              <?php echo $log?>
             </div>
         <?php elseif ( TemplateLogger::debug == $type): ?>
             <div class="alert alert-warring">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <b>DEBUG:</b> <?php echo$log?>
+              <b>DEBUG:</b> <?php echo $log?>
             </div>
         <?php else: ?>
-            <p><?php echo$log?></p> 
+            <p><?php echo $log?></p> 
         <?php endif; ?>
-      <?endforeach;?>
-   <?endforeach;?>
+      <?php endforeach;?>
+   <?php endforeach;?>
 </div>
 
 
