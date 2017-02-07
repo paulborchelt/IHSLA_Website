@@ -16,5 +16,14 @@ class News_Row extends Row{
             $this->team_id = $array['team_id'];
             $this->timestamp = $array['timestamp'];
    }
+   
+   function formatmessage (){
+    return nl2br($this->message);
+   }
+   
+   function teaser (){
+    $string = nl2br($this->message);
+    return substr($string,0,300);
+   }
 }
 ?>

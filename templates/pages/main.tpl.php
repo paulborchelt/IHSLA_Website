@@ -10,9 +10,9 @@
       <div class="row-fluid">
          <?php include('../templates/include/sidebar.html')?>
          <div class="span9">
-            <?php $logging ?>
-            <?php $selectYear ?>
-            <? echo$content; ?>
+            <?php echo $logging ?>
+            <?php echo $selectYear ?>
+            <?php echo $content; ?>
          </div><!--/span-->
       </div><!--/row-->
 
