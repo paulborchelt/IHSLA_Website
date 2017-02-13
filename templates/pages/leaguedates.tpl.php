@@ -2,21 +2,19 @@
 
 <h3>League Dates</h3>
 <ul>
-   <li>Website open for new schedules - August 1st, 2015</li>
-   <li>New Team's Submit Application - November 1st, 2015</li>
-   <li>Annual Mandatory Fall meeting - November 7th, 2015 10am – 12pm</li>
-   <li>Schedules are due - January 1 2016</li>
-   <li>Membership Dues - February 1, 2016</li>
-   <li>First Game: Two weeks after President's Day - February 29, 2015</li>
-   <li>Rosters Entered into website before first game.</li>
-   <li>Last day to schedule games: The second Saturday before Memorial Day - May 21, 2016</li>
-   <li>Makeup Game Date*: The Monday preceding Memorial Day - May 23, 2016</li>
-      <ul>
-         <li>*Only games that were postponed during the last week of the regular season may be made up on this date.</li>
-      </ul>
-   <li>IHSLA Playoffs (1st Round): The Thursday/Friday before Memorial Day - May 26/27, 2016 Higher Seed Hosts</li>
-   <li>IHSLA Playoffs (Quarterfinals): The Saturday before Memorial Day - May 28, 2016 Higher Seed Hosts</li>
-   <li>IHSLA Playoffs (Semifinals): The Friday following Memorial Day - June 3, 2016 at TBA</li>
-   <li>IHSLA Playoffs (Finals): The Saturday following Memorial Day - June 4, 2016 at TBA </li>
+   <li>Jan 1st 2017   -> Team schedules to be entered on IHSLA website</li>
+   <li>Feb 1st 2017   -> Team dues to be paid</li>
+   <li>March 6th 2017 -> Rosters to be ented on website with US lacrosse numbers</li>
+   <li>March 6th 2017 -> First games may be played</li>
+   <li>May 13th 2017  -> IHSLA All Academic nomincation due.</li>
+   <li>May 20th 2017  -> Last day to schedule an IHSLA game.</li>
+   <li>May 20th 2017  -> Last day to withdraw from IHSLA tournement. </li>
+   <li>May 21st 2017  -> IHSLA post season rankings released.</li>
+   <li>May 24th 2017  -> IHSLA All-State nominations due.</li>
+   <li>May 24th 2017  -> IHSLA Playoffs - First Round.</li>
+   <li>May 26th 2017  -> IHSLA All State Votes due.</li>
+   <li>May 27th 2017  -> IHSLA Quarter Finals.</li>
+   <li>June 2nd 2017  -> IHSLA Semi Finals.</li>
+   <li>June 3rd 2017  -> IHSLA State Finals.</li>
 </ul>
 
