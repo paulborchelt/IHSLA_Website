@@ -19,7 +19,7 @@ catch(Exception $e){
     $main->error($e);
 }
 
-$sql_News->Search("ORDER BY timestamp ASC LIMIT 7");
+$sql_News->Search("WHERE remove != 1 ORDER BY timestamp DESC LIMIT 7");
 $tpl = new Template();
 $tpl->set('result', $sql_News);
 $main->set('newscards', $tpl->fetch('../templates/NewsCards.tpl.php'));
