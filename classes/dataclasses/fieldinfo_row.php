@@ -21,7 +21,8 @@ class Field_Info_Row extends Row{
     
    static function GetOptions( $database, $previousValue = NULL ){
         $sql_Statement = "SELECT * 
-                          FROM Field_Info";
+                          FROM Field_Info
+                          Order by field_name ASC";
         $database->query($sql_Statement);
         while ( $row = $database->fetchNextObject() ){
             $ID = $row->field_id;
