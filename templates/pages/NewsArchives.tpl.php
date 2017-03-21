@@ -17,13 +17,21 @@
    <tr>
     <th>Date: </th>
    	<th>Headline: </th>
+    <?php if( true == $edit ): ?>
+    <th>Edit:</th>
+    <?php endif; ?>
    </tr>
 </thead>
 <tbody>
    <?php while ( $news = $results->fetchNextObject() ): ?>
    <tr>
         <td><?php echo $news->_DateObject->getMonthDayYearFormat() ?></td>
-        <td><a href="ViewNews.php?id=<?php echo $news->id?>"><?php echo $news->headline?></td>     
+        <td><a href="ViewNews.php?id=<?php echo $news->id?>"><?php echo $news->headline?></td>
+        <?php if( true == $edit ): ?>
+        <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=edit_news&id=<?php echo $news->id?>"> <img src= ../images/site_images/icon_edit.gif>
+            <a href="<?php echo $_SERVER['PHP_SELF']?>?action=delete_news&id=<?php echo $news->id?>"> <img src= ../images/site_images/icon_delete.gif></td>
+        <?php endif; ?>
+        
    </tr>
    <?php endwhile; ?>
 </tbody>
