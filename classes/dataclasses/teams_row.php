@@ -149,10 +149,11 @@ class Teams_Row extends Row {
       while ($row = $database->fetchNextObject()) {
          $id = $row->Team_ID;
          $name = $row->Team_Name;
+         $state = $row->State;
          if($id == $previousValue) {
-            $options .= "<option selected value = $id>$name</OPTION>";
+            $options .= "<option selected value = $id>$name, $state</OPTION>";
          } else {
-            $options .= "<option value = $id>$name</OPTION>";
+            $options .= "<option value = $id>$name, $state</OPTION>";
          }
       }
       return $options;
@@ -162,7 +163,8 @@ class Teams_Row extends Row {
       $sql_Statement = "SELECT * 
                           FROM Teams 
                           LEFT JOIN Leagues on League = Leagues.ID 
-                          WHERE Team_ID != '$excludeTeam' && State='IN' && ID = '$league' && member='1'";
+                          WHERE Team_ID != '$excludeTeam' && State='IN' && ID = '$league' && member='1'
+                          ORDER by Team_Name ASC ";
 
       return Teams_Row::GetOptions($database, $sql_Statement, $previousValue, $league);
    }
@@ -201,8 +203,12 @@ class Teams_Row extends Row {
    }
    
    static function GetTeamScheduleOptions ($database, $includeTeam, $previousValue = NULL, $league = 1){
-      $options = Teams_Row::GetIhslaOptions($database,$includeTeam,$previousValue,$league);
+      $options = "<optgroup label=\"IHSLA TEAMS\">";
+      $options .= Teams_Row::GetIhslaOptions($database,$includeTeam,$previousValue,$league);
+      $options .= "</optgroup>";
+      $options .= "<optgroup label=\"NON IHSLA TEAMS\">";
       $options .= Teams_Row::GetNonIhslaTeamsOptions($database,$includeTeam,$previousValue,$league);
+      $options .= "</optgroup>";
       return $options;
       
    }
