@@ -24,8 +24,10 @@ catch(Exception $e){
 }
 
 $sql_News->Search("WHERE remove != 1 ORDER BY timestamp DESC LIMIT 7");
+
 $scheduleSorter = new scheduleSorter(array(level => Varsity, daterange => Today ));
 $sql_Executor_Schedule->SearchWithOwnSelect(Schedule_Row::GetSelectStatement(),Schedule_Row::GetCurrentYear(1, $scheduleSorter));
+
 $tpl = new Template();
 $tpl->set('resultnews', $sql_News);
 $tpl->set('resultschedule', $sql_Executor_Schedule);
