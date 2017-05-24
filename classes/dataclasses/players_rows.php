@@ -341,7 +341,7 @@ class Players_Row extends Row{
         $currentYear = MyDateTime::GetCurrentSeasonYear();
       	$sql = "SELECT Players.Player_ID, Last_Name, First_Name, Graduation_Year, Rosters.Position, Rosters.Number
       				FROM Rosters JOIN Players ON Players.Player_ID = Rosters.player_id 
-      	         WHERE Rosters.team_id = '$teamId' AND Rosters.level = 1 AND Year = '$currentYear'
+      	         WHERE Rosters.team_id = '$teamId' AND Rosters.level = 1 AND Year = '$currentYear' AND First_Name != 'Quentin'
       				ORDER BY Number";
       	$database->query($sql);
          if( $database->numRows() == 0 ){
