@@ -14,11 +14,7 @@
          <?php if ( 1 != $team->Club ): ?>
          <!-- </a><li><button type="button" onClick="window.location='EnterAllStateNominations.php?Team_ID=<?php echo$team->Team_ID?>&Position_ID=1'">Enter All-State Nominations</button></li> -->
          <!-- <li><button type="button" onClick="window.location='EnterAllStateVotes.php?Team_ID=<?php echo$team->Team_ID?>&Position_ID=1&Team_Level=1'">Enter All-State Votes</button></li> -->
-         <?endif;?>
-         <?php if ( 392 == $team->Team_ID ): ?>
-             <li><button type="button" onClick="window.location='EnterAllStateVotesFishers.php?Team_ID=<?php echo$team->Team_ID?>&Position_ID=1&Team_Level=1'">Enter All-State Votes</button></li>
-         <?endif;?>
-         
+         <?endif;?>         
       </ul>
    <?php endwhile; ?>
    <?php if ($user->hasPermisions(Groups_Row::Administrators)): ?>

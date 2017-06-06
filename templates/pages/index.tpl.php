@@ -8,7 +8,7 @@
           <?php include('../templates/include/sidebar.html')?>
         <div class="span9">
           <div class="hero-unit">
-            <h3>Congratulation to Cathedral the 2016 State Champions.</h3>
+            <h3>Congratulation to Cathedral the 2017 State Champions.</h3>
             <p>Welcome all students, parents, and visitors to the Indiana High School Lacrosse Association (IHSLA) website.Here you will find all the information you need to know about boys high school lacrosse in the state of Indiana. The league will provide informational updates in the news section below and you can view information about our league, teams, schedule and stats with the links above.</p>
             <p><a href="leagueinfo.php" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
           </div>
