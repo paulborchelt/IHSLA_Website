@@ -122,7 +122,7 @@ class Allstate_Nominations_Row extends row{
       else if ( $row[ranking] > 8 && $row[ranking] < 17 ){
          $limit = 7;
       }
-      else if ( $row[ranking] > 17 && $row[ranking] < 27 ){
+      else if ( $row[ranking] > 16 && $row[ranking] < 27 ){
          $limit = 3;
       }
       else{

@@ -13,8 +13,9 @@
          <li><button type="button" onClick="window.location='SubmitProgramMembers.php?Team_ID=<?php echo$team->Team_ID?>'">Submit Program Members to League</button></li>
          <?php if ( 1 != $team->Club ): ?>
          <!-- </a><li><button type="button" onClick="window.location='EnterAllStateNominations.php?Team_ID=<?php echo$team->Team_ID?>&Position_ID=1'">Enter All-State Nominations</button></li> -->
+
          <!-- <li><button type="button" onClick="window.location='EnterAllStateVotes.php?Team_ID=<?php echo$team->Team_ID?>&Position_ID=1&Team_Level=1'">Enter All-State Votes</button></li> -->
-         <?endif;?>
+         <?endif;?>         
       </ul>
    <?php endwhile; ?>
    <?php if ($user->hasPermisions(Groups_Row::Administrators)): ?>
@@ -47,4 +48,3 @@
          <li><button type="button" onClick="window.location='login.php?action=viewchangepassword'">Change Password</button></li>
       </ul>
 </ul>
-
