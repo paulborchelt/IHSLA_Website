@@ -81,7 +81,7 @@
       else
         return mysql_fetch_object($result);
     }
-    
+
     /** Convenient method for mysql_fetch_array().
       * ADDED by Paul Borchelt
       * @param $result The ressource returned by query(). If NULL, the last result returned by query() will be used.
@@ -289,7 +289,7 @@
       if (mysql_num_rows($result) > 0)
         mysql_data_seek($result, 0);
     }
-    
+
     /** Go back to the first element of the result line.
       * @param $result The resssource returned by a query() function.
       */
@@ -304,6 +304,23 @@
     {
       $value = mysql_insert_id();
       return $value;
+    }
+    /** User prepare to avoid datbase injection attacks
+      *
+      */
+    function prepare( $sql_statement, $parmsArray, $debug = -1 )
+    {
+      $this->prepare($sql_statement);
+      foreach($parmsArray as $key => $value ){
+        $this->bindParam($key,$value);
+      }
+
+      $this->nbQueries++;
+      $this->lastResult = $this->execute or $this->debugAndDie($query);
+
+      $this->debug($debug, $sql_statement, $this->lastResult);
+
+      return $this->lastResult;
     }
     /** Close the connexion with the database server.\n
       * It's usually unneeded since PHP do it automatically at script end.
