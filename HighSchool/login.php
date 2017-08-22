@@ -12,17 +12,17 @@ function menuView($main, $user ){
    $tpl = new Template('./');
    $tpl->set('user', $user);
    $main->set('content', $tpl->fetch('../templates/menu.tpl.php'));
-   echo $main->fetch('../templates/pages/main.tpl.php'); 
+   echo $main->fetch('../templates/pages/main.tpl.php');
 }
 
 function DefaultView($main ){
    $main->set('content', Users_Row::getLoginForm());
-   echo $main->fetch('../templates/pages/main.tpl.php'); 
+   echo $main->fetch('../templates/pages/main.tpl.php');
 }
 
 function ChangePasswordView($main ){
    $main->set('content', Users_Row::getChangePasswordForm());
-   echo $main->fetch('../templates/pages/main.tpl.php'); 
+   echo $main->fetch('../templates/pages/main.tpl.php');
 }
 
 
@@ -35,20 +35,21 @@ function getUser($db){
 
 $db = new db();
 
-$main = new TemplateLogger($db,'./');  
+$main = new TemplateLogger($db,'./');
 
 
 $action = $_REQUEST['action'];
-switch ($action){ 
+switch ($action){
     case Logout:
-		session_unset(); 
-		session_destroy(); 
+		session_unset();
+		session_destroy();
 		DefaultView($main);
       break;
     case login:
       try{
          $user = new Users_Row($_REQUEST,$db);
          $user->login($db);
+         //NOTE: To prevent a Session Fixation attact figure out how to use session_regenerate_id()
          $_SESSION[userid] = $user->userid;
       }
       catch(Exception $e){
@@ -89,10 +90,10 @@ switch ($action){
          $user = getUser($db);
          menuView($main, $user);
         }
-        
-    
+
+
 }
 
- 
+
 
 ?>
