@@ -29,7 +29,7 @@ $db = new db();
 
 $main = new TemplateLogger($db,'./');
 
-$user = Users_Row::getUser($db);
+$user = Users_Row::Authentication($db);
 
 try{
     $sql_News = new SqlExecutor( $db, new News_Row($_REQUEST) );   
