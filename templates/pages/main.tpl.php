@@ -3,12 +3,9 @@
   <?php include('../templates/include/header.html')?>
   
   <body>
-  
-    <?php include('../templates/pages/navbar.tpl.php')?>
 
     <div class="container-fluid">
       <div class="row-fluid">
-         <?php include('../templates/include/sidebar.html')?>
          <div class="span9">
             <?php echo $logging ?>
             <?php echo $selectYear ?>
