@@ -185,7 +185,7 @@ class Schedule_Row extends Row
          $to = $this->getSchedulersEmails($database);
          $to .= $this->getCoachesEmails($database);
          $mail = new mail($message, "IHSLA Game Added",$to, "assigner@indianalacrosse.org");
-         $mail->Send();
+         //$mail->Send();
     }
     
     function SendDeleteEmail( $database ){
@@ -217,7 +217,7 @@ class Schedule_Row extends Row
          $to = $this->_scheduleObject->getSchedulersEmails($database);
          $to .= $this->_scheduleObject->getCoachesEmails($database);
          $mail = new mail($message, "IHSLA game {$this->_scheduleObject->Game_ID} has been removed.",$to, "assigner@indianalacrosse.org");
-         $mail->Send();
+         //$mail->Send();
     }
     
     function PrepUpdateEmail( $database ){
@@ -322,7 +322,7 @@ class Schedule_Row extends Row
       $to = $this->getSchedulersEmails($database);
       $to .= $this->getCoachesEmails($database);
       $mail = new mail($message, "Schedule change for Game ID {$this->_scheduleObject->Game_ID}",$to, "assigner@indianalacrosse.org");
-      $mail->Send();
+      //$mail->Send();
     }
     
     function getCoachesEmails ($database){
