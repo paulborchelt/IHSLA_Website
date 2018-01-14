@@ -6,7 +6,7 @@ vti_modifiedby:SR|Paul-Laptop\\Paul
 vti_timecreated:TR|25 Nov 2011 05:44:53 -0000
 vti_cacheddtm:TX|25 Nov 2011 05:44:53 -0000
 vti_filesize:IR|6009
-vti_cachedlinkinfo:VX|H|../examples/MagicSquareExample.php H|http://mathforum.org/alejandre/magic.square.html
+vti_cachedlinkinfo:VX|H|examples/MagicSquareExample.php H|http://mathforum.org/alejandre/magic.square.html
 vti_cachedsvcrellinks:VX|FHUS|indianalacrosse.org/classes/PHPExcel/Shared/JAMA/examples/MagicSquareExample.php NHHS|http://mathforum.org/alejandre/magic.square.html
 vti_cachedneedsrewrite:BR|false
 vti_cachedhasbots:BR|false

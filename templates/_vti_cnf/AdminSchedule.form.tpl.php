@@ -6,7 +6,7 @@ vti_modifiedby:SR|Paul-Laptop\\Paul
 vti_timecreated:TR|30 Aug 2012 23:06:34 -0000
 vti_cacheddtm:TX|30 Aug 2012 23:06:34 -0000
 vti_filesize:IR|2921
-vti_cachedlinkinfo:VX|S|../javascript/html_form_input_mask.js S|prototype.js A|< H|AdminTeams.php
+vti_cachedlinkinfo:VX|S|javascript/html_form_input_mask.js S|prototype.js A|< H|AdminTeams.php
 vti_cachedsvcrellinks:VX|NSUS|indianalacrosse.org/javascript/html_form_input_mask.js NSUS|indianalacrosse.org/templates/prototype.js DAUS|indianalacrosse.org/templates/< NHUS|indianalacrosse.org/templates/AdminTeams.php
 vti_cachedneedsrewrite:BR|false
 vti_cachedhasbots:BR|false

@@ -54,7 +54,7 @@ class OfficialRegistration_Row extends Row{
    }
    
    static function getForm(){
-        $tpl =  new Template('../templates/');
+        $tpl =  new Template('templates/');
         return $tpl->fetch('OfficialRegistration.form.tpl.php');
    }
 }

@@ -32,8 +32,8 @@
          <?php echo$contactinfo->LastName?>
         </b></td>
         <?php if( true == $edit ): ?>
-             <td><a href="<?php $_SERVER['PHP_SELF']?>?action=Edit&Id=<?php echo$contactinfo->Id?>&Team_ID=<?php echo$contactinfo->_ContactInfoTeamsListObject->TID?>&contactinfoteamslistid=<?php echo$contactinfo->_ContactInfoTeamsListObject->contactinfoteamslistid?>"> <img src= ../images/site_images/icon_edit.gif></a>
-              <a href="<?php $_SERVER['PHP_SELF']?>?action=Delete&CID=<?php echo$contactinfo->Id?>&Id=<?php echo$contactinfo->Id?>&Team_ID=<?php echo$contactinfo->_ContactInfoTeamsListObject->TID?>&contactinfoteamslistid=<?php echo$contactinfo->_ContactInfoTeamsListObject->contactinfoteamslistid?>"> <img src= ../images/site_images/icon_delete.gif></a></td>
+             <td><a href="<?php $_SERVER['PHP_SELF']?>?action=Edit&Id=<?php echo$contactinfo->Id?>&Team_ID=<?php echo$contactinfo->_ContactInfoTeamsListObject->TID?>&contactinfoteamslistid=<?php echo$contactinfo->_ContactInfoTeamsListObject->contactinfoteamslistid?>"> <img src= images/site_images/icon_edit.gif></a>
+              <a href="<?php $_SERVER['PHP_SELF']?>?action=Delete&CID=<?php echo$contactinfo->Id?>&Id=<?php echo$contactinfo->Id?>&Team_ID=<?php echo$contactinfo->_ContactInfoTeamsListObject->TID?>&contactinfoteamslistid=<?php echo$contactinfo->_ContactInfoTeamsListObject->contactinfoteamslistid?>"> <img src= images/site_images/icon_delete.gif></a></td>
         <?php endif; ?>
     </tr><?php if ($contactinfo->PhoneHome != ""): ?>
 

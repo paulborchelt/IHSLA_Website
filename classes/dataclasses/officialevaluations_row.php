@@ -163,11 +163,11 @@ class OfficialEvaluations_Row extends Row
   }
   
   function DoYouWantToEditDisplay($main){
-    $tpl = new Template('../templates/');
+    $tpl = new Template('templates/');
     $tpl->set("Game_ID",$this->idschedule);
     $tpl->set("Team_ID",$this->Team_ID);
     $main->set('content', $tpl->fetch('OfficialsEvaluationDoYouWantToEdit.form.tpl.php'));
-    echo $main->fetch('../templates/pages/main.tpl.php');
+    echo $main->fetch('templates/pages/main.tpl.php');
     
   }
     

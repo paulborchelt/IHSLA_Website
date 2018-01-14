@@ -201,7 +201,7 @@ class PHPExcel_Writer_Excel2007_Rels extends PHPExcel_Writer_Excel2007_WriterPar
 					$objWriter,
 					1,
 					'http://schemas.openxmlformats.org/officeDocument/2006/relationships/drawing',
-					'../drawings/drawing' . $pWorksheetId . '.xml'
+					'drawings/drawing' . $pWorksheetId . '.xml'
 				);
 			}
 
@@ -228,14 +228,14 @@ class PHPExcel_Writer_Excel2007_Rels extends PHPExcel_Writer_Excel2007_WriterPar
 					$objWriter,
 					'_comments_vml' . $i,
 					'http://schemas.openxmlformats.org/officeDocument/2006/relationships/vmlDrawing',
-					'../drawings/vmlDrawing' . $pWorksheetId . '.vml'
+					'drawings/vmlDrawing' . $pWorksheetId . '.vml'
 				);
 
 				$this->_writeRelationship(
 					$objWriter,
 					'_comments' . $i,
 					'http://schemas.openxmlformats.org/officeDocument/2006/relationships/comments',
-					'../comments' . $pWorksheetId . '.xml'
+					'comments' . $pWorksheetId . '.xml'
 				);
 			}
 
@@ -246,7 +246,7 @@ class PHPExcel_Writer_Excel2007_Rels extends PHPExcel_Writer_Excel2007_WriterPar
 					$objWriter,
 					'_headerfooter_vml' . $i,
 					'http://schemas.openxmlformats.org/officeDocument/2006/relationships/vmlDrawing',
-					'../drawings/vmlDrawingHF' . $pWorksheetId . '.vml'
+					'drawings/vmlDrawingHF' . $pWorksheetId . '.vml'
 				);
 			}
 
@@ -291,7 +291,7 @@ class PHPExcel_Writer_Excel2007_Rels extends PHPExcel_Writer_Excel2007_WriterPar
 						$objWriter,
 						$i,
 						'http://schemas.openxmlformats.org/officeDocument/2006/relationships/image',
-						'../media/' . str_replace(' ', '', $iterator->current()->getIndexedFilename())
+						'media/' . str_replace(' ', '', $iterator->current()->getIndexedFilename())
 					);
 				}
 
@@ -336,7 +336,7 @@ class PHPExcel_Writer_Excel2007_Rels extends PHPExcel_Writer_Excel2007_WriterPar
 					$objWriter,
 					$key,
 					'http://schemas.openxmlformats.org/officeDocument/2006/relationships/image',
-					'../media/' . $value->getIndexedFilename()
+					'media/' . $value->getIndexedFilename()
 				);
 			}
 

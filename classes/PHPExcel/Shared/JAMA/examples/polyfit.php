@@ -1,5 +1,5 @@
 <?php
-require_once "../Matrix.php";
+require_once "Matrix.php";
 /*
 * @package JAMA
 * @author Michael Bommarito

@@ -5,7 +5,7 @@ require_once ('players_rows.php');
 require_once ('teams_row.php');
 require_once ('position_row.php');
 require_once ('rosters_row.php');
-require_once ('../classes/mydatetime.php');
+require_once ('classes/mydatetime.php');
 class Saves_Row extends Row {
    protected $Game_ID;
    protected $Player_ID;
@@ -103,7 +103,7 @@ class Saves_Row extends Row {
     }
     
     function getSavesForm( $database, $teamId, $teamname, $gameId, $editsaves ){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       $tpl->set('playeroptions', Players_Row::getOptions( $database, $teamId, $editsaves != NULL ? $editsaves->Player_ID : NULL ));
       $tpl->set('Team_ID', $teamId);
       $tpl->set('Game_ID',$gameId);

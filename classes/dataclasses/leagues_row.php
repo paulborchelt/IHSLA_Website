@@ -31,7 +31,7 @@ class Leagues_Row extends Row{
     
     static function getForm($db, $league){
         
-        $tpl = new Template('../templates/');
+        $tpl = new Template('templates/');
         $tpl->set('leagueoptions',Leagues_Row::GetOptions($db,$league));
    
 		return $tpl->fetch('LeagueOptions.form.tpl.php');

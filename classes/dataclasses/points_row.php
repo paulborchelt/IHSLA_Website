@@ -5,7 +5,7 @@ require_once ('players_rows.php');
 require_once ('teams_row.php');
 require_once ('position_row.php');
 require_once ('rosters_row.php');
-require_once ('../classes/mydatetime.php');
+require_once ('classes/mydatetime.php');
 class Points_Row extends Row {
    protected $Game_ID;
    protected $Player_ID;
@@ -161,7 +161,7 @@ class Points_Row extends Row {
     }
     
     function getStatsForm( $database, $teamId, $teamname, $gameId, $editpoints ){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       $tpl->set('playeroptions', Players_Row::getOptions( $database, $teamId, $editpoints != NULL ? $editpoints->Player_ID : NULL ));
       $tpl->set('quarteroptions', Points_Row::getQuarterOptions( $editpoints != NULL ? $editpoints->Quarter : NULL ));
       $tpl->set('Team_ID', $teamId);

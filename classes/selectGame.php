@@ -36,7 +36,7 @@ class selectGame {
       $tpl->set('gameOptions', $test);
       $tpl->set('Team_ID', $this->Team_ID);
       $tpl->set('page',"Stats");
-      return $tpl->fetch('../templates/SelectGame.tpl.php');   
+      return $tpl->fetch('templates/SelectGame.tpl.php');   
    }
 }
 ?>

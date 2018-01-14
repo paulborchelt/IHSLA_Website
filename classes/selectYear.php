@@ -26,7 +26,7 @@ class selectYear {
       $tpl->set('yearOptions', $test);
       $tpl->set('Team_ID', $this->Team_ID);
       $tpl->set('subpage',$page);
-      return $tpl->fetch('../templates/SelectYear.tpl.php');   
+      return $tpl->fetch('templates/SelectYear.tpl.php');   
    }
 }
 ?>

@@ -3,7 +3,7 @@ require_once('row.php');
 require_once('contactinfo_row.php');
 require_once('teams_row.php');
 require_once('contacttype_row.php');
-require_once ('../classes/mydatetime.php');
+require_once ('classes/mydatetime.php');
 define('All_RECORDS', 1);
 define('CONTACT_RECORDS', 0);
 class ContactRecord_Row extends row{
@@ -50,20 +50,20 @@ class ContactRecord_Row extends row{
    }
    
    static function fetchContactRecordView( $sqlExecutorContacted ){
-    $tpl = new Template('../templates/');
+    $tpl = new Template('templates/');
     $tpl->set('result', $sqlExecutorContacted );
     return $tpl->fetch('ContactRecord.tpl.php');
    }
    
    static function fetchContactRecordForm( $id ){
-    $tpl = new Template('../templates/');
+    $tpl = new Template('templates/');
     $tpl->set("calendar", MyDateTime::getCalander(AllOW_PREVIOUS_DATES));
     $tpl->set("contactid", $id );
     return $tpl->fetch('ContactRecord.form.tpl.php');
    }
    
    static function fetchNewContacts( $sqlExecutorContacted, $contactypeoptions, $teamoptions){
-    $tpl = new Template('../templates/');
+    $tpl = new Template('templates/');
     $tpl->set('list_of_newcontacts', $sqlExecutorContacted );
     $tpl->set('submittype',Submit);
     $tpl->set('contacttypeoptions', $contactypeoptions);

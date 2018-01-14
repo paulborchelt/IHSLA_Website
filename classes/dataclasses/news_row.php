@@ -1,6 +1,6 @@
 <?php
 require_once('row.php');
-require_once ('../classes/mydatetime.php');
+require_once ('classes/mydatetime.php');
 
 class News_Row extends Row{
    protected $id;

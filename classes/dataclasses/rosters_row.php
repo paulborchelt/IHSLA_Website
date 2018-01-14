@@ -5,8 +5,8 @@ require_once ('players_rows.php');
 require_once ('levels_row.php');
 require_once ('teams_row.php');
 require_once ('position_row.php');
-require_once ('../classes/mydatetime.php');
-require_once ('../classes/rostermanager.php');
+require_once ('classes/mydatetime.php');
+require_once ('classes/rostermanager.php');
 class Rosters_Row extends Row {
    protected $id;
    protected $player_id;
@@ -62,7 +62,7 @@ class Rosters_Row extends Row {
     
     static function getRosterManagerForm($db, $team){
       $rosterManager = new RosterManager( $db, $team);
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       $tpl->set('rostermanager', $rosterManager);
       return $tpl->fetch('RosterManager.form.tpl.php');
     }

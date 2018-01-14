@@ -6,7 +6,7 @@ error_reporting(E_ALL);
  * @package JAMA
  */
 
-require_once '../Matrix.php';
+require_once 'Matrix.php';
 require_once 'Stats.php';
 
 

@@ -2,7 +2,7 @@
 require_once('row.php');
 require_once('contactinfo_row.php');
 require_once('groups_row.php');
-require_once ('../classes/mail.php');
+require_once ('classes/mail.php');
 class Users_Row extends row{
     protected $userid;
     protected $username;
@@ -79,12 +79,12 @@ class Users_Row extends row{
     }
     
     static function getLoginForm(){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       return $tpl->fetch('DisplayLogin.form.tpl.php');
     }
     
     static function getChangePasswordForm(){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       return $tpl->fetch('DisplayChangePassword.form.tpl.php');
     }
     
@@ -117,7 +117,7 @@ class Users_Row extends row{
    }
    
    function getUserNewForm($edit=null){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       return $tpl->fetch('UserNew.form.tpl.php');
    }
    

@@ -7,7 +7,7 @@ vti_timecreated:TR|23 Mar 2014 19:20:12 -0000
 vti_backlinkinfo:VX|
 vti_cacheddtm:TX|02 Aug 2014 04:46:50 -0000
 vti_filesize:IR|219
-vti_cachedlinkinfo:VX|H|../leagueuploads/Bylaws.pdf H|../leagueuploads/RulesPolicies.pdf
+vti_cachedlinkinfo:VX|H|leagueuploads/Bylaws.pdf H|leagueuploads/RulesPolicies.pdf
 vti_cachedsvcrellinks:VX|NHUS|indianalacrosse.org/templates/leagueuploads/Bylaws.pdf NHUS|indianalacrosse.org/templates/leagueuploads/RulesPolicies.pdf
 vti_cachedneedsrewrite:BR|false
 vti_cachedhasbots:BR|false

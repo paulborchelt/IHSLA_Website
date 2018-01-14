@@ -258,7 +258,7 @@ class Teams_Row extends Row {
    }
 
    static function getAdminForm($db, $listOfTeams, $sqlEdit, $league, $user, $link ) {
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       $tpl->set('list_of_teams', $listOfTeams);
       $tpl->set('Team_Name', $sqlEdit != null ? $sqlEdit->Team_Name : null);
       $tpl->set('City', $sqlEdit != null ? $sqlEdit->City : null);
@@ -299,14 +299,14 @@ class Teams_Row extends Row {
    }
 
    function getTeamView($edit) {
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       $tpl->set('team', $this);
       $tpl->set('edit', $edit);
       return $tpl->fetch('Team.tpl.php');
    }
    
    static function getEditUserTeamList($db, $user){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       $tpl->set('teamoptions', Teams_Row::GetIhslaOptions($db,null));
       $tpl->set('userid',$user->userid);
       $teamuserlist = new SqlExecutor($db, new UserTeamList_Row());

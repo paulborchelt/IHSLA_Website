@@ -2,7 +2,7 @@
 require_once('row.php');
 require_once('contactinfo_row.php');
 require_once('groups_row.php');
-require_once ('../classes/mail.php');
+require_once ('classes/mail.php');
 class Users_Row extends row{
     protected $userid;
     protected $username;
@@ -90,12 +90,12 @@ class Users_Row extends row{
     }
     
     static function getLoginForm(){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       return $tpl->fetch('DisplayLogin.form.tpl.php');
     }
     
     static function getChangePasswordForm(){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       return $tpl->fetch('DisplayChangePassword.form.tpl.php');
     }
     
@@ -158,7 +158,7 @@ class Users_Row extends row{
    }
    
    function getUserNewForm($sqlEdit = null){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       $tpl->set('FirstName',$sqlEdit != NULL ? $sqlEdit->_contactInfoObject->FirstName : NULL);
       $tpl->set('LastName',$sqlEdit != NULL ? $sqlEdit->_contactInfoObject->LastName : NULL);
       $tpl->set('PhoneHome',$sqlEdit != NULL ? $sqlEdit->_contactInfoObject->PhoneHome : NULL);

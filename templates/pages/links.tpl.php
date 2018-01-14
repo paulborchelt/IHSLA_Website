@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-   <?php include('../templates/include/header.html')?>
+   <?php include('templates/include/header.html')?>
 
   <body>
-    <?php include('../templates/include/navbar.html')?>
+    <?php include('templates/include/navbar.html')?>
 
     <div class="container-fluid">
       <div class="container">
@@ -35,19 +35,19 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../js/bootstrap_js/jquery.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-transition.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-alert.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-modal.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-dropdown.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-scrollspy.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-tab.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-tooltip.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-popover.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-button.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-collapse.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-carousel.js"></script>
-    <script src="../js/bootstrap_js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap_js/jquery.js"></script>
+    <script src="js/bootstrap_js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap_js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap_js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap_js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap_js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap_js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap_js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap_js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap_js/bootstrap-button.js"></script>
+    <script src="js/bootstrap_js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap_js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap_js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>

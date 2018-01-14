@@ -1,6 +1,6 @@
 <?php
 
-require_once "../Matrix.php";
+require_once "Matrix.php";
 
 class TestMatrix {
 

@@ -1,6 +1,6 @@
 
 
-<script type="text/javascript" language="javascript" src="../DataTables-1.9.4/media/js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="DataTables-1.9.4/media/js/jquery.js"></script>
 <div>
    <?php foreach ( $logs as $row ): ?>
       <?php foreach ( $row as $type => $log ): ?>

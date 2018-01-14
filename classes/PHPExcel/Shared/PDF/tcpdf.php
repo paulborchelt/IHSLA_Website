@@ -11975,7 +11975,7 @@ class TCPDF {
 	 * @param String $user_pass user password. Empty by default.
 	 * @param String $owner_pass owner password. If not specified, a random value is used.
 	 * @param int $mode encryption strength: 0 = RC4 40 bit; 1 = RC4 128 bit; 2 = AES 128 bit; 3 = AES 256 bit.
-	 * @param String $pubkeys array of recipients containing public-key certificates ('c') and permissions ('p'). For example: array(array('c' => 'file://../tcpdf.crt', 'p' => array('print')))
+	 * @param String $pubkeys array of recipients containing public-key certificates ('c') and permissions ('p'). For example: array(array('c' => 'file://tcpdf.crt', 'p' => array('print')))
 	 * @access public
 	 * @since 2.0.000 (2008-01-02)
 	 * @author Nicola Asuni

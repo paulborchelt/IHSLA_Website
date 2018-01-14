@@ -1,6 +1,6 @@
 <?php
 
-include "../Matrix.php";
+include "Matrix.php";
 
 /**
 * Tiling of matrix X in [rowWise by colWise] dimension. Tiling

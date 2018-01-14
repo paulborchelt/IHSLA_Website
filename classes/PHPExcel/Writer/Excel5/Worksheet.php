@@ -1055,7 +1055,7 @@ class PHPExcel_Writer_Excel5_Worksheet extends PHPExcel_Writer_Excel5_BIFFwriter
 
 	/**
 	 * Write links to external directory names such as 'c:\foo.xls',
-	 * c:\foo.xls#Sheet1!A1', '../../foo.xls'. and '../../foo.xls#Sheet1!A1'.
+	 * c:\foo.xls#Sheet1!A1', 'foo.xls'. and 'foo.xls#Sheet1!A1'.
 	 *
 	 * Note: Excel writes some relative links with the $dir_long string. We ignore
 	 * these cases for the sake of simpler code.

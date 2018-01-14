@@ -17,12 +17,12 @@ handling capabilities.  This will improve our ability to replicate all the unit 
 appeared in the original (except for some print methods that may not be worth porting).
 </p>
 <p>
-You can <a href='../test/TestMatrix.php'>run the TestMatrix.php script</a> to see what 
+You can <a href='test/TestMatrix.php'>run the TestMatrix.php script</a> to see what 
 unit tests are currently implemented.  The source of the <code>TestMatrix.php</code> script 
 is provided below.  It is worth studying carefully for an example of how to do matrix algebra
 programming with Jama.
 </p>
 <?php
-highlight_file("../test/TestMatrix.php");
+highlight_file("test/TestMatrix.php");
 include_once "includes/footer.php";	
 ?>

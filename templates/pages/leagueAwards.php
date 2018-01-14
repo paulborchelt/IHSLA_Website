@@ -4,10 +4,10 @@
 <p>Below are links to all IHSLA All State and IHSLA Academic All-State / All Academic Awards. Congratulations to all award winners!</p>
 
 <ul>
-   <li><a href="../HighSchool/ViewAllState.php?Position_ID=1">IHSLA All-State Winners</a></li>
-   <li><a href="../HighSchool/ViewNews.php?id=114">IHSLA / US Lacrosse Individual Award Winners</a></li>
-   <li><a href="../leagueuploads/IHSLA_Academic_All_State_Team.pdf">IHSLA Academic All State Team</a></li>
-   <li><a href="../leagueuploads/IHSLA_All_Academic_Team.pdf">IHSLA All Academic Team</a></li>
+   <li><a href="HighSchool/ViewAllState.php?Position_ID=1">IHSLA All-State Winners</a></li>
+   <li><a href="HighSchool/ViewNews.php?id=114">IHSLA / US Lacrosse Individual Award Winners</a></li>
+   <li><a href="leagueuploads/IHSLA_Academic_All_State_Team.pdf">IHSLA Academic All State Team</a></li>
+   <li><a href="leagueuploads/IHSLA_All_Academic_Team.pdf">IHSLA All Academic Team</a></li>
 </ul>
 
 <h4>IHSLA Semifinals & Finals Weekend</h4>

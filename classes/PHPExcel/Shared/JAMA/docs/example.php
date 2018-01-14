@@ -146,7 +146,7 @@ Running the Java-based version of the matix square example produces these result
 <center>Elapsed Time =        0.710 seconds</center>
 
 <p>
-The magic square example does not fare well when <a href='../examples/MagicSquareExample.php'>run as a PHP script</a>.  For a 32x32 matrix array 
+The magic square example does not fare well when <a href='examples/MagicSquareExample.php'>run as a PHP script</a>.  For a 32x32 matrix array 
 it takes around a second to complete just the last row of computations in the above table.  
 Hopefully this result will spur PHP developers to find optimizations and better attuned algorithms 
 to speed things up. Matrix algebra is a great testing ground for ideas about time and memory 
@@ -161,6 +161,6 @@ You can also learn more by carefully examining the <code>MagicSquareExample.php<
 </p>
 
 <?php
-highlight_file("../examples/MagicSquareExample.php");
+highlight_file("examples/MagicSquareExample.php");
 include_once "includes/footer.php";	
 ?>
