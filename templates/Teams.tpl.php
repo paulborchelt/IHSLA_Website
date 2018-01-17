@@ -1,9 +1,9 @@
 <style type="text/css" title="currentStyle">
-			@import "../DataTables-1.9.4/media/css/demo_page.css";
-			@import "../DataTables-1.9.4/media/css/demo_table.css";
+			@import "DataTables-1.9.4/media/css/demo_page.css";
+			@import "DataTables-1.9.4/media/css/demo_table.css";
 		</style>
-		<script type="text/javascript" language="javascript" src="../DataTables-1.9.4/media/js/jquery.js"></script>
-		<script type="text/javascript" language="javascript" src="../DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+		<script type="text/javascript" language="javascript" src="DataTables-1.9.4/media/js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function() {
             $('#example').dataTable();
@@ -28,8 +28,8 @@
       	<td><?php echo $teams->City?></td>
           <td><?php echo $teams->State?></td>
           <?php if ($user->hasPermisions(Groups_Row::Administrators)): ?>
-         	 <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&league=<?php echo $teams->League?>&Team_ID=<?php echo $teams->Team_ID?>"> <img src= ../images/site_images/icon_edit.gif>
-                 <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&league=<?php echo $teams->League?>&Team_ID=<?php echo $teams->Team_ID?>"> <img src= ../images/site_images/icon_delete.gif>
+         	 <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&league=<?php echo $teams->League?>&Team_ID=<?php echo $teams->Team_ID?>"> <img src= images/site_images/icon_edit.gif>
+                 <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&league=<?php echo $teams->League?>&Team_ID=<?php echo $teams->Team_ID?>"> <img src= images/site_images/icon_delete.gif>
              </td>
           <?php endif; ?>
       </tr>

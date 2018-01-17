@@ -1,6 +1,6 @@
 <?php
 
-require_once "../Matrix.php";
+require_once "Matrix.php";
 
 /**
  * Given n points (x0,y0)...(xn-1,yn-1), the following method computes

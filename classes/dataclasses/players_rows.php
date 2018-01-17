@@ -2,7 +2,7 @@
 require_once('row.php');
 require_once('teams_row.php');
 require_once('position_row.php');
-require_once ('../classes/duplicateplayerexception.php');
+require_once ('classes/duplicateplayerexception.php');
 class Players_Row extends Row{
     protected $Player_ID;
     protected $First_Name;
@@ -152,7 +152,7 @@ class Players_Row extends Row{
    }
    
    static function getAdminForm($db, $listOfPlayers, $sqlEdit, $team){
-        $tpl = new Template('../templates/');
+        $tpl = new Template('templates/');
         $tpl->set('list_of_players', $listOfPlayers );
         $tpl->set('First_Name', $sqlEdit != NULL ? $sqlEdit->First_Name : NULL);
         $tpl->set('Last_Name',$sqlEdit != NULL ? $sqlEdit->Last_Name : NULL);
@@ -330,7 +330,7 @@ class Players_Row extends Row{
     }
     
     function getRosterAddForm($db, $roster){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       $tpl->set('player', $this);
       $tpl->set('roster', $roster);
       $tpl->set('positionoptions', Position_Row::GetOptions($db));
@@ -394,7 +394,7 @@ class Players_Row extends Row{
     }
     
     static function getDuplicateForm($sqlExecutor, $player, $Team_ID ){
-        $tpl = new Template('../templates/');
+        $tpl = new Template('templates/');
         $tpl->set('result',$sqlExecutor);
         $tpl->set('Team_ID', $Team_ID);
         $tpl->set('playerObject',$player);

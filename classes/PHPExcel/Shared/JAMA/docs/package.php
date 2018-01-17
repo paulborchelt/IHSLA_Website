@@ -7,7 +7,7 @@ Source Listing:
 </p>
 <ul>
   <?php
-  chdir("../");
+  chdir("");
   $files = glob("*.php");
   $files = array_merge($files, glob("util/*.php"));
   foreach ($files as $fileName) {

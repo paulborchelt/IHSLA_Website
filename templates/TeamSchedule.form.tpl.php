@@ -1,4 +1,4 @@
-<script type="text/javascript" src="../javascript/html_form_input_mask.js"></script>
+<script type="text/javascript" src="javascript/html_form_input_mask.js"></script>
 <script type="text/javascript" src="prototype.js"></script>
 
 <script type="text/javascript">

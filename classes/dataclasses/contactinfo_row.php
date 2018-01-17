@@ -2,8 +2,8 @@
 require_once('row.php');
 require_once('contacttype_row.php');
 require_once('contactinfoteamslist_row.php');
-require_once ('../classes/duplicatecontactinfoexception.php');
-require_once ('../classes/validateException.php');
+require_once ('classes/duplicatecontactinfoexception.php');
+require_once ('classes/validateException.php');
 class ContactInfo_Row extends row{
    protected $Id;
    protected $FirstName;
@@ -84,7 +84,7 @@ class ContactInfo_Row extends row{
      
    
    static function getForm($db, $sqlEdit, $teamID, $newcontact ){
-        $tpl = new Template('../templates/');
+        $tpl = new Template('templates/');
         //$tpl->set('Type',ContactInfo_Row::GetTypeOptions($sqlEdit != NULL ? $sqlEdit->Type : NULL));
         $tpl->set('FirstName',$sqlEdit != NULL ? $sqlEdit->FirstName : NULL);
         $tpl->set('LastName',$sqlEdit != NULL ? $sqlEdit->LastName : NULL);
@@ -151,7 +151,7 @@ class ContactInfo_Row extends row{
    }
    
    static public function fetchTeamView( $sqlExecutor, $teamID, $edit ){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
       $tpl->set('result', new RowList($sqlExecutor) ); 
       $tpl->set('teamid',$teamID); 
       $tpl->set('edit', $edit);  
@@ -175,7 +175,7 @@ class ContactInfo_Row extends row{
    }
    
    static function getDuplicateForm($sqlExecutor, $contactInfo, $Team_ID, $CTID, $MainContact ){
-        $tpl = new Template('../templates/');
+        $tpl = new Template('templates/');
         $tpl->set('result',$sqlExecutor);
         $tpl->set('Team_ID', $Team_ID);
         $tpl->set('CTID', $CTID);
@@ -185,7 +185,7 @@ class ContactInfo_Row extends row{
     }
     
     static function getDuplicateFormUser($sqlExecutor, $contactInfo, $username ){
-        $tpl = new Template('../templates/');
+        $tpl = new Template('templates/');
         $tpl->set('result',$sqlExecutor);
         $tpl->set('username', $username);
         $tpl->set('newContactInfo', $contactInfo);

@@ -6,7 +6,7 @@ vti_modifiedby:SR|Paul-Laptop\\Paul
 vti_timecreated:TR|25 Nov 2011 05:44:54 -0000
 vti_cacheddtm:TX|25 Nov 2011 05:44:54 -0000
 vti_filesize:IR|1191
-vti_cachedlinkinfo:VX|H|../test/TestMatrix.php
+vti_cachedlinkinfo:VX|H|test/TestMatrix.php
 vti_cachedsvcrellinks:VX|NHUS|indianalacrosse.org/classes/PHPExcel/Shared/JAMA/test/TestMatrix.php
 vti_cachedneedsrewrite:BR|false
 vti_cachedhasbots:BR|false

@@ -192,9 +192,9 @@
 //            $year = $sqlEdit != NULL ? $sqlEdit->_DateObject->getYear() : date('y');
 //            $nextYear = (date("Y")+1);
 //            $myCalendar = new tc_calendar("Date", true, false);
-//            $myCalendar->setIcon("../calendar/images/iconCalendar.gif");
+//            $myCalendar->setIcon("calendar/images/iconCalendar.gif");
 //            $myCalendar->setDate($day, $month, $year);
-//            $myCalendar->setPath("../calendar/");
+//            $myCalendar->setPath("calendar/");
 //            $myCalendar->setYearInterval(date('Y'),date('Y') + date('Y') );
 //            if( AllOW_PREVIOUS_DATES == $allowType ){
 //                $myCalendar->dateAllow(date('Y-m-d') - date('Y')  , date('Y-m-d')+ date('Y') );

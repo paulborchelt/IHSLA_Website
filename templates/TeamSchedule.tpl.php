@@ -1,9 +1,9 @@
 <style type="text/css" title="currentStyle">
-			@import "../DataTables-1.9.4/media/css/demo_page.css";
-			@import "../DataTables-1.9.4/media/css/demo_table.css";
+			@import "DataTables-1.9.4/media/css/demo_page.css";
+			@import "DataTables-1.9.4/media/css/demo_table.css";
 		</style>
-		<script type="text/javascript" language="javascript" src="../DataTables-1.9.4/media/js/jquery.js"></script>
-		<script type="text/javascript" language="javascript" src="../DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+		<script type="text/javascript" language="javascript" src="DataTables-1.9.4/media/js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function() {
             $('#example').dataTable({"aoColumns": [
@@ -50,8 +50,8 @@
          <td><?php echo $schedule->_TimeObject->getTime()?></td>
          <td><?php echo $schedule->Game_Level?></td>
          <?php if ($enterschedule == "yes" && FALSE == $schedule->_Score->scoreSetHome && FALSE == $schedule->_Score->scoreSetAway ): ?>
-            <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&Game_ID=<?php echo $schedule->Game_ID?>&Team_ID=<?php echo $Team_ID?>"> <img src= ../images/site_images/icon_edit.gif>
-            <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&Game_ID=<?php echo $schedule->Game_ID?>&Team_ID=<?php echo $Team_ID?>"> <img src= ../images/site_images/icon_delete.gif></td>
+            <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&Game_ID=<?php echo $schedule->Game_ID?>&Team_ID=<?php echo $Team_ID?>"> <img src= images/site_images/icon_edit.gif>
+            <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&Game_ID=<?php echo $schedule->Game_ID?>&Team_ID=<?php echo $Team_ID?>"> <img src= images/site_images/icon_delete.gif></td>
          <?php else: ?>
             <td><?php echo $schedule->getResults(TRUE)?></td>
          <?php endif; ?>

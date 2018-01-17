@@ -1,7 +1,7 @@
 <?php
-   require_once ('../classes/sqlexecutor.php');
-   require_once ('../classes/dataclasses/players_rows.php');
-   require_once ('../classes/dataclasses/levels_row.php');
+   require_once ('classes/sqlexecutor.php');
+   require_once ('classes/dataclasses/players_rows.php');
+   require_once ('classes/dataclasses/levels_row.php');
 	class RosterManager{
 	  private $database;
      private $sqlplayers;

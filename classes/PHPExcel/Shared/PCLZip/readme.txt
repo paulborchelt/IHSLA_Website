@@ -117,7 +117,7 @@
     - Code improvment : try to speed up the code by removing unusefull call to pack()
     - Correct bug in delete() : delete() should be called with no argument. This was not
       the case in 2.3. This is corrected in 2.4.
-    - Correct a bug in path_inclusion function. When the path has several '../../', the
+    - Correct a bug in path_inclusion function. When the path has several '', the
       result was bad.
     - Add a check for magic_quotes_runtime configuration. If enabled, PclZip will 
       disable it while working and det it back to its original value.

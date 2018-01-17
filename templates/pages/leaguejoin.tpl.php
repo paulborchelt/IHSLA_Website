@@ -6,6 +6,6 @@
 If the board approves the application you will be presented at the <a href="leagueinfo.php?subpage=Dates">annual fall meeting</a> for a vote. If the majority of the membership vote you in you become a member.</p>
 
 <u>
-   <li><a href="../leagueuploads/Application.docx">Download application form (Word Doc)</a></li>
-   <li><a href="../leagueuploads/Application.pdf">Download application form (PDF)</a></li>
+   <li><a href="leagueuploads/Application.docx">Download application form (Word Doc)</a></li>
+   <li><a href="leagueuploads/Application.pdf">Download application form (PDF)</a></li>
 </u>

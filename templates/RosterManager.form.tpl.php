@@ -1,9 +1,9 @@
 <style type="text/css" title="currentStyle">
-			@import "../DataTables-1.9.4/media/css/demo_page.css";
-			@import "../DataTables-1.9.4/media/css/demo_table.css";
+			@import "DataTables-1.9.4/media/css/demo_page.css";
+			@import "DataTables-1.9.4/media/css/demo_table.css";
 		</style>
-		<script type="text/javascript" language="javascript" src="../DataTables-1.9.4/media/js/jquery.js"></script>
-		<script type="text/javascript" language="javascript" src="../DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+		<script type="text/javascript" language="javascript" src="DataTables-1.9.4/media/js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function() {
             $('#example').dataTable();
@@ -37,8 +37,8 @@
                   <td><a href="Roster.php?action=Add&Player_ID=<?php echo$player->Player_ID?>&Team_ID=<?php echo$player->Team_ID?>&level=<?php echo$level->Level_ID?>"> [ADD]</a></td>
                <?php endif; ?>
             <?php endwhile; ?>
-            <td><a href="EditPlayerInfo.php?action=Edit&Team_ID=<?php echo$rostermanager->getTeam_ID()?>&Player_ID=<?php echo$player->Player_ID?>"> <img src=../images/site_images/icon_edit.gif>
-                <a href="EditPlayerInfo.php?action=Delete&Team_ID=<?php echo$rostermanager->getTeam_ID()?>&Player_ID=<?php echo$player->Player_ID?>"> <img src=../images/site_images/icon_delete.gif></a></td>
+            <td><a href="EditPlayerInfo.php?action=Edit&Team_ID=<?php echo$rostermanager->getTeam_ID()?>&Player_ID=<?php echo$player->Player_ID?>"> <img src=images/site_images/icon_edit.gif>
+                <a href="EditPlayerInfo.php?action=Delete&Team_ID=<?php echo$rostermanager->getTeam_ID()?>&Player_ID=<?php echo$player->Player_ID?>"> <img src=images/site_images/icon_delete.gif></a></td>
          </tr>
       <?php endwhile; ?>
    	<tr>

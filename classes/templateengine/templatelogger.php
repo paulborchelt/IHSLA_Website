@@ -1,5 +1,5 @@
 <?php
-require_once ('../classes/templateengine/template.php');
+require_once ('classes/templateengine/template.php');
 
 $globaldebugmsg;
 $globaldebugcount = 0;
@@ -70,7 +70,7 @@ class TemplateLogger extends Template {
     function fetch($file){
         $this->processDebugMessages();
         if( null != $this->logs ){
-         $tpl =  new Template('../templates/');
+         $tpl =  new Template('templates/');
          $tpl->set('logs',$this->logs);
          parent::set('logging',$tpl->fetch('logging.tpl.php'));
         }

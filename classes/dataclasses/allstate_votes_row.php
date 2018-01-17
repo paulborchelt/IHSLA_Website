@@ -45,7 +45,7 @@ class AllState_Votes_Row extends row{
       $tpl->set(Position_ID, $Position_ID);
       $tpl->set(Year, MyDateTime::GetCurrentSeasonYear());
       $tpl->set(Team_Level, $Team_Level);
-      return $tpl->fetch('../templates/AllState_Votes.form.tpl.php');
+      return $tpl->fetch('templates/AllState_Votes.form.tpl.php');
    }
    
    static function getWhereStatement($Team_ID, $Team_Level, $Position_ID ){

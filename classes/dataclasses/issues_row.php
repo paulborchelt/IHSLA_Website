@@ -12,7 +12,7 @@ class Issues_Row extends Row{
    }
    
    function getForm($listOfIssues){
-		$tpl = new Template('../templates/');
+		$tpl = new Template('templates/');
 		$tpl->set('list_of_issues', $listOfIssues );
 		return $tpl->fetch('Issues.form.tpl.php');
    }
@@ -20,7 +20,7 @@ class Issues_Row extends Row{
    //Edit form should exclude the list of issue but allow 
    //user to enter teams invovled with the issue. 
    function getEditForm($listOfTeams){
-        $tpl =  new Template('../templates/');
+        $tpl =  new Template('templates/');
         $tpl->set('issue',$this);
         $tpl->set('list_of_teams',$listOfTeams);
 		return $tpl->fetch('Issues.form.tpl.php');

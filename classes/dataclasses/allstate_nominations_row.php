@@ -42,7 +42,7 @@ class Allstate_Nominations_Row extends row{
       $tpl->set(Team_ID, $Team_ID);
       $tpl->set(Position_ID, $Position_ID);
       $tpl->set(Year, MyDateTime::GetCurrentSeasonYear());
-      return $tpl->fetch('../templates/Allstate_Nominations.form.tpl.php');
+      return $tpl->fetch('templates/Allstate_Nominations.form.tpl.php');
    }
    
    static function getNextPosition($db, $position){

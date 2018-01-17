@@ -62,7 +62,7 @@ if (!defined('PHPEXCEL_ROOT')) {
 	/**
 	 * @ignore
 	 */
-	define('PHPEXCEL_ROOT', dirname(__FILE__) . '/../../');
+	define('PHPEXCEL_ROOT', dirname(__FILE__) . '/');
 	require(PHPEXCEL_ROOT . 'PHPExcel/Autoloader.php');
 }
 
@@ -4194,7 +4194,7 @@ class PHPExcel_Reader_Excel5 implements PHPExcel_Reader_IReader
 				// section 5.58.3: Hyperlink to local file
 				// examples:
 				//   mydoc.txt
-				//   ../../somedoc.xls#Sheet!A1
+				//   somedoc.xls#Sheet!A1
 
 				// offset: var; size: 16; GUI of File Moniker
 				$offset += 16;

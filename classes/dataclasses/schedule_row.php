@@ -9,9 +9,9 @@ require_once ('levels_row.php');
 require_once ('gametype_row.php');
 require_once ('canceloptions_row.php');
 require_once ('leagues_row.php');
-require_once ('../classes/mydatetime.php');
-require_once ('../classes/score.php');
-require_once ('../classes/mail.php');
+require_once ('classes/mydatetime.php');
+require_once ('classes/score.php');
+require_once ('classes/mail.php');
 class Schedule_Row extends Row
 {
     protected $Game_ID;
@@ -543,7 +543,7 @@ class Schedule_Row extends Row
     
     
     static function getAdminForm($db, $listOfSchedule, $sqlEdit, $league){
-		$tpl = new Template('../templates/');
+		$tpl = new Template('templates/');
         $tpl->set('leagueoptionsform', Leagues_Row::getForm($db,$league));
 		$tpl->set('list_of_schedule', $listOfSchedule );
         $tpl->set('hometeamoptions',Teams_Row::GetIhslaOptions($db,90,$sqlEdit != NULL ? $sqlEdit->HomeTeam_ID : NULL));
@@ -561,7 +561,7 @@ class Schedule_Row extends Row
     }
     
     static function getTeamForm($db, $listOfSchedule, $sqlEdit, $team, $league){
-		$tpl = new Template('../templates/');
+		$tpl = new Template('templates/');
 		$tpl->set('list_of_schedule', $listOfSchedule );
         if ( NULL != $sqlEdit ){
             $location = $sqlEdit->getLocation($team->Team_ID);
@@ -597,7 +597,7 @@ class Schedule_Row extends Row
       $tpl->set('gameOptions', $test);
       $tpl->set('Team_ID', $teamId);
       $tpl->set('action',"EnterStats");
-      return $tpl->fetch('../templates/SelectGame.tpl.php');   
+      return $tpl->fetch('templates/SelectGame.tpl.php');   
    }
     
     static function convertTime( $hour, $minutes, $period){
@@ -774,7 +774,7 @@ class Schedule_Row extends Row
     }
     
     function fetchScore( ){
-        $tpl = new Template('../templates/');
+        $tpl = new Template('templates/');
         $tpl->set(Score, $this->_Score);
         return $tpl->fetch('Score.tpl.php');
     }

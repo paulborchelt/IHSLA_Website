@@ -78,7 +78,7 @@ class Team_Associations_Row extends Row{
     }
     
     static function getAdminForm($db, $listOfTeamAssociations, $sqlEdit){
-        $tpl = new Template('../templates/');
+        $tpl = new Template('templates/');
         $tpl->set('list_of_team_associations', $listOfTeamAssociations );
         $tpl->set('hostteamoptions',Teams_Row::GetIhslaOptions($db,90,$sqlEdit != NULL ? $sqlEdit->idhostteam : NULL));
         $tpl->set('linkteamoptions',Teams_Row::GetNonIhslaTeamInIndianaOptions($db,90,$sqlEdit != NULL ? $sqlEdit->idlinkedteam : NULL));

@@ -1,7 +1,7 @@
 <?PHP
 require_once('sqlstringcreator.php');
 require_once('dataclasses/rowlist.php');
-//require_once('../HighSchool/functions.php');
+//require_once('HighSchool/functions.php');
 class SqlExecutor{
     
     private $_dataObject;
@@ -188,7 +188,7 @@ class SqlExecutor{
     
     //TODO: Write unit test
     public function fetch($values = null){
-      $tpl = new Template('../templates/');
+      $tpl = new Template('templates/');
 		$tpl->set('result', new RowList($this) );
       if(null != $values){
             foreach( $values as $variable => $value ){
@@ -202,7 +202,7 @@ class SqlExecutor{
    
    //TODO: Create Unit Test for this function. 
    public function fetchThisTemplate($template_Name, $values = null){
-        $tpl = new Template('../templates/');
+        $tpl = new Template('templates/');
 		$tpl->set('result', new RowList($this) );
         if(null != $values){
             foreach( $values as $variable => $value ){

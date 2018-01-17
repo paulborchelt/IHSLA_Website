@@ -1,9 +1,9 @@
 <style type="text/css" title="currentStyle">
-			@import "../DataTables-1.9.4/media/css/demo_page.css";
-			@import "../DataTables-1.9.4/media/css/demo_table.css";
+			@import "DataTables-1.9.4/media/css/demo_page.css";
+			@import "DataTables-1.9.4/media/css/demo_table.css";
 		</style>
-		<script type="text/javascript" language="javascript" src="../DataTables-1.9.4/media/js/jquery.js"></script>
-		<script type="text/javascript" language="javascript" src="../DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+		<script type="text/javascript" language="javascript" src="DataTables-1.9.4/media/js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function() {
             $('#example').dataTable();
@@ -45,8 +45,8 @@
             <td><?php echo $points->Shots?></td>
             <td><?php echo $points->Turnovers?></td>
             <td><?php echo $points->CausedTurnovers?></td>
-            <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&Game_ID=<?php echo $points->Game_ID?>&Team_ID=<?php echo $points->Team_ID?>&Player_ID=<?php echo $points->Player_ID?>&Quarter=<?php echo $points->Quarter?>&Goals=<?php echo $points->Goals?>&Assists=<?php echo $points->Assists?>&GroundBalls=<?php echo $points->GroundBalls?>&Shots=<?php echo $points->Shots?>&Turnovers=<?php echo $points->Turnovers?>&CausedTurnovers=<?php echo $points->CausedTurnovers?>"> <img src= ../images/site_images/icon_edit.gif>
-            <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&Game_ID=<?php echo $points->Game_ID?>&Player_ID=<?php echo $points->Player_ID?>&Quarter=<?php echo $points->Quarter?>"> <img src= ../images/site_images/icon_delete.gif></td>
+            <td><a href="<?php echo $_SERVER['PHP_SELF']?>?action=Edit&Game_ID=<?php echo $points->Game_ID?>&Team_ID=<?php echo $points->Team_ID?>&Player_ID=<?php echo $points->Player_ID?>&Quarter=<?php echo $points->Quarter?>&Goals=<?php echo $points->Goals?>&Assists=<?php echo $points->Assists?>&GroundBalls=<?php echo $points->GroundBalls?>&Shots=<?php echo $points->Shots?>&Turnovers=<?php echo $points->Turnovers?>&CausedTurnovers=<?php echo $points->CausedTurnovers?>"> <img src= images/site_images/icon_edit.gif>
+            <a href="<?php echo $_SERVER['PHP_SELF']?>?action=Delete&Game_ID=<?php echo $points->Game_ID?>&Player_ID=<?php echo $points->Player_ID?>&Quarter=<?php echo $points->Quarter?>"> <img src= images/site_images/icon_delete.gif></td>
          </tr>
 <?php endwhile; ?>
       </tbody>
