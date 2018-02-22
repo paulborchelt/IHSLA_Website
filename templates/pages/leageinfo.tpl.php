@@ -10,8 +10,8 @@
 <p>Tim Clark        '18 - '19   <a href="mailto:tkralc@yahoo.com"><span class="c8">tkralc@yahoo.com</a></p>
 <p>Danny Gray       '18 - '19'  <a href="mailto:sportandfitness@yahoo.com"><span class="c8">sportandfitness@yahoo.com</a></p>
 <br />
-<h3>2017 Executive Committee:</h3>
-<p>Paul Borchelt    President   <a href="mailto:pborchelt@gmail.com"><span class="c8">pborchelt@gmail.com</a></p>
-<p>Matt McInrue     Vice President    <a href="mailto:mmcinrue@hse.k12.in.us"><span class="c8">mmcinrue@hse.k12.in.us</a></p>
-<p>Alex Gregg       Secretary        <a href="mailto:asgregg14@gmail.com"><span class="c8">asgregg14@gmail.com</a></p>
-<p>Jay Reeder       Treasurer   <a href="mailto:jay.reeder45@gmail.com"><span class="c8">jay.reeder45@gmail.com</a></p>
+<h3>Executive Committee:</h3>
+<p>Paul Borchelt    President   <a href="mailto:president@ihsla.com"><span class="c8">president@ihsla.com</a></p>
+<p>Matt McInrue     Vice President    <a href="mailto:vicepresident@ihsla.com"><span class="c8">vicepresident@ihsla.com</a></p>
+<p>Alex Gregg       Secretary        <a href="mailto:secretary@ihsla.com"><span class="c8">secretary@ihsla.com</a></p>
+<p>Jay Reeder       Treasurer   <a href="mailto:treasurer@ihsla.com"><span class="c8">treasurer@ihsla.com</a></p>
