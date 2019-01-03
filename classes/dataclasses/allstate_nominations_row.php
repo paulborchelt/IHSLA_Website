@@ -116,6 +116,10 @@ class Allstate_Nominations_Row extends row{
       $sql = "SELECT ranking from laxpower_ranking where teamid = $teamid";
      	$row = $db->queryUniqueArray($sql);
       
+      if ( $row == NULL ){
+        return 1;
+      }
+      
       if ( $row[ranking] < 9 ){
          $limit = 13;
       }
