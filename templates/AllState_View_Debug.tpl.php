@@ -1,5 +1,3 @@
-
-
 <div class="btn-toolbar" role="toolbar">
    <div class="btn-group btn-group-xs">
      <button type="button" class="<?php echo$Position->Position_ID == 1 ? "btn btn-primary" : "btn btn-default" ?>" onClick="window.location='<?php echo$_SERVER['PHP_SELF']?>?Position_ID=1&year=2018'">Attack</button>
@@ -13,7 +11,7 @@
 </div> 
 <div>
 <h4>All-State <?php echo$Position->Description?> </h4>
-<?php $previousPoints = 0; $count = -1; $Team_Level = 1 ?>
+<?php $previousPoints = 0; $count = -1; $Team_Level = 1; $loop = 0; ?>
 <table id="Table1" cellSpacing="1" cellPadding="1" width="100%" border="1">
 <tr>
    <td>Team</td>
@@ -23,11 +21,16 @@
 <?php while ( $vote = $result->fetchNextObject() ): ?>
    <?php $Points = $vote->Points; ?>
    <?if ( 6 < $Points ): ?>
+      <?php $loop++; ?>
+      
       <?php $positionCount = AllState_Votes_Row::getPositionLimit($Position->Position_ID) ?>
-      <?if ( $count >= $positionCount  && $previousPoints != $Points && $Team_Level != 3): ?>
+      <?php TemplateLogger::Debug("loop = $loop, count = $count, postitoincount = $positionCount, previous point = $previousPoints, points = $Points"); ?>
+      <?if ( $count >= $positionCount && $previousPoints != $Points && $Team_Level != 3): ?>
         <?php $count = 0; $Team_Level++; $previousPoints = 0; ?>
+        <?php TemplateLogger::Debug("Next Level = $Team_Level"); ?>
       <?else:?>
          <?php $count++; $previousPoints = $Points;  ?>	
+         <?php TemplateLogger::Debug("Same level = $previousPoints"); ?>
       <?endif;?>
       <?if( $count == 0 ):?>
          <?if( $Team_Level == 1 ): ?>
@@ -54,6 +57,7 @@
          <td>&nbsp;</td>
          <td><?php echo $vote->_PlayersObject->getFullName()?></td>
          <td><?php echo $vote->_PlayersObject->_teamObject->Team_Name?></td>
+         <td><?php echo $vote->Points?></td>
       </tr>
    <?endif;?>
 <?php endwhile; ?>

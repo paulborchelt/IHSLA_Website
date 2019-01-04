@@ -18,9 +18,10 @@
             </li>
             <li> Off Season Leagues
                <ul>
-                  <li><a href="http://www.smartlacrosse.com/">Smart Lacrosse (www.smartlacrosse.com)</a></li>
-                  <li><a href="http://www.indyindoorlax.com">www.indyindoorlax.com</a></li>
-                  <li><a href="http://www.hoosierlacrosse.com">www.hoosierlacrosse.com</a></li>
+                  <li><a href="http://https://in.truelacrosse.com/">True Lacrosse</a></li>
+                  <li><a href="http://www.MaxLaxIndy.com">MaxLax Indy</a></li>
+                  <li><a href="http://originslc.com">Origins Lacrosse Club</a></li>
+                  <li><a href="http://indyelitelacrosse.com">Indy Elite</a></li>
                </ul>
             </li>
          </ul>

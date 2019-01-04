@@ -2,7 +2,7 @@
 <?php echo$leagueinfonavbar ?>
 
 <h3>Board of Directors</h3>
-<p>Mike Williams    '17 - '18   <a href="mailto:mwilliams@saintjoelacrosse.com"><span class="c8">mwilliams@saintjoelacrosse.com</a></p>
+<p>Mike Williams    '17 - '18   <a href="mailto:michael.a.williams@me.com"><span class="c8">michael.a.williams@me.com</a></p>
 <p>Paul Borchelt    '17 - '18   <a href="mailto:pborchelt@gmail.com"><span class="c8">pborchelt@gmail.com</a></p>
 <p>John Belote      '17 - '18   <a href="mailto:belotejohn@gmail.com"><span class="c8">belotejohn@gmail.com</a></p>
 <p>Ted Hampton      '18 - '19   <a href="mailto:thampton@brebeuf.org "><span class="c8">thampton@brebeuf.org</a></p>
