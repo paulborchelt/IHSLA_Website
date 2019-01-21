@@ -16,6 +16,10 @@
          } );
 </script>
 
+ <button type="button" class="btn btn-primary" onClick="window.location='<?php echo$_SERVER['PHP_SELF']?>?action=File'">Download Report</button>
+ 
+ <p></p>
+
 
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
 <thead>

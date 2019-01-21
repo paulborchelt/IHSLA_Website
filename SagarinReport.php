@@ -18,7 +18,7 @@ switch ($action){
       $sql_Executor_Schedule = new SqlExecutor( $db, new Schedule_Row($_REQUEST));
       $scheduleSorter = new scheduleSorter($_REQUEST);
       $sql_Executor_Schedule->SearchWithOwnSelect(Schedule_Row::GetSelectStatement(),Schedule_Row::GetCurrentYearSagarin());
-      $file = "newfile.txt";
+      $file = "leagueuploads/sagarin report.txt";
       $myfile = fopen($file, "w") or die("Unable to open file!");
       while ( $schedule = $sql_Executor_Schedule->fetchNextObject() ){
         fwrite ($myfile, $schedule->_DateObject->getDatabaseFormat());
@@ -27,11 +27,12 @@ switch ($action){
         fwrite ($myfile, " ");
    	    fwrite ($myfile, $schedule->_AwayTeamObject->Team_Name );
         fwrite ($myfile, " ");
-   	    fwrite ($myfile, $schedule->_SiteObject->field_name);
+   	    fwrite ($myfile, $schedule->_HomeTeamObject->Team_ID);
+        fwrite ($myfile, " ");
+   	    fwrite ($myfile, $schedule->_AwayTeamObject->Team_ID );
         fwrite ($myfile, " ");
         fwrite ($myfile, $schedule->getResults(TRUE));
-
-        fwrite ($myfile, "\n");
+        fwrite ($myfile, "\r\n");
       }
       fclose($myfile);
       $managefile = new managefile($file);
