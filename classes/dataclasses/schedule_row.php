@@ -448,6 +448,23 @@ class Schedule_Row extends Row
                 Order by Date";
     }
     
+    static function GetCurrentYearSagarin()
+    {
+        $currentSeason = Schedule_Row::GetCurrentSeasonYear();
+        return "LEFT JOIN `Teams` AS home ON `HomeTeam_ID` = home.Team_ID
+                LEFT JOIN `Teams` AS away ON `AwayTeam_ID` = away.Team_ID
+                LEFT JOIN `Field_Info` on Site_ID = Field_Info.field_id
+                LEFT JOIN  `CancelOptions` ON Cancel = CancelOptions.cancelid
+                LEFT JOIN  ContactInfo as referee ON referee.pn_uid = Referee and referee.pn_uid != 0 and referee.pn_uid is not null
+                LEFT JOIN  ContactInfo as umpire ON umpire.pn_uid = Umpire and umpire.pn_uid != 0 and umpire.pn_uid is not null
+                LEFT JOIN  ContactInfo as fieldjudge ON fieldjudge.pn_uid = Field_Judge and fieldjudge.pn_uid != 0 and fieldjudge.pn_uid is not null
+                LEFT JOIN Leagues as lh ON away.League = lh.ID
+	            LEFT JOIN Leagues as la ON home.League = la.ID
+                WHERE Year( Date )= $currentSeason AND Game_Level = 'Varsity' AND (Game_Type = 'Regular' OR Game_Type = 'Tournament') AND (la.ID = 1 or lh.ID = 1) AND (away.Member != 0 AND home.Member != 0)
+                Group by Schedule.Game_ID
+                Order by Date";
+    }
+    
     static function GetCurrentYearForTeam($league, $TeamId )
     {
         $currentSeason = Schedule_Row::GetCurrentSeasonYear();
