@@ -41,6 +41,7 @@
    <li><h5>Info</h5></li>
       <ul>
          <li><button type="button" onClick="window.location='ContactInfoList.php'">Contact List</button></li>
+         <li><button type="button" onClick="window.location='SagarinReport.php'">Sagarin Report</button></li>
       </ul>
    <li><h5>Account</h5></li>
       <ul>

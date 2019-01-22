@@ -16,9 +16,12 @@
          } );
 </script>
 
+<?php if ($user->hasPermisions(Groups_Row::Administrators)): ?>
  <button type="button" class="btn btn-primary" onClick="window.location='<?php echo$_SERVER['PHP_SELF']?>?action=File'">Download Report</button>
  
  <p></p>
+ 
+ <?php endif; ?>
 
 
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
