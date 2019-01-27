@@ -9,9 +9,9 @@ require_once ('levels_row.php');
 require_once ('gametype_row.php');
 require_once ('canceloptions_row.php');
 require_once ('leagues_row.php');
-require_once ('classes/mydatetime.php');
-require_once ('classes/score.php');
-require_once ('classes/mail.php');
+require_once ('../classes/mydatetime.php');
+require_once ('../classes/score.php');
+require_once ('../classes/mail.php');
 class Schedule_Row extends Row
 {
     protected $Game_ID;
@@ -450,7 +450,7 @@ class Schedule_Row extends Row
     
     static function GetCurrentYearSagarin()
     {
-        $currentSeason = Schedule_Row::GetCurrentSeasonYear();
+        $TodayDate = date("Y-m-d");
         return "LEFT JOIN `Teams` AS home ON `HomeTeam_ID` = home.Team_ID
                 LEFT JOIN `Teams` AS away ON `AwayTeam_ID` = away.Team_ID
                 LEFT JOIN `Field_Info` on Site_ID = Field_Info.field_id
@@ -460,7 +460,7 @@ class Schedule_Row extends Row
                 LEFT JOIN  ContactInfo as fieldjudge ON fieldjudge.pn_uid = Field_Judge and fieldjudge.pn_uid != 0 and fieldjudge.pn_uid is not null
                 LEFT JOIN Leagues as lh ON away.League = lh.ID
 	            LEFT JOIN Leagues as la ON home.League = la.ID
-                WHERE Year( Date )= $currentSeason AND Game_Level = 'Varsity' AND (Game_Type = 'Regular' OR Game_Type = 'Tournament') AND (la.ID = 1 or lh.ID = 1) AND (away.Member != 0 AND home.Member != 0)
+                WHERE Game_Level = 'Varsity' AND Date <= '2018-05-19' AND Date >= '2018-03-05' AND (Game_Type = 'Regular' OR Game_Type = 'Tournament') AND ( away.Member = 1 AND home.Member=1 )
                 Group by Schedule.Game_ID
                 Order by Date";
     }

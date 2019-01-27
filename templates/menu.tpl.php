@@ -36,12 +36,12 @@
       <ul>
          <li><button type="button" onClick="window.location='EmailContacts.php'">Email Contacts</button></li>
          <li><button type="button" onClick="window.location='EnterNews.php'">Enter News</button></li>
+         <li><button type="button" onClick="window.location='SagarinReport.php'">Sagarin Report</button></li>
       </ul>
    <?php endif; ?>
    <li><h5>Info</h5></li>
       <ul>
          <li><button type="button" onClick="window.location='ContactInfoList.php'">Contact List</button></li>
-         <li><button type="button" onClick="window.location='SagarinReport.php'">Sagarin Report</button></li>
       </ul>
    <li><h5>Account</h5></li>
       <ul>

@@ -39,7 +39,7 @@
 <?php while ( $schedule = $result->fetchNextObject() ): ?>
    <tr>
       <td><?php echo$schedule->_DateObject->getScheduleSortFormat()?></td>
-   	<td><?php echo$schedule->_DateObject->getScheduleFormat()?></td>
+   	<td><?php echo$schedule->_DateObject->getDatabaseFormat()?></td>
    	<td><?php echo$schedule->_HomeTeamObject->Team_Name?></td>
    	<td><?php echo$schedule->_AwayTeamObject->Team_Name?></td>
    	<td><?php echo$schedule->_SiteObject->field_name?></td>

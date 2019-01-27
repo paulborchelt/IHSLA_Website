@@ -16,6 +16,7 @@ class managefile{
         header('Pragma: public');
         header('Content-Length: ' . filesize($this->filename));
         readfile($this->filename);
+        exit;
     }
 }
 ?>

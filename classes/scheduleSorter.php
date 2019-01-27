@@ -1,6 +1,6 @@
 <?php
 require_once ('accessprotected.php');
-require_once ('classes/dataclasses/schedule_row.php');
+require_once ('../classes/dataclasses/schedule_row.php');
 class ScheduleSorter extends AccessProtected{
    protected $level;
    protected $type;
